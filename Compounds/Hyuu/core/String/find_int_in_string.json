@@ -148,29 +148,9 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "48.000000"
+                            "metaValue": "47.000000"
                         }
                     ]
-                },
-                {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-533.449 -332.034 2157 1103.28"
-                },
-                {
-                    "metaName": "DisplayMode",
-                    "metaType": "string",
-                    "metaValue": "2"
-                },
-                {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "-44.5625 -885.632"
-                },
-                {
-                    "metaName": "zValue",
-                    "metaType": "string",
-                    "metaValue": "326.000000"
                 },
                 {
                     "metaName": "documentation",
@@ -181,6 +161,26 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../../icons/hyuu_icon.png"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-90.5954 -842.939 2158 1792.98"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "35.000000"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-193 -108"
                 }
             ],
             "ports": [
@@ -519,11 +519,6 @@
                             "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
                         },
                         {
-                            "metaName": "ViewportRect",
-                            "metaType": "string",
-                            "metaValue": "-753 -359 1506 718"
-                        },
-                        {
                             "metaName": "io_nodes",
                             "metadata": [
                                 {
@@ -543,11 +538,6 @@
                                                     "metaValue": "-583 -105"
                                                 },
                                                 {
-                                                    "metaName": "zValue",
-                                                    "metaType": "string",
-                                                    "metaValue": "34.000000"
-                                                },
-                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
@@ -560,6 +550,11 @@
                                                             "metaName": "output"
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "34.000000"
                                                 }
                                             ]
                                         }
@@ -582,11 +577,6 @@
                                                     "metaValue": "1036.65 -64.1685"
                                                 },
                                                 {
-                                                    "metaName": "zValue",
-                                                    "metaType": "string",
-                                                    "metaValue": "33.000000"
-                                                },
-                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
@@ -596,12 +586,22 @@
                                                             "metaName": "index"
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "33.000000"
                                                 }
                                             ]
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-691 -619 1478 1228"
                         }
                     ],
                     "ports": [
@@ -628,27 +628,6 @@
                         }
                     ],
                     "compoundNodes": [
-                        {
-                            "nodeName": "is_character_int",
-                            "nodeType": "Hyuu::String::is_character_int",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "488.178 -173.641"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "32.000000"
-                                }
-                            ]
-                        },
                         {
                             "nodeName": "get_from_string",
                             "nodeType": "Core::String::get_from_string",
@@ -694,17 +673,30 @@
                                     "metaValue": "31.000000"
                                 }
                             ]
+                        },
+                        {
+                            "nodeName": "string_to_int",
+                            "nodeType": "Core::String::string_to_int",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "43.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "524 -343"
+                                }
+                            ]
                         }
                     ],
                     "connections": [
-                        {
-                            "source": "is_character_int.result",
-                            "target": ".looping_condition"
-                        },
-                        {
-                            "source": "get_from_string.character",
-                            "target": "is_character_int.character"
-                        },
                         {
                             "source": "subtract.output",
                             "target": "get_from_string.index"
@@ -724,15 +716,17 @@
                         {
                             "source": ".output",
                             "target": "get_from_string.string"
-                        }
-                    ],
-                    "values": [
+                        },
                         {
-                            "valueName": "is_character_int.character",
-                            "valueType": "string",
-                            "value": ""
+                            "source": "get_from_string.character",
+                            "target": "string_to_int.string"
+                        },
+                        {
+                            "source": "string_to_int.success",
+                            "target": ".looping_condition"
                         }
                     ],
+                    "values": [],
                     "reservedNodeNames": [
                         {
                             "name": "input"
@@ -764,7 +758,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "51.000000"
+                            "metaValue": "49.000000"
                         }
                     ]
                 },
@@ -785,7 +779,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "49.000000"
+                            "metaValue": "50.000000"
                         }
                     ]
                 },
@@ -957,7 +951,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "47.000000"
+                            "metaValue": "46.000000"
                         }
                     ]
                 },
