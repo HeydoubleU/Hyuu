@@ -32,7 +32,7 @@ Preliminary library for fur/hair creation and styling.
 
 ## Install
 
-Copy the `Hyuu` folder in `Compounds` to your prefered compounds directory. Add the path to `HyuuPackConfig.json` to `BIFROST_LIB_CONFIG_FILES`, e.g.:
+Copy the `Hyuu` folder in `Compounds` to your prefered compounds directory. Add the path for `HyuuPackConfig.json` to `BIFROST_LIB_CONFIG_FILES`, e.g.:
 
 ```
 BIFROST_LIB_CONFIG_FILES = C:/your/compounds/path/Hyuu/HyuuPackConfig.json
