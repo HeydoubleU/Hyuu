@@ -1,0 +1,1 @@
+Generates a kernel of the given size where all weights are 1.
