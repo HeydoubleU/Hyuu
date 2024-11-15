@@ -1,0 +1,1 @@
+Store the strands' root point_position as a strand property "strand_root_position".

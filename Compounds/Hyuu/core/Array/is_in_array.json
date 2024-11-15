@@ -1,0 +1,269 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Array::is_in_array",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-3796.76 455.385"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "array"
+                                                },
+                                                {
+                                                    "metaName": "value"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-2001.9 609.841"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "found"
+                                                },
+                                                {
+                                                    "metaName": "index"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-5050.47 151.588 4364.43 1101.82"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-3905 1041.34"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../documentation/core/Array/is_in_array.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "array",
+                    "portDirection": "input",
+                    "portDefaultType": "array<float>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "found",
+                    "portDirection": "output",
+                    "portType": "bool"
+                },
+                {
+                    "portName": "value",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "0f"
+                },
+                {
+                    "portName": "index",
+                    "portDirection": "output",
+                    "portType": "long"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "array_size",
+                    "nodeType": "Core::Array::array_size",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-3404.62 446.745"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "find_in_array",
+                    "nodeType": "Core::Array::find_in_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-3438.6 780.308"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "to_bool",
+                    "nodeType": "Core::Type_Conversion::to_bool",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2992.42 419.137"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "and",
+                    "nodeType": "Core::Logic::and",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2654.53 475.364"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "not_equal",
+                    "nodeType": "Core::Logic::not_equal",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-3023.6 598"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".array",
+                    "target": "array_size.array"
+                },
+                {
+                    "source": ".array",
+                    "target": "find_in_array.input"
+                },
+                {
+                    "source": ".value",
+                    "target": "find_in_array.value"
+                },
+                {
+                    "source": "find_in_array.found_index",
+                    "target": ".index"
+                },
+                {
+                    "source": "array_size.size",
+                    "target": "to_bool.from"
+                },
+                {
+                    "source": "to_bool.bool",
+                    "target": "and.first"
+                },
+                {
+                    "source": "array_size.size",
+                    "target": "not_equal.first"
+                },
+                {
+                    "source": "find_in_array.found_index",
+                    "target": "not_equal.second"
+                },
+                {
+                    "source": "not_equal.output",
+                    "target": "and.second"
+                },
+                {
+                    "source": "and.output",
+                    "target": ".found"
+                }
+            ],
+            "values": [],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+Resize a kernel mask, new weights are sampled using linear interpolation.

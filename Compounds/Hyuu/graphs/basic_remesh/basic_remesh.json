@@ -1,0 +1,928 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Graphs::basic_remesh",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "cut_plane_transform",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "transform"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1257.21 -303.638"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "35.000000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "mesh_to_cut",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "mesh"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "45.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1265.22 -507.644"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-227.623 188.731 1158.7 639.418"
+                        },
+                        {
+                            "metaName": "title",
+                            "metaType": "string",
+                            "metaValue": "Alternative version where we only remesh faces along cut"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop1",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "title",
+                            "metaType": "string",
+                            "metaValue": "Full remesh or cut face only remesh"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "1267.02 -356.358 334.661 474.11"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#28da9652"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop2",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#28da9652"
+                        },
+                        {
+                            "metaName": "title",
+                            "metaType": "string",
+                            "metaValue": "Tag hard edges so we don't lose them during remesh"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-73.7651 -361.028 494.341 412.236"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop3",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#28da9652"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "45.1183 383.571 614.687 379.599"
+                        },
+                        {
+                            "metaName": "title",
+                            "metaType": "string",
+                            "metaValue": "Preserve faces by inverting the face Cut tag created by cut Mesh"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1675.1 -597.091 2345.87 650.452"
+                },
+                {
+                    "metaName": "compoundIsGraph",
+                    "metaValue": "true"
+                },
+                {
+                    "metaName": "category",
+                    "metaType": "string",
+                    "metaValue": "Hyuu"
+                },
+                {
+                    "metaName": "description",
+                    "metaType": "string",
+                    "metaValue": "basic demo of remesh compound"
+                },
+                {
+                    "metaName": "example_scene",
+                    "metaType": "string",
+                    "metaValue": "basic_remesh_example.ma"
+                },
+                {
+                    "metaName": "thumbnail",
+                    "metaType": "string",
+                    "metaValue": "basic_remesh_thumb.png"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "mesh",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {},
+                    "metadata": [
+                        {
+                            "metaName": "pathinfo",
+                            "metadata": [
+                                {
+                                    "metaName": "path",
+                                    "metaType": "string",
+                                    "metaValue": "default_meshShape"
+                                },
+                                {
+                                    "metaName": "setOperation",
+                                    "metaType": "string",
+                                    "metaValue": "+"
+                                },
+                                {
+                                    "metaName": "active",
+                                    "metaType": "string",
+                                    "metaValue": "true"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "portName": "transform",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "0.164295137f",
+                            "y": "0.398425698f",
+                            "z": "0.902365804f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "-0.953176737f",
+                            "y": "0.299584568f",
+                            "z": "0.0412694179f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "-0.253892064f",
+                            "y": "-0.866894484f",
+                            "z": "0.428990424f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "-0.195207372f",
+                            "y": "5.51052332f",
+                            "z": "-0.671850443f",
+                            "w": "1f"
+                        }
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "pathinfo",
+                            "metadata": [
+                                {
+                                    "metaName": "path",
+                                    "metaType": "string",
+                                    "metaValue": "/locator1"
+                                },
+                                {
+                                    "metaName": "setOperation",
+                                    "metaType": "string",
+                                    "metaValue": "+"
+                                },
+                                {
+                                    "metaName": "active",
+                                    "metaType": "string",
+                                    "metaValue": "true"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "cut_mesh",
+                    "nodeType": "Hyuu::Geometry::Mesh::cut_mesh",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Cutting Plane",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-938.208 -508.638"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "terminal",
+                    "nodeType": "Core::Graph::terminal",
+                    "fanInPortNames": {
+                        "final": [],
+                        "proxy": [],
+                        "diagnostic": [
+                            "mesh_below"
+                        ]
+                    },
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "diagnostic",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2038.32 -361.879"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "tag_hard_edges",
+                    "nodeType": "Hyuu::Geometry::Property::tag_hard_edges",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Tagging",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "48.1473 -269.301"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "soften_harden_edges",
+                    "nodeType": "Geometry::Mesh::soften_harden_edges",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1692.43 -238.962"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "wireframe_strands",
+                    "nodeType": "Hyuu::Geometry::Strands::wireframe_strands",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2038.16 -88.1644"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "remesh2",
+                    "nodeType": "Hyuu::Geometry::Mesh::remesh",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Tags",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "696 269"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_component_tag",
+                    "nodeType": "Geometry::Tags::get_component_tag",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "76.9555 465.852"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "not",
+                    "nodeType": "Core::Logic::not",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "380.906 475.337"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "41.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "remesh1",
+                    "nodeType": "Hyuu::Geometry::Mesh::remesh",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Tags",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "608.911 -523.484"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1311 -142"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "pass",
+                    "nodeType": "Core::Graph::pass",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-215 305.588"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "bool",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1305.8 -287.231"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".mesh",
+                    "target": "cut_mesh.mesh"
+                },
+                {
+                    "source": ".transform",
+                    "target": "cut_mesh.transform"
+                },
+                {
+                    "source": "cut_mesh.mesh_below",
+                    "target": "tag_hard_edges.mesh"
+                },
+                {
+                    "source": "soften_harden_edges.out_mesh",
+                    "target": "wireframe_strands.mesh"
+                },
+                {
+                    "source": "soften_harden_edges.out_mesh",
+                    "target": "terminal.diagnostic.mesh_below"
+                },
+                {
+                    "source": "get_component_tag.tag_data",
+                    "target": "not.value"
+                },
+                {
+                    "source": "not.output",
+                    "target": "remesh2.face_preserve"
+                },
+                {
+                    "source": "cut_mesh.mesh_below",
+                    "target": "remesh1.mesh"
+                },
+                {
+                    "source": "tag_hard_edges.edge_hard",
+                    "target": "remesh1.edge_preserve"
+                },
+                {
+                    "source": "tag_hard_edges.point_hard",
+                    "target": "remesh1.point_preserve"
+                },
+                {
+                    "source": "remesh1.mesh_out",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": "remesh2.mesh_out",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": "if.output",
+                    "target": "soften_harden_edges.mesh"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "remesh2.mesh"
+                },
+                {
+                    "source": "cut_mesh.mesh_below",
+                    "target": "pass.input"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "get_component_tag.geometry"
+                },
+                {
+                    "source": "value.output",
+                    "target": "if.condition"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "cut_mesh.cross_section_remesh",
+                    "valueType": "long",
+                    "value": "2"
+                },
+                {
+                    "valueName": "cut_mesh.properties",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "tag_hard_edges.angle_threshold",
+                    "valueType": "float",
+                    "value": "30f"
+                },
+                {
+                    "valueName": "tag_hard_edges.tag_open_edges",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "wireframe_strands.color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.100000001f",
+                        "z": "0.400000006f"
+                    }
+                },
+                {
+                    "valueName": "remesh2.edge_preserve",
+                    "valueType": "array<bool>",
+                    "value": []
+                },
+                {
+                    "valueName": "remesh2.point_preserve",
+                    "valueType": "array<bool>",
+                    "value": []
+                },
+                {
+                    "valueName": "remesh2.face_preserve",
+                    "valueType": "array<bool>",
+                    "value": []
+                },
+                {
+                    "valueName": "remesh2.max_length",
+                    "valueType": "float",
+                    "value": "0.400000006f"
+                },
+                {
+                    "valueName": "remesh2.collapse_threshold",
+                    "valueType": "float",
+                    "value": "0.5f"
+                },
+                {
+                    "valueName": "remesh2.collapse_iterations",
+                    "valueType": "long",
+                    "value": "15"
+                },
+                {
+                    "valueName": "remesh2.unsafe_collapse",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "remesh2.filter_poked_triangles",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "remesh2.flip_edges",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "get_component_tag.tag",
+                    "valueType": "string",
+                    "value": "face_cut"
+                },
+                {
+                    "valueName": "remesh1.mesh",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "remesh1.edge_preserve",
+                    "valueType": "array<bool>",
+                    "value": []
+                },
+                {
+                    "valueName": "remesh1.point_preserve",
+                    "valueType": "array<bool>",
+                    "value": []
+                },
+                {
+                    "valueName": "remesh1.face_preserve",
+                    "valueType": "array<bool>",
+                    "value": []
+                },
+                {
+                    "valueName": "remesh1.max_length",
+                    "valueType": "float",
+                    "value": "0.400000006f"
+                },
+                {
+                    "valueName": "remesh1.collapse_threshold",
+                    "valueType": "float",
+                    "value": "0.5f"
+                },
+                {
+                    "valueName": "remesh1.split_iterations",
+                    "valueType": "long",
+                    "value": "16"
+                },
+                {
+                    "valueName": "remesh1.collapse_iterations",
+                    "valueType": "long",
+                    "value": "15"
+                },
+                {
+                    "valueName": "remesh1.reproject",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "remesh1.unsafe_collapse",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "remesh1.pre_sort_edges",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "remesh1.filter_poked_triangles",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "remesh1.allow_preserved_face_split",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "remesh1.flip_edges",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "if.condition",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "bool",
+                    "value": "true"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "cut_plane_transform"
+                },
+                {
+                    "name": "mesh_to_cut"
+                }
+            ]
+        }
+    ]
+}

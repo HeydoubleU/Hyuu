@@ -1,0 +1,1 @@
+Construct kernel mask given string of weights. This assumes the kernel is square.

@@ -1,0 +1,1 @@
+This compounds was created for internal use by `remesh`. A "poked triangle" refers to when 3 triangles are contained inside of a larger triangle, this is generally undesirable.

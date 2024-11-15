@@ -1,0 +1,1 @@
+Remove strands with fewer than 2 points.

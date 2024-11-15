@@ -1,0 +1,1 @@
+Simple float3 or float4 constant will color widget.

@@ -1,0 +1,1 @@
+Get all face edges for a mesh.

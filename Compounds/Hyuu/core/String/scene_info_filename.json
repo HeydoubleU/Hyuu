@@ -1,0 +1,390 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::String::scene_info_filename",
+            "uriImported": "stream:/stream",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-2788.92 -676.42"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "filename"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "37.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "expanded"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "43.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-410.425 -633.783"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-2530.22 -757.772 1882.15 1063.55"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-1285.1 -162.559"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "154.000000"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../documentation/core/String/scene_info_filename.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "filename",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "$SDIR/$SCENE_cache.abc"
+                },
+                {
+                    "portName": "expanded",
+                    "portDirection": "output",
+                    "portType": "string"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "expand_env_vars",
+                    "nodeType": "Core::String::expand_env_vars",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2314.75 -690.54"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "scene_info",
+                    "nodeType": "File::Project::scene_info",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "47.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2510.54 -194.985"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "split_string_ext",
+                    "nodeType": "Hyuu::String::split_string_ext",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2242.97 -509.647"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "string_replace",
+                    "nodeType": "Core::String::string_replace",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1946.13 -671.185"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "string_replace1",
+                    "nodeType": "Core::String::string_replace",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "48.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1116.45 -406.284"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "string_replace2",
+                    "nodeType": "Core::String::string_replace",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "49.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1402.36 -605.754"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "string_strip",
+                    "nodeType": "Core::String::string_strip",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "52.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1844.28 -434.77"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "string_strip1",
+                    "nodeType": "Core::String::string_strip",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "54.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1833.86 -207.846"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "expand_env_vars.expanded",
+                    "target": "string_replace.string"
+                },
+                {
+                    "source": "scene_info.scene",
+                    "target": "split_string_ext.string"
+                },
+                {
+                    "source": "split_string_ext.basename",
+                    "target": "string_replace.new"
+                },
+                {
+                    "source": "string_replace.modified",
+                    "target": "string_replace2.string"
+                },
+                {
+                    "source": "string_replace2.modified",
+                    "target": "string_replace1.string"
+                },
+                {
+                    "source": ".filename",
+                    "target": "expand_env_vars.string"
+                },
+                {
+                    "source": "string_replace1.modified",
+                    "target": ".expanded"
+                },
+                {
+                    "source": "scene_info.scene_directory",
+                    "target": "string_strip.string"
+                },
+                {
+                    "source": "string_strip.stripped",
+                    "target": "string_replace2.new"
+                },
+                {
+                    "source": "scene_info.project_directory",
+                    "target": "string_strip1.string"
+                },
+                {
+                    "source": "string_strip1.stripped",
+                    "target": "string_replace1.new"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "split_string_ext.string",
+                    "valueType": "string",
+                    "value": "filename.ext"
+                },
+                {
+                    "valueName": "string_replace.old",
+                    "valueType": "string",
+                    "value": "$SCENE"
+                },
+                {
+                    "valueName": "string_replace1.old",
+                    "valueType": "string",
+                    "value": "$PDIR"
+                },
+                {
+                    "valueName": "string_replace2.old",
+                    "valueType": "string",
+                    "value": "$SDIR"
+                },
+                {
+                    "valueName": "string_strip.characters",
+                    "valueType": "string",
+                    "value": "/"
+                },
+                {
+                    "valueName": "string_strip1.characters",
+                    "valueType": "string",
+                    "value": "/"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

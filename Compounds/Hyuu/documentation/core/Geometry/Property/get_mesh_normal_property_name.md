@@ -1,0 +1,1 @@
+Get normal property name based on what data exists on the mesh.

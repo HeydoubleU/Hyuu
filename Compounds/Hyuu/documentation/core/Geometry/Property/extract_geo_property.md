@@ -1,0 +1,1 @@
+Remove geo property from object and return its data.

@@ -1,0 +1,1 @@
+Legacy reduce mesh compound, consider using `remesh` if more control is required.

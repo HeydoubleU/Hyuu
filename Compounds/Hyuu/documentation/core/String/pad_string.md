@@ -1,0 +1,1 @@
+If the input string is shorter than `padding`, it is lengthened. The gap is fill with `pad_character` at either the front or back of the string. If the input string is greater or equal to `padding`, the string is unaffected.

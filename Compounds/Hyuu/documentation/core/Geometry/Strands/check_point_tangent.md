@@ -1,0 +1,1 @@
+Create strand point tangent property if not present.

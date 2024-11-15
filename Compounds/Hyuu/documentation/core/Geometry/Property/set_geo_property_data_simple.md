@@ -1,0 +1,1 @@
+Set's the data property of a geo property directly.

@@ -1,0 +1,1 @@
+Append input to array, returns id of the new last element in the array.

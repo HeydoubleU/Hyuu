@@ -1,0 +1,1 @@
+Returns the magnitude at the given position using the gaussian falloff function.

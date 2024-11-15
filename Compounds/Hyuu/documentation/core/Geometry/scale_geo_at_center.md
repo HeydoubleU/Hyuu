@@ -1,0 +1,1 @@
+Scale point position around `center`.

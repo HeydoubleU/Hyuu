@@ -1,0 +1,1 @@
+Get strand point property as 2D array.

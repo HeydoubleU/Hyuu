@@ -1,0 +1,1 @@
+Creates an array of face edges representing only one face edge per edge (i.e. no face edge twins). `fv_unique_edge_id` targets `face_vertex_component`, indexing face vertices to their `unique_edge`.

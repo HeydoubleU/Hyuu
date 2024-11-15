@@ -1,0 +1,1 @@
+Returns true if the weights input is an empty array, or single scalar float ~= 0.0 (within threshold).

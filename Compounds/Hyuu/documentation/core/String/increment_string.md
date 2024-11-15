@@ -1,0 +1,1 @@
+Increment the number contained in a string, with support for padded numbers. If multiple numbers are present, the last one is incremented.

@@ -1,0 +1,1 @@
+Update property with product of itself and `scale`.

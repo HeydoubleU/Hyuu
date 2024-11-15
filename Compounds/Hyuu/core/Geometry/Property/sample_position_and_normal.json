@@ -1,0 +1,303 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Geometry::Properties::sample_position_and_normal",
+            "uriImported": "file:///sample_position_and_normal.json",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1165 -61"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "33.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "geo"
+                                                },
+                                                {
+                                                    "metaName": "locations"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-57.8988 -83.4476"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "34.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "position"
+                                                },
+                                                {
+                                                    "metaName": "normal"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-2077 -357 3018 870"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-300.884 -89.8252"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "69.000000"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/core/Geometry/Property/sample_position_and_normal.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "geo",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "locations",
+                    "portDirection": "input",
+                    "portType": "array<Geometry::Common::GeoLocation>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "position",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>"
+                },
+                {
+                    "portName": "normal",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "sample_property",
+                    "nodeType": "Geometry::Query::sample_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-606.266 -238.223"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "sample_property1",
+                    "nodeType": "Geometry::Query::sample_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-610.196 68.4325"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_mesh_normal_property_name",
+                    "nodeType": "Hyuu::Geometry::Properties::get_mesh_normal_property_name",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-917.5 200"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".locations",
+                    "target": "sample_property.locations"
+                },
+                {
+                    "source": ".locations",
+                    "target": "sample_property1.locations"
+                },
+                {
+                    "source": ".geo",
+                    "target": "sample_property.geometry"
+                },
+                {
+                    "source": ".geo",
+                    "target": "sample_property1.geometry"
+                },
+                {
+                    "source": "sample_property.sampled_data",
+                    "target": ".position"
+                },
+                {
+                    "source": "sample_property1.sampled_data",
+                    "target": ".normal"
+                },
+                {
+                    "source": ".geo",
+                    "target": "get_mesh_normal_property_name.mesh"
+                },
+                {
+                    "source": "get_mesh_normal_property_name.property_name",
+                    "target": "sample_property1.property"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "sample_property.default",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sample_property.property",
+                    "valueType": "string",
+                    "value": "point_position"
+                },
+                {
+                    "valueName": "sample_property.method",
+                    "valueType": "BifrostExp::Geometry::SampleMethod",
+                    "value": "interpolated"
+                },
+                {
+                    "valueName": "sample_property1.default",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "sample_property1.property",
+                    "valueType": "string",
+                    "value": "point_normal"
+                },
+                {
+                    "valueName": "sample_property1.method",
+                    "valueType": "BifrostExp::Geometry::SampleMethod",
+                    "value": "interpolated"
+                },
+                {
+                    "valueName": "get_mesh_normal_property_name.mesh",
+                    "valueType": "Object",
+                    "value": {}
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

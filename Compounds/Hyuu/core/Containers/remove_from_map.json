@@ -1,0 +1,232 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Containers::Map::remove_from_map",
+            "uriImported": "file:///remove_map_item.json",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-733.876 -46.118"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "35.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "map"
+                                                },
+                                                {
+                                                    "metaName": "key"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "531.522 -73.1761"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "map_out"
+                                                },
+                                                {
+                                                    "metaName": "found"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-944 -481.161 1935 999.321"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "43 -296"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "48.000000"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../documentation/core/Containers/remove_from_map.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "map",
+                    "portDirection": "input",
+                    "portType": "Hyuu::Containers::Map::HashMap",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "key",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "0f"
+                },
+                {
+                    "portName": "map_out",
+                    "portDirection": "output",
+                    "portType": "Hyuu::Containers::Map::HashMap"
+                },
+                {
+                    "portName": "found",
+                    "portDirection": "output",
+                    "portType": "bool"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "value_to_map_hash",
+                    "nodeType": "Hyuu::Containers::value_to_hash",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-352.314 60.6448"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "map_remove",
+                    "nodeType": "Hyuu::Containers::Map::map_remove",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-63.6149 -83.1814"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".key",
+                    "target": "value_to_map_hash.value"
+                },
+                {
+                    "source": ".map",
+                    "target": "map_remove.map"
+                },
+                {
+                    "source": "value_to_map_hash.hash",
+                    "target": "map_remove.hash"
+                },
+                {
+                    "source": "map_remove.map_out",
+                    "target": ".map_out"
+                },
+                {
+                    "source": "map_remove.output",
+                    "target": ".found"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "value_to_map_hash.value",
+                    "valueType": "float",
+                    "value": "0f"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

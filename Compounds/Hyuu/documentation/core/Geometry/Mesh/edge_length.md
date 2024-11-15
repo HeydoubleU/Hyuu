@@ -1,0 +1,1 @@
+Internal node for getting the distance/length of an edge, as well as its midpoint.

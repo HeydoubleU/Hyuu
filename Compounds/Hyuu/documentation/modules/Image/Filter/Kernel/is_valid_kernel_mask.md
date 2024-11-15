@@ -1,0 +1,1 @@
+Checks if a kernel mask's extents are odd, weights array is the correct size for its extents.

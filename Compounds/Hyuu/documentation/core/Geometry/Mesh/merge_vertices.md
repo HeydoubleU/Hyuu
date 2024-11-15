@@ -1,0 +1,1 @@
+Legacy merge vertices compound. Merges vertices within radius of each other.

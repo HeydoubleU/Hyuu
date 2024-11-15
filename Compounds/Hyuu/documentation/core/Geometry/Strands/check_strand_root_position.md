@@ -1,0 +1,1 @@
+create strand_root property if not present.

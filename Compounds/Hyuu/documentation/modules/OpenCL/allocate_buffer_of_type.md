@@ -1,0 +1,1 @@
+Allocate a buffer given the element type and array size.

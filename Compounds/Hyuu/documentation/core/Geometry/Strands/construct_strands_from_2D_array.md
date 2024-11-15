@@ -1,0 +1,1 @@
+Construct strands from a 2D array of points.

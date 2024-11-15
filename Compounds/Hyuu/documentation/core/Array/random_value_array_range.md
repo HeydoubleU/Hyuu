@@ -1,0 +1,1 @@
+Generate array of random values in range. `exponent` controls the distribution of values.

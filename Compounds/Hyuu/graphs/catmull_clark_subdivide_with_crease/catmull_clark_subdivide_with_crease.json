@@ -1,0 +1,485 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Graphs::catmull_clark_subdivide_with_crease",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes"
+                        },
+                        {
+                            "metaName": "io_onodes"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "title",
+                            "metaType": "string",
+                            "metaValue": "Create random shape"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#286487ce"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-1710.16 -392.361 921.44 607.794"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop1",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "title",
+                            "metaType": "string",
+                            "metaValue": "Tag hard edges, then convert to float for use as crease weights"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-723.595 -150.873 962.888 483.111"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#28da9652"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-3428.91 -576 5478.82 1143"
+                },
+                {
+                    "metaName": "compoundIsGraph",
+                    "metaValue": "true"
+                },
+                {
+                    "metaName": "category",
+                    "metaType": "string",
+                    "metaValue": "Hyuu"
+                },
+                {
+                    "metaName": "description",
+                    "metaType": "string",
+                    "metaValue": "Basic subdividing with creases example."
+                },
+                {
+                    "metaName": "thumbnail",
+                    "metaType": "string",
+                    "metaValue": "catmull_clark_subdivide_with_crease_thumb.png"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [],
+            "compoundNodes": [
+                {
+                    "nodeName": "catmull_clark_subdivide_mesh",
+                    "nodeType": "Hyuu::Geometry::Mesh::catmull_clark_subdivide_mesh",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "365.581 -284.442"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "create_mesh_sphere",
+                    "nodeType": "Modeling::Primitive::create_mesh_sphere",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1670.3 -306.554"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "displace_points",
+                    "nodeType": "Modeling::Points::displace_points",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Displacement",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1361.95 -243.923"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "terminal",
+                    "nodeType": "Core::Graph::terminal",
+                    "fanInPortNames": {
+                        "final": [],
+                        "proxy": [],
+                        "diagnostic": [
+                            "out_points"
+                        ]
+                    },
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "diagnostic",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "661.703 -316.482"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "fractal_turbulence_field",
+                    "nodeType": "Core::Fields::fractal_turbulence_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1671.5 -57.181"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "tag_hard_edges1",
+                    "nodeType": "Hyuu::Geometry::Property::tag_hard_edges",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-670.348 -41.6168"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "to_float",
+                    "nodeType": "Core::Type_Conversion::to_float",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-400.73 41.6202"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "AxB",
+                    "nodeType": "Hyuu::Math::AxB",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-100.009 24.3762"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "wireframe_strands1",
+                    "nodeType": "Hyuu::Geometry::Strands::wireframe_strands",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1138.94 -41.1378"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "create_mesh_sphere.sphere_mesh",
+                    "target": "displace_points.points"
+                },
+                {
+                    "source": "fractal_turbulence_field.noise_field",
+                    "target": "displace_points.displacement_vector"
+                },
+                {
+                    "source": "displace_points.out_points",
+                    "target": "tag_hard_edges1.mesh"
+                },
+                {
+                    "source": "tag_hard_edges1.edge_hard",
+                    "target": "to_float.from"
+                },
+                {
+                    "source": "to_float.float",
+                    "target": "AxB.A"
+                },
+                {
+                    "source": "AxB.output",
+                    "target": "catmull_clark_subdivide_mesh.edge_crease"
+                },
+                {
+                    "source": "catmull_clark_subdivide_mesh.mesh_out",
+                    "target": "terminal.diagnostic.out_points"
+                },
+                {
+                    "source": "displace_points.out_points",
+                    "target": "catmull_clark_subdivide_mesh.mesh"
+                },
+                {
+                    "source": "displace_points.out_points",
+                    "target": "wireframe_strands1.mesh"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "catmull_clark_subdivide_mesh.edge_crease",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "catmull_clark_subdivide_mesh.clamp_crease",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "catmull_clark_subdivide_mesh.divisions",
+                    "valueType": "long",
+                    "value": "6"
+                },
+                {
+                    "valueName": "create_mesh_sphere.radius",
+                    "valueType": "float",
+                    "value": "2.02999997f"
+                },
+                {
+                    "valueName": "create_mesh_sphere.axis_segments",
+                    "valueType": "int",
+                    "value": "11L"
+                },
+                {
+                    "valueName": "create_mesh_sphere.height_segments",
+                    "valueType": "int",
+                    "value": "9L"
+                },
+                {
+                    "valueName": "fractal_turbulence_field.magnitude",
+                    "valueType": "float",
+                    "value": "0.985199988f"
+                },
+                {
+                    "valueName": "fractal_turbulence_field.seed",
+                    "valueType": "long",
+                    "value": "1"
+                },
+                {
+                    "valueName": "tag_hard_edges1.angle_threshold",
+                    "valueType": "float",
+                    "value": "40.7999992f"
+                },
+                {
+                    "valueName": "tag_hard_edges1.surface_offset",
+                    "valueType": "float",
+                    "value": "0.00999999978f"
+                },
+                {
+                    "valueName": "AxB.A",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "AxB.B",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "wireframe_strands1.color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0.200000003f",
+                        "z": "0.200000003f"
+                    }
+                }
+            ]
+        }
+    ]
+}

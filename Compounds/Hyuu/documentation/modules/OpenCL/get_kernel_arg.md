@@ -1,0 +1,1 @@
+Get the given `arg_id` from a kernel and cast to specified type.

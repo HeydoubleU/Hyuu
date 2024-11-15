@@ -1,0 +1,249 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::String::split_filename",
+            "uriImported": "stream:/stream",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "filename"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1052.58 -166.934"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "611.138 -198.976"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "33.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "directory"
+                                                },
+                                                {
+                                                    "metaName": "name"
+                                                },
+                                                {
+                                                    "metaName": "ext"
+                                                },
+                                                {
+                                                    "metaName": "has_directory"
+                                                },
+                                                {
+                                                    "metaName": "has_ext"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-679 -402 1437 718"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "1042.61 478.997"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "152.000000"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../documentation/core/String/split_filename.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "filename",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "filename.ext"
+                },
+                {
+                    "portName": "directory",
+                    "portDirection": "output",
+                    "portType": "string"
+                },
+                {
+                    "portName": "name",
+                    "portDirection": "output",
+                    "portType": "string"
+                },
+                {
+                    "portName": "ext",
+                    "portDirection": "output",
+                    "portType": "string"
+                },
+                {
+                    "portName": "has_directory",
+                    "portDirection": "output",
+                    "portType": "bool"
+                },
+                {
+                    "portName": "has_ext",
+                    "portDirection": "output",
+                    "portType": "bool"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "split_string_ext1",
+                    "nodeType": "Hyuu::String::split_string_ext",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "54.9154 -77.1071"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "split_string_directory1",
+                    "nodeType": "Hyuu::String::split_string_directory",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-435.812 -205.758"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".filename",
+                    "target": "split_string_directory1.string"
+                },
+                {
+                    "source": "split_string_directory1.directory",
+                    "target": ".directory"
+                },
+                {
+                    "source": "split_string_directory1.file",
+                    "target": "split_string_ext1.string"
+                },
+                {
+                    "source": "split_string_ext1.basename",
+                    "target": ".name"
+                },
+                {
+                    "source": "split_string_ext1.ext",
+                    "target": ".ext"
+                },
+                {
+                    "source": "split_string_directory1.has_directory",
+                    "target": ".has_directory"
+                },
+                {
+                    "source": "split_string_ext1.has_ext",
+                    "target": ".has_ext"
+                }
+            ],
+            "values": [],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

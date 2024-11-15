@@ -1,0 +1,1 @@
+Accumulate input in each evaluation.

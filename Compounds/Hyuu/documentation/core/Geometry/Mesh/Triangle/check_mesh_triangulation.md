@@ -1,0 +1,1 @@
+Checks if mesh is triangulated. If not, triangulates it.

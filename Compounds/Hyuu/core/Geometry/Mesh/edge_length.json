@@ -1,0 +1,355 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Geometry::Mesh::edge_length",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "face_edge"
+                                                },
+                                                {
+                                                    "metaName": "point_position"
+                                                },
+                                                {
+                                                    "metaName": "face_vertex"
+                                                },
+                                                {
+                                                    "metaName": "face_offset"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "41.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-47.279 138.503"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "distance"
+                                                },
+                                                {
+                                                    "metaName": "mid_point"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "40.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1230 107"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-769.568 -385.988 2294.85 1182.53"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "79.000000"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "449.07 -197.159"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/core/Geometry/Mesh/edge_length.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "face_edge",
+                    "portDirection": "input",
+                    "portType": "Geometry::Mesh::FaceEdge",
+                    "portDefault": {
+                        "face": "0U",
+                        "side": "0U"
+                    }
+                },
+                {
+                    "portName": "point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "distance",
+                    "portDirection": "output",
+                    "portType": "float"
+                },
+                {
+                    "portName": "mid_point",
+                    "portDirection": "output",
+                    "portType": "Math::float3"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "distance",
+                    "nodeType": "Core::Math::distance",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "925 10"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_face_edge_vertices",
+                    "nodeType": "Geometry::Mesh::Internal::get_face_edge_vertices",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "296.523 365.441"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_from_array1",
+                    "nodeType": "Core::Array::get_from_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "620 45"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_from_array2",
+                    "nodeType": "Core::Array::get_from_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "620 264"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "lerp",
+                    "nodeType": "Core::Math::lerp",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "925 228"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "get_from_array1.value",
+                    "target": "distance.first"
+                },
+                {
+                    "source": "get_from_array2.value",
+                    "target": "distance.second"
+                },
+                {
+                    "source": ".face_edge",
+                    "target": "get_face_edge_vertices.face_edge"
+                },
+                {
+                    "source": ".face_vertex",
+                    "target": "get_face_edge_vertices.face_vertex"
+                },
+                {
+                    "source": ".face_offset",
+                    "target": "get_face_edge_vertices.face_offset"
+                },
+                {
+                    "source": "get_face_edge_vertices.first_vertex",
+                    "target": "get_from_array1.index"
+                },
+                {
+                    "source": "get_face_edge_vertices.second_vertex",
+                    "target": "get_from_array2.index"
+                },
+                {
+                    "source": ".point_position",
+                    "target": "get_from_array1.array"
+                },
+                {
+                    "source": "get_from_array1.value",
+                    "target": "lerp.first"
+                },
+                {
+                    "source": ".point_position",
+                    "target": "get_from_array2.array"
+                },
+                {
+                    "source": "get_from_array2.value",
+                    "target": "lerp.second"
+                },
+                {
+                    "source": "lerp.interpolated",
+                    "target": ".mid_point"
+                },
+                {
+                    "source": "distance.distance",
+                    "target": ".distance"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "get_face_edge_vertices.face_edge",
+                    "valueType": "Geometry::Mesh::FaceEdge",
+                    "value": {
+                        "face": "0U",
+                        "side": "0U"
+                    }
+                },
+                {
+                    "valueName": "lerp.fraction",
+                    "valueType": "float",
+                    "value": "0.5f"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

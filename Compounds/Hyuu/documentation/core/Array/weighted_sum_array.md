@@ -1,0 +1,1 @@
+Weighted sum of array.

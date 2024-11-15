@@ -1,0 +1,613 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Fur::Modifier::displace_fur",
+            "uriImported": "file:///displace_fur.json",
+            "metadata": [
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-961.902 -421.688 2159.25 1435.67"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1559.51 -286.733"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "42.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "fur"
+                                                },
+                                                {
+                                                    "metaName": "weights"
+                                                },
+                                                {
+                                                    "metaName": "falloff_f"
+                                                },
+                                                {
+                                                    "metaName": "displacement"
+                                                },
+                                                {
+                                                    "metaName": "scale"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "95.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1340.07 -302.008"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "fur_out"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "157.000000"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-442.288 -810.012"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"fur\"\n            },\n            {\n                \"port\": \"weights\"\n            },\n            {\n                \"port\": \"displacement\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Displacement\",\n                \"items\": [\n                    {\n                        \"port\": \"scale\"\n                    },\n                    {\n                        \"port\": \"falloff_f\"\n                    }\n                ],\n                \"unique_id\": 12\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"Falloff\",\n                \"items\": [\n                    {\n                        \"port\": \"use_falloff\"\n                    }\n                ],\n                \"unique_id\": 5\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Displacement",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/modules/Fur/Modifier/displace_fur.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "fur",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "weights",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "1f",
+                    "metadata": [
+                        {
+                            "metaName": "TypeWranglingSuggestedTypes",
+                            "metaType": "string",
+                            "metaValue": "float, string, Core::Fields::ScalarField, array<float>, array<long>"
+                        },
+                        {
+                            "metaName": "UISoftMin",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "UISoftMax",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        }
+                    ]
+                },
+                {
+                    "portName": "falloff_f",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "1f"
+                },
+                {
+                    "portName": "displacement",
+                    "portDirection": "input",
+                    "metadata": [
+                        {
+                            "metaName": "TypeWranglingSuggestedTypes",
+                            "metaType": "string",
+                            "metaValue": "float, string, Math::float3, Core::Fields::ScalarField, Core::Fields::VectorField, array<Math::float3>"
+                        }
+                    ]
+                },
+                {
+                    "portName": "scale",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "1f"
+                },
+                {
+                    "portName": "fur_out",
+                    "portDirection": "output",
+                    "portType": "Object"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "power_or_fcurve",
+                    "nodeType": "Hyuu::Math::power_or_fcurve",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "132.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-195.338 632.558"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_geo_property",
+                    "nodeType": "Geometry::Properties::get_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-496.03 577.921"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "139.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "interpret_auto_port_as_scalar_strands",
+                    "nodeType": "Geometry::Common::interpret_auto_port_as_scalar",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "133.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-605.292 1037.66"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Filter",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "is_weights_zero",
+                    "nodeType": "Hyuu::Logic::is_weights_zero",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "94.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "264.681 -401.582"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "96.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "851.879 -331.353"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "interpret_auto_port_as_vector",
+                    "nodeType": "Geometry::Common::interpret_auto_port_as_vector",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "136.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-128.289 291.675"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "offset_geo_property",
+                    "nodeType": "Hyuu::Geometry::Property::offset_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "138.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "773.446 163.776"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "promote_strand_to_point",
+                    "nodeType": "Hyuu::Geometry::Strands::promote_strand_to_point",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "134.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-300.111 907.841"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "multiply",
+                    "nodeType": "Core::Math::multiply",
+                    "multiInPortNames": [
+                        "ouput",
+                        "point_data",
+                        "port"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "135.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "118.83 751.446"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "multiply1",
+                    "nodeType": "Core::Math::multiply",
+                    "multiInPortNames": [
+                        "data",
+                        "output1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "334 296"
+                        },
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "137.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "power_or_fcurve.ouput",
+                    "target": "multiply.first.ouput"
+                },
+                {
+                    "source": "get_geo_property.data",
+                    "target": "power_or_fcurve.input"
+                },
+                {
+                    "source": "interpret_auto_port_as_scalar_strands.data",
+                    "target": "promote_strand_to_point.strand_data"
+                },
+                {
+                    "source": "is_weights_zero.is_zero",
+                    "target": "if.condition"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".fur_out"
+                },
+                {
+                    "source": "interpret_auto_port_as_vector.data",
+                    "target": "multiply1.first.data"
+                },
+                {
+                    "source": "offset_geo_property.out_geometry",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": "promote_strand_to_point.point_data",
+                    "target": "multiply.first.point_data"
+                },
+                {
+                    "source": "multiply.output",
+                    "target": "multiply1.first.output1"
+                },
+                {
+                    "source": "multiply1.output",
+                    "target": "offset_geo_property.offset"
+                },
+                {
+                    "source": ".fur",
+                    "target": "interpret_auto_port_as_scalar_strands.geometry"
+                },
+                {
+                    "source": ".fur",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": ".fur",
+                    "target": "interpret_auto_port_as_vector.geometry"
+                },
+                {
+                    "source": ".fur",
+                    "target": "get_geo_property.geometry"
+                },
+                {
+                    "source": ".fur",
+                    "target": "promote_strand_to_point.strands"
+                },
+                {
+                    "source": ".fur",
+                    "target": "offset_geo_property.geometry"
+                },
+                {
+                    "source": ".weights",
+                    "target": "interpret_auto_port_as_scalar_strands.interpreted_scalar_port"
+                },
+                {
+                    "source": ".weights",
+                    "target": "is_weights_zero.weights_input"
+                },
+                {
+                    "source": ".falloff_f",
+                    "target": "power_or_fcurve.function"
+                },
+                {
+                    "source": ".scale",
+                    "target": "multiply.first.port"
+                },
+                {
+                    "source": ".displacement",
+                    "target": "interpret_auto_port_as_vector.interpreted_vector_port"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "get_geo_property.property",
+                    "valueType": "string",
+                    "value": "point_ratio"
+                },
+                {
+                    "valueName": "get_geo_property.type",
+                    "valueType": "array<float>",
+                    "value": []
+                },
+                {
+                    "valueName": "interpret_auto_port_as_scalar_strands.interpreted_scalar_port",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_scalar_strands.default_value",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_scalar_strands.indices",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "interpret_auto_port_as_scalar_strands.geometry_component",
+                    "valueType": "string",
+                    "value": "strand_component"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_scalar_strands.position_property",
+                    "valueType": "string",
+                    "value": "strand_root_position"
+                },
+                {
+                    "valueName": "is_weights_zero.threshold",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_vector.indices",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "interpret_auto_port_as_vector.geometry_component",
+                    "valueType": "string",
+                    "value": "point_component"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_vector.position_property",
+                    "valueType": "string",
+                    "value": "point_position"
+                },
+                {
+                    "valueName": "offset_geo_property.geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "offset_geo_property.property",
+                    "valueType": "string",
+                    "value": "point_position"
+                },
+                {
+                    "valueName": "offset_geo_property.offset",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "promote_strand_to_point.strands",
+                    "valueType": "Object",
+                    "value": {}
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

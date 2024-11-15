@@ -1,0 +1,1 @@
+Shortcut for creating a large chain of if-else for a given index.

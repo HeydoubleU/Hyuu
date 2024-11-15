@@ -1,0 +1,1 @@
+Return weighted average of input transforms.

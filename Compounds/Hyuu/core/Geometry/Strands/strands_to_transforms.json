@@ -1,0 +1,455 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Geometry::Strands::strands_to_transforms",
+            "uriImported": "stream:/stream",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "strands"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "88.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1403.28 -238.559"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "point_transform"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "94.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "701.669 -248.868"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1600.08 -738.961 2552.06 1044.28"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "83.000000"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-541.47 -1722.37"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/core/Geometry/Strands/strands_to_transforms.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/hyuu_icon.png"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "false"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "point_transform",
+                    "portDirection": "output",
+                    "portType": "array<Math::float4x4>"
+                },
+                {
+                    "portName": "strands",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "SRT_to_matrix",
+                    "nodeType": "Core::Math::SRT_to_matrix",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "93.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "401.711 -256.156"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_strands_structure",
+                    "nodeType": "Geometry::Strands::get_strands_structure",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "62.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-382.564 107.365"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "normal_and_tangent_to_orientation",
+                    "nodeType": "Core::Math::normal_and_tangent_to_orientation",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "96.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-382.78 -202.322"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "update_strands_basis",
+                    "nodeType": "Geometry::Strands::update_strands_basis",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "89.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1072 -286.401"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "Math::float3",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "85.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-318.377 -529.859"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_geo_property_or_default",
+                    "nodeType": "Geometry::Properties::get_geo_property_or_default",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "86.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-580.903 -532.106"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_geo_property_check",
+                    "nodeType": "Geometry::Properties::get_geo_property_check",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "91.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-586.307 -880.678"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "95.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "8.60955 -642.728"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "normal_and_tangent_to_orientation.quaternion",
+                    "target": "SRT_to_matrix.quaternion"
+                },
+                {
+                    "source": "get_strands_structure.point_position",
+                    "target": "SRT_to_matrix.translation"
+                },
+                {
+                    "source": "update_strands_basis.out_strands",
+                    "target": "get_strands_structure.strands"
+                },
+                {
+                    "source": "update_strands_basis.point_normal",
+                    "target": "normal_and_tangent_to_orientation.normal"
+                },
+                {
+                    "source": "update_strands_basis.point_tangent",
+                    "target": "normal_and_tangent_to_orientation.tangent"
+                },
+                {
+                    "source": ".strands",
+                    "target": "update_strands_basis.strands"
+                },
+                {
+                    "source": "SRT_to_matrix.transform",
+                    "target": ".point_transform"
+                },
+                {
+                    "source": "update_strands_basis.out_strands",
+                    "target": "get_geo_property_or_default.geometry"
+                },
+                {
+                    "source": "get_geo_property_or_default.data",
+                    "target": "value.value"
+                },
+                {
+                    "source": "update_strands_basis.out_strands",
+                    "target": "get_geo_property_check.geometry"
+                },
+                {
+                    "source": "value.output",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": "get_geo_property_check.found_property",
+                    "target": "if.condition"
+                },
+                {
+                    "source": "get_geo_property_check.data",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": "if.output",
+                    "target": "SRT_to_matrix.scale"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "normal_and_tangent_to_orientation.prioritize_normal",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "update_strands_basis.strands",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "update_strands_basis.update_start_to_end",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "update_strands_basis.force_update_tangents",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "update_strands_basis.up_vector",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "1f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "update_strands_basis.diagnostics_scale",
+                    "valueType": "float",
+                    "value": "0.100000001f"
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "1f",
+                        "z": "1f"
+                    }
+                },
+                {
+                    "valueName": "get_geo_property_or_default.property",
+                    "valueType": "string",
+                    "value": "point_size"
+                },
+                {
+                    "valueName": "get_geo_property_or_default.default_value",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "get_geo_property_check.property",
+                    "valueType": "string",
+                    "value": "point_size"
+                },
+                {
+                    "valueName": "get_geo_property_check.type",
+                    "valueType": "array<Math::float3>",
+                    "value": []
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

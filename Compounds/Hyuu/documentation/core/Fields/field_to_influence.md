@@ -1,0 +1,1 @@
+Convert field to influence for use with simulations.

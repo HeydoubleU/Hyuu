@@ -1,0 +1,2850 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::String::edit_filename",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "32.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "10 419"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "filename"
+                                                },
+                                                {
+                                                    "metaName": "repath"
+                                                },
+                                                {
+                                                    "metaName": "rename"
+                                                },
+                                                {
+                                                    "metaName": "prefix"
+                                                },
+                                                {
+                                                    "metaName": "suffix"
+                                                },
+                                                {
+                                                    "metaName": "increment"
+                                                },
+                                                {
+                                                    "metaName": "by"
+                                                },
+                                                {
+                                                    "metaName": "extension"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "38.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "2451 785"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "out_filename"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-69.4142 -171.421 2826.44 1412.24"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-510.797 164"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "50.000000"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"filename\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Edits\",\n                \"items\": [\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Replace\",\n                        \"items\": [\n                            {\n                                \"port\": \"repath\"\n                            },\n                            {\n                                \"port\": \"rename\"\n                            },\n                            {\n                                \"port\": \"extension\"\n                            }\n                        ]\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Append\",\n                        \"items\": [\n                            {\n                                \"port\": \"prefix\"\n                            },\n                            {\n                                \"port\": \"suffix\"\n                            }\n                        ]\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Increment\",\n                        \"items\": [\n                            {\n                                \"port\": \"increment\"\n                            },\n                            {\n                                \"port\": \"by\"\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Edits.Append",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "Edits",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../documentation/core/String/edit_filename.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../icons/hyuu_icon.png"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "filename",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "",
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "FileBrowserWidget"
+                        },
+                        {
+                            "metaName": "UIWidgetProp",
+                            "metaType": "string",
+                            "metaValue": "browserMode=save"
+                        }
+                    ]
+                },
+                {
+                    "portName": "repath",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "",
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "FileBrowserWidget"
+                        },
+                        {
+                            "metaName": "UIWidgetProp",
+                            "metaType": "string",
+                            "metaValue": "browserMode=save;browserType=folder"
+                        }
+                    ]
+                },
+                {
+                    "portName": "out_filename",
+                    "portDirection": "output",
+                    "portType": "string"
+                },
+                {
+                    "portName": "rename",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": ""
+                },
+                {
+                    "portName": "prefix",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": ""
+                },
+                {
+                    "portName": "suffix",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": ""
+                },
+                {
+                    "portName": "increment",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "by",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "1"
+                },
+                {
+                    "portName": "extension",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": ""
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "set_ext",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "filename"
+                                                        },
+                                                        {
+                                                            "metaName": "edit"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "43.000000"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-659.294 -32.9653"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_filename"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "46.000000"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1154.19 -56.7093"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-425.675 -342.459 2056.96 1027.76"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "filename",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "edit",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "out_filename",
+                            "portDirection": "output",
+                            "portType": "string"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "string_strip",
+                            "nodeType": "Core::String::string_strip",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-108.355 518.002"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "33.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "split_string_ext",
+                            "nodeType": "Hyuu::String::split_string_ext",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-112 146"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "32.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "build_string",
+                            "nodeType": "Core::String::build_string",
+                            "fanInPortNames": {
+                                "strings": [
+                                    "basename",
+                                    "output",
+                                    "stripped"
+                                ]
+                            },
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "strings",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "332.92 252.566"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "35.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-131.694 360.34"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "34.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if1",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "44.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "819.441 -69.5486"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "string_empty",
+                            "nodeType": "Core::String::string_empty",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "45.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "472.337 -167.859"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": ".edit",
+                            "target": "string_strip.string"
+                        },
+                        {
+                            "source": ".filename",
+                            "target": "split_string_ext.string"
+                        },
+                        {
+                            "source": "split_string_ext.basename",
+                            "target": "build_string.strings.basename"
+                        },
+                        {
+                            "source": "value.output",
+                            "target": "build_string.strings.output"
+                        },
+                        {
+                            "source": "string_strip.stripped",
+                            "target": "build_string.strings.stripped"
+                        },
+                        {
+                            "source": "string_empty.empty",
+                            "target": "if1.condition"
+                        },
+                        {
+                            "source": ".filename",
+                            "target": "if1.true_case"
+                        },
+                        {
+                            "source": ".edit",
+                            "target": "string_empty.string"
+                        },
+                        {
+                            "source": "build_string.joined",
+                            "target": "if1.false_case"
+                        },
+                        {
+                            "source": "if1.output",
+                            "target": ".out_filename"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "string_strip.characters",
+                            "valueType": "string",
+                            "value": "."
+                        },
+                        {
+                            "valueName": "value.value",
+                            "valueType": "string",
+                            "value": "."
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                },
+                {
+                    "name": "add_suffix",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-655.132 92.835"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "filename"
+                                                        },
+                                                        {
+                                                            "metaName": "edit"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "31.000000"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_filename"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "967.819 39.2682"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "33.000000"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-608 -315 1437 718"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "filename",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "edit",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "out_filename",
+                            "portDirection": "output",
+                            "portType": "string"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "build_string",
+                            "nodeType": "Core::String::build_string",
+                            "fanInPortNames": {
+                                "strings": [
+                                    "basename",
+                                    "edit",
+                                    "ext"
+                                ]
+                            },
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "strings",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "678.849 27.5581"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "32.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "split_string_ext",
+                            "nodeType": "Hyuu::String::split_string_ext",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-205.868 -38.8123"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "34.000000"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "build_string.joined",
+                            "target": ".out_filename"
+                        },
+                        {
+                            "source": ".filename",
+                            "target": "split_string_ext.string"
+                        },
+                        {
+                            "source": "split_string_ext.basename",
+                            "target": "build_string.strings.basename"
+                        },
+                        {
+                            "source": ".edit",
+                            "target": "build_string.strings.edit"
+                        },
+                        {
+                            "source": "split_string_ext.ext",
+                            "target": "build_string.strings.ext"
+                        }
+                    ],
+                    "values": [],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                },
+                {
+                    "name": "add_prefix",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "filename"
+                                                        },
+                                                        {
+                                                            "metaName": "edit"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "42.000000"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-955.88 -89.768"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_filename"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "43.000000"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "924.219 -122.142"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-1352.95 -507.295 2314.27 1156.33"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "filename",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "edit",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "out_filename",
+                            "portDirection": "output",
+                            "portType": "string"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "build_string",
+                            "nodeType": "Core::String::build_string",
+                            "fanInPortNames": {
+                                "strings": [
+                                    "last",
+                                    "edit",
+                                    "file"
+                                ]
+                            },
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "strings",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "38.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-4.76535 232.046"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "split_string_directory",
+                            "nodeType": "Hyuu::String::split_string_directory",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "37.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-410.091 116.239"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if1",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "47.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "344.649 -97.8302"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "string_empty",
+                            "nodeType": "Core::String::string_empty",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "48.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-2.4547 -196.14"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": ".filename",
+                            "target": "split_string_directory.string"
+                        },
+                        {
+                            "source": "split_string_directory.directory",
+                            "target": "build_string.strings.last"
+                        },
+                        {
+                            "source": ".edit",
+                            "target": "build_string.strings.edit"
+                        },
+                        {
+                            "source": "split_string_directory.file",
+                            "target": "build_string.strings.file"
+                        },
+                        {
+                            "source": "string_empty.empty",
+                            "target": "if1.condition"
+                        },
+                        {
+                            "source": ".filename",
+                            "target": "if1.true_case"
+                        },
+                        {
+                            "source": ".edit",
+                            "target": "string_empty.string"
+                        },
+                        {
+                            "source": "build_string.joined",
+                            "target": "if1.false_case"
+                        },
+                        {
+                            "source": "if1.output",
+                            "target": ".out_filename"
+                        }
+                    ],
+                    "values": [],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                },
+                {
+                    "name": "increment_filename",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-1053.2 -100.102"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "filename"
+                                                        },
+                                                        {
+                                                            "metaName": "increment"
+                                                        },
+                                                        {
+                                                            "metaName": "by"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "37.000000"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_filename"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "59.000000"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1171.04 -141.425"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-433.636 -444.684 2611.71 1304.95"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "filename",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "out_filename",
+                            "portDirection": "output",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "increment",
+                            "portDirection": "input",
+                            "portType": "bool"
+                        },
+                        {
+                            "portName": "by",
+                            "portDirection": "input",
+                            "portType": "long"
+                        }
+                    ],
+                    "compounds": [
+                        {
+                            "name": "add_suffix1",
+                            "metadata": [
+                                {
+                                    "metaName": "ViewportRect",
+                                    "metaType": "string",
+                                    "metaValue": "-608 -315 1437 718"
+                                },
+                                {
+                                    "metaName": "io_nodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_inodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "input",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "-655.132 92.835"
+                                                        },
+                                                        {
+                                                            "metaName": "zValue",
+                                                            "metaType": "string",
+                                                            "metaValue": "31.000000"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "filename"
+                                                                },
+                                                                {
+                                                                    "metaName": "edit"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "io_onodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "967.819 39.2682"
+                                                        },
+                                                        {
+                                                            "metaName": "zValue",
+                                                            "metaType": "string",
+                                                            "metaValue": "33.000000"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "out_filename"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "ports": [
+                                {
+                                    "portName": "filename",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "edit",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "out_filename",
+                                    "portDirection": "output",
+                                    "portType": "string"
+                                }
+                            ],
+                            "compoundNodes": [
+                                {
+                                    "nodeName": "build_string",
+                                    "nodeType": "Core::String::build_string",
+                                    "fanInPortNames": {
+                                        "strings": [
+                                            "basename",
+                                            "edit",
+                                            "ext"
+                                        ]
+                                    },
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "678.849 27.5581"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "32.000000"
+                                        },
+                                        {
+                                            "metaName": "PortExpandedState",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "strings",
+                                                    "metaType": "string",
+                                                    "metaValue": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "split_string_ext",
+                                    "nodeType": "Hyuu::String::split_string_ext",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-205.868 -38.8123"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "34.000000"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "connections": [
+                                {
+                                    "source": "build_string.joined",
+                                    "target": ".out_filename"
+                                },
+                                {
+                                    "source": "split_string_ext.basename",
+                                    "target": "build_string.strings.basename"
+                                },
+                                {
+                                    "source": "split_string_ext.ext",
+                                    "target": "build_string.strings.ext"
+                                },
+                                {
+                                    "source": ".filename",
+                                    "target": "split_string_ext.string"
+                                },
+                                {
+                                    "source": ".edit",
+                                    "target": "build_string.strings.edit"
+                                }
+                            ],
+                            "values": [
+                                {
+                                    "valueName": "split_string_ext.string",
+                                    "valueType": "string",
+                                    "value": "filename.ext"
+                                }
+                            ],
+                            "reservedNodeNames": [
+                                {
+                                    "name": "input"
+                                },
+                                {
+                                    "name": "output"
+                                }
+                            ]
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "increment_string",
+                            "nodeType": "Hyuu::String::increment_string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "54.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-58.7812 233.368"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if1",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "55.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "268.483 280.978"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "int_to_padded_string",
+                            "nodeType": "Hyuu::String::int_to_padded_string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "51.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-776.217 633.196"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "build_string",
+                            "nodeType": "Core::String::build_string",
+                            "fanInPortNames": {
+                                "strings": [
+                                    "output",
+                                    "string"
+                                ]
+                            },
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "strings",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "52.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-364.667 542.228"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "53.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-766.296 461.545"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "add_suffix1",
+                            "nodeType": "add_suffix1",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "50.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-48.1972 426.277"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if2",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "58.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "824.665 -131.297"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "split_string_directory",
+                            "nodeType": "Hyuu::String::split_string_directory",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "56.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-456.804 39.737"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "build_string1",
+                            "nodeType": "Core::String::build_string",
+                            "fanInPortNames": {
+                                "strings": [
+                                    "directory",
+                                    "output"
+                                ]
+                            },
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "57.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "542.069 43.3145"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "increment_string.out_string",
+                            "target": "if1.true_case"
+                        },
+                        {
+                            "source": "increment_string.success",
+                            "target": "if1.condition"
+                        },
+                        {
+                            "source": "int_to_padded_string.string",
+                            "target": "build_string.strings.string"
+                        },
+                        {
+                            "source": "value.output",
+                            "target": "build_string.strings.output"
+                        },
+                        {
+                            "source": "build_string.joined",
+                            "target": "add_suffix1.edit"
+                        },
+                        {
+                            "source": "add_suffix1.out_filename",
+                            "target": "if1.false_case"
+                        },
+                        {
+                            "source": "if2.output",
+                            "target": ".out_filename"
+                        },
+                        {
+                            "source": ".increment",
+                            "target": "if2.condition"
+                        },
+                        {
+                            "source": ".by",
+                            "target": "increment_string.by"
+                        },
+                        {
+                            "source": ".by",
+                            "target": "int_to_padded_string.int"
+                        },
+                        {
+                            "source": ".filename",
+                            "target": "if2.false_case"
+                        },
+                        {
+                            "source": ".filename",
+                            "target": "split_string_directory.string"
+                        },
+                        {
+                            "source": "split_string_directory.file",
+                            "target": "increment_string.string"
+                        },
+                        {
+                            "source": "split_string_directory.file",
+                            "target": "add_suffix1.filename"
+                        },
+                        {
+                            "source": "split_string_directory.directory",
+                            "target": "build_string1.strings.directory"
+                        },
+                        {
+                            "source": "if1.output",
+                            "target": "build_string1.strings.output"
+                        },
+                        {
+                            "source": "build_string1.joined",
+                            "target": "if2.true_case"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "increment_string.string",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "increment_string.by",
+                            "valueType": "long",
+                            "value": "1"
+                        },
+                        {
+                            "valueName": "int_to_padded_string.int",
+                            "valueType": "long",
+                            "value": "0"
+                        },
+                        {
+                            "valueName": "int_to_padded_string.padding",
+                            "valueType": "long",
+                            "value": "4"
+                        },
+                        {
+                            "valueName": "value.value",
+                            "valueType": "string",
+                            "value": "."
+                        },
+                        {
+                            "valueName": "add_suffix1.filename",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "add_suffix1.edit",
+                            "valueType": "string",
+                            "value": ""
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                },
+                {
+                    "name": "rename1",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "filename"
+                                                        },
+                                                        {
+                                                            "metaName": "edit"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-1177.86 -248.822"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "34.000000"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_filename"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "663.772 -267.791"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "36.000000"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-1371.55 -623.039 2307.24 1152.82"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "filename",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "edit",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "out_filename",
+                            "portDirection": "output",
+                            "portType": "string"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "split_filename",
+                            "nodeType": "Hyuu::String::split_filename",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-656.324 -0.962808"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "37.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "build_string1",
+                            "nodeType": "Core::String::build_string",
+                            "fanInPortNames": {
+                                "strings": [
+                                    "directory",
+                                    "edit",
+                                    "ext"
+                                ]
+                            },
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "strings",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-22.2619 65.6531"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "32.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-290.501 227.05"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "33.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "string_find",
+                            "nodeType": "Core::String::string_find",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-625.807 252.949"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "31.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if1",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "278.812 -246.554"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "38.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "string_empty",
+                            "nodeType": "Core::String::string_empty",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-68.292 -344.864"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "39.000000"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": ".filename",
+                            "target": "split_filename.filename"
+                        },
+                        {
+                            "source": "split_filename.directory",
+                            "target": "build_string1.strings.directory"
+                        },
+                        {
+                            "source": ".edit",
+                            "target": "build_string1.strings.edit"
+                        },
+                        {
+                            "source": "split_filename.ext",
+                            "target": "if.false_case"
+                        },
+                        {
+                            "source": "if.output",
+                            "target": "build_string1.strings.ext"
+                        },
+                        {
+                            "source": ".edit",
+                            "target": "string_find.string"
+                        },
+                        {
+                            "source": "string_find.found",
+                            "target": "if.condition"
+                        },
+                        {
+                            "source": "string_empty.empty",
+                            "target": "if1.condition"
+                        },
+                        {
+                            "source": ".filename",
+                            "target": "if1.true_case"
+                        },
+                        {
+                            "source": ".edit",
+                            "target": "string_empty.string"
+                        },
+                        {
+                            "source": "build_string1.joined",
+                            "target": "if1.false_case"
+                        },
+                        {
+                            "source": "if1.output",
+                            "target": ".out_filename"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "string_find.find",
+                            "valueType": "string",
+                            "value": "."
+                        },
+                        {
+                            "valueName": "string_find.reverse",
+                            "valueType": "bool",
+                            "value": "true"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                },
+                {
+                    "name": "repath1",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "filename"
+                                                        },
+                                                        {
+                                                            "metaName": "edit"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-1143.79 -290.605"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "37.000000"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_filename"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "866.381 -338.218"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "38.000000"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-907.852 -547.083 2059.04 1028.81"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "filename",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "edit",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "out_filename",
+                            "portDirection": "output",
+                            "portType": "string"
+                        }
+                    ],
+                    "compounds": [
+                        {
+                            "name": "pass_if_empty",
+                            "metadata": [
+                                {
+                                    "metaName": "io_nodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_inodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "input",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "zValue",
+                                                            "metaType": "string",
+                                                            "metaValue": "37.000000"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "-570.069 -282.572"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "filename"
+                                                                },
+                                                                {
+                                                                    "metaName": "edit"
+                                                                },
+                                                                {
+                                                                    "metaName": "edited"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "io_onodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "zValue",
+                                                            "metaType": "string",
+                                                            "metaValue": "39.000000"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "816.508 -319.501"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "out_filename"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "ViewportRect",
+                                    "metaType": "string",
+                                    "metaValue": "-1161.64 -691.872 2307.24 1152.82"
+                                }
+                            ],
+                            "ports": [
+                                {
+                                    "portName": "filename",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "edit",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "edited",
+                                    "portDirection": "input",
+                                    "portType": "string"
+                                },
+                                {
+                                    "portName": "out_filename",
+                                    "portDirection": "output",
+                                    "portType": "string"
+                                }
+                            ],
+                            "compoundNodes": [
+                                {
+                                    "nodeName": "if1",
+                                    "nodeType": "Core::Logic::if",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "501.835 -321.291"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "33.000000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "string_empty",
+                                    "nodeType": "Core::String::string_empty",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "154.731 -419.601"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "34.000000"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "connections": [
+                                {
+                                    "source": "string_empty.empty",
+                                    "target": "if1.condition"
+                                },
+                                {
+                                    "source": ".filename",
+                                    "target": "if1.true_case"
+                                },
+                                {
+                                    "source": ".edit",
+                                    "target": "string_empty.string"
+                                },
+                                {
+                                    "source": ".edited",
+                                    "target": "if1.false_case"
+                                },
+                                {
+                                    "source": "if1.output",
+                                    "target": ".out_filename"
+                                }
+                            ],
+                            "values": [],
+                            "reservedNodeNames": [
+                                {
+                                    "name": "input"
+                                },
+                                {
+                                    "name": "output"
+                                }
+                            ]
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "build_string1",
+                            "nodeType": "Core::String::build_string",
+                            "fanInPortNames": {
+                                "strings": [
+                                    "edit",
+                                    "file"
+                                ]
+                            },
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "strings",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-98.2619 30.6531"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "34.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "split_string_directory",
+                            "nodeType": "Hyuu::String::split_string_directory",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-546 -127"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "31.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "string_ends_with",
+                            "nodeType": "Core::String::string_ends_with",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-800 203"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "32.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "210 123"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "33.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "build_string2",
+                            "nodeType": "Core::String::build_string",
+                            "fanInPortNames": {
+                                "strings": [
+                                    "edit",
+                                    "output",
+                                    "file"
+                                ]
+                            },
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "strings",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-73 315"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "35.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-475 462"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "36.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "pass_if_empty",
+                            "nodeType": "pass_if_empty",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "530.999 -341.486"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "39.000000"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": ".edit",
+                            "target": "build_string1.strings.edit"
+                        },
+                        {
+                            "source": ".filename",
+                            "target": "split_string_directory.string"
+                        },
+                        {
+                            "source": "split_string_directory.file",
+                            "target": "build_string1.strings.file"
+                        },
+                        {
+                            "source": ".edit",
+                            "target": "string_ends_with.string"
+                        },
+                        {
+                            "source": "string_ends_with.end_matches",
+                            "target": "if.condition"
+                        },
+                        {
+                            "source": "build_string1.joined",
+                            "target": "if.true_case"
+                        },
+                        {
+                            "source": ".edit",
+                            "target": "build_string2.strings.edit"
+                        },
+                        {
+                            "source": "value.output",
+                            "target": "build_string2.strings.output"
+                        },
+                        {
+                            "source": "split_string_directory.file",
+                            "target": "build_string2.strings.file"
+                        },
+                        {
+                            "source": "build_string2.joined",
+                            "target": "if.false_case"
+                        },
+                        {
+                            "source": ".filename",
+                            "target": "pass_if_empty.filename"
+                        },
+                        {
+                            "source": ".edit",
+                            "target": "pass_if_empty.edit"
+                        },
+                        {
+                            "source": "if.output",
+                            "target": "pass_if_empty.edited"
+                        },
+                        {
+                            "source": "pass_if_empty.out_filename",
+                            "target": ".out_filename"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "string_ends_with.suffix",
+                            "valueType": "string",
+                            "value": "/"
+                        },
+                        {
+                            "valueName": "value.value",
+                            "valueType": "string",
+                            "value": "/"
+                        },
+                        {
+                            "valueName": "pass_if_empty.filename",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "pass_if_empty.edit",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "pass_if_empty.edited",
+                            "valueType": "string",
+                            "value": ""
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "set_ext",
+                    "nodeType": "set_ext",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "55.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1231 339"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add_suffix",
+                    "nodeType": "add_suffix",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1841 579"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add_prefix",
+                    "nodeType": "add_prefix",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1536 450"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "increment_filename",
+                    "nodeType": "increment_filename",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2128.3 757.496"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "57.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "rename1",
+                    "nodeType": "rename1",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "54.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "926 224"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "normalize_filename",
+                    "nodeType": "Hyuu::String::normalize_filename",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "52.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "315 229"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "repath1",
+                    "nodeType": "repath1",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "50.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "621 106"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "normalize_filename1",
+                    "nodeType": "Hyuu::String::normalize_filename",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "47.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "315 10"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".repath",
+                    "target": "normalize_filename.filename"
+                },
+                {
+                    "source": "normalize_filename.normalized",
+                    "target": "repath1.edit"
+                },
+                {
+                    "source": "repath1.out_filename",
+                    "target": "rename1.filename"
+                },
+                {
+                    "source": ".rename",
+                    "target": "rename1.edit"
+                },
+                {
+                    "source": ".prefix",
+                    "target": "add_prefix.edit"
+                },
+                {
+                    "source": ".suffix",
+                    "target": "add_suffix.edit"
+                },
+                {
+                    "source": "add_prefix.out_filename",
+                    "target": "add_suffix.filename"
+                },
+                {
+                    "source": "add_suffix.out_filename",
+                    "target": "increment_filename.filename"
+                },
+                {
+                    "source": ".increment",
+                    "target": "increment_filename.increment"
+                },
+                {
+                    "source": ".by",
+                    "target": "increment_filename.by"
+                },
+                {
+                    "source": ".filename",
+                    "target": "normalize_filename1.filename"
+                },
+                {
+                    "source": "normalize_filename1.normalized",
+                    "target": "repath1.filename"
+                },
+                {
+                    "source": ".extension",
+                    "target": "set_ext.edit"
+                },
+                {
+                    "source": "increment_filename.out_filename",
+                    "target": ".out_filename"
+                },
+                {
+                    "source": "rename1.out_filename",
+                    "target": "set_ext.filename"
+                },
+                {
+                    "source": "set_ext.out_filename",
+                    "target": "add_prefix.filename"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "set_ext.filename",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "set_ext.edit",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "add_suffix.filename",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "add_suffix.edit",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "add_prefix.filename",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "add_prefix.edit",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "increment_filename.filename",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "increment_filename.increment",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "increment_filename.by",
+                    "valueType": "long",
+                    "value": "1"
+                },
+                {
+                    "valueName": "rename1.filename",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "rename1.edit",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "normalize_filename.strip_start_end",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "repath1.filename",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "repath1.edit",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "normalize_filename1.filename",
+                    "valueType": "string",
+                    "value": "\\C:/oh\\shit\\\\what\\//up\\dud/"
+                },
+                {
+                    "valueName": "normalize_filename1.strip_start_end",
+                    "valueType": "bool",
+                    "value": "false"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

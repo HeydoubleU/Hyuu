@@ -1,0 +1,1 @@
+Each division (i.e. iteration) doubles the size of the array, lerping between neighboring elements to fill the gaps.

@@ -1,0 +1,1 @@
+Changes range of array so all values fall between 0 and 1.

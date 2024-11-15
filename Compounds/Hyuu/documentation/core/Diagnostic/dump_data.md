@@ -1,0 +1,1 @@
+Dumps input to text file in user's home directory.

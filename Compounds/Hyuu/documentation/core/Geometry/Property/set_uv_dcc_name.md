@@ -1,0 +1,1 @@
+Set the dcc name of a uv property. This will become the uv set name when converted to maya mesh.

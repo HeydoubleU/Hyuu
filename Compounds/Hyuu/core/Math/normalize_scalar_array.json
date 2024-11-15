@@ -1,0 +1,272 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Math::normalize_scalar_array",
+            "uriImported": "file:///normalize_scalar_array.json",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "array"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "126.618 43.9939"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1984.04 -285.234"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "normalized"
+                                                },
+                                                {
+                                                    "metaName": "min_bound"
+                                                },
+                                                {
+                                                    "metaName": "max_bound"
+                                                },
+                                                {
+                                                    "metaName": "range"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1728.52 -446.75 4249.9 1003.43"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "827.5 157"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../documentation/core/Math/normalize_scalar_array.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "array",
+                    "portDirection": "input",
+                    "portDefaultType": "array<float>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "normalized",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "min_bound",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "max_bound",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "range",
+                    "portDirection": "output"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "array_bounds_impl",
+                    "nodeType": "Core::Array::array_bounds_impl",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "589.566 207.266"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "divide",
+                    "nodeType": "Core::Math::divide",
+                    "multiInPortNames": [
+                        "output1",
+                        "output2"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1468.16 -91.722"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "subtract",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "y",
+                        "min_bound"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "940.603 -8.98999"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "subtract1",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "max_bound",
+                        "min_bound"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1032.53 224.545"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".array",
+                    "target": "array_bounds_impl.array"
+                },
+                {
+                    "source": "array_bounds_impl.min_bound",
+                    "target": "subtract.first.min_bound"
+                },
+                {
+                    "source": "array_bounds_impl.min_bound",
+                    "target": "subtract1.first.min_bound"
+                },
+                {
+                    "source": "array_bounds_impl.min_bound",
+                    "target": ".min_bound"
+                },
+                {
+                    "source": "array_bounds_impl.max_bound",
+                    "target": "subtract1.first.max_bound"
+                },
+                {
+                    "source": "array_bounds_impl.max_bound",
+                    "target": ".max_bound"
+                },
+                {
+                    "source": "subtract.output",
+                    "target": "divide.first.output1"
+                },
+                {
+                    "source": "subtract1.output",
+                    "target": "divide.first.output2"
+                },
+                {
+                    "source": "divide.output",
+                    "target": ".normalized"
+                },
+                {
+                    "source": ".array",
+                    "target": "subtract.first.y"
+                },
+                {
+                    "source": "subtract1.output",
+                    "target": ".range"
+                }
+            ],
+            "values": [],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

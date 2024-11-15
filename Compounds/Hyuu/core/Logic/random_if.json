@@ -1,0 +1,247 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Logic::random_if",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1215 -61"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "true_case"
+                                                },
+                                                {
+                                                    "metaName": "false_case"
+                                                },
+                                                {
+                                                    "metaName": "probability"
+                                                },
+                                                {
+                                                    "metaName": "seed"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "240.36 5.15809"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "result"
+                                                },
+                                                {
+                                                    "metaName": "condition"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1440 -391 2881 782"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-25.7551 -397.999"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"true_case\"\n            },\n            {\n                \"port\": \"false_case\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Settings\",\n                \"items\": [\n                    {\n                        \"port\": \"probability\"\n                    },\n                    {\n                        \"port\": \"seed\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Settings",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../documentation/core/Logic/random_if.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "true_case",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "false_case",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "probability",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0.5f"
+                },
+                {
+                    "portName": "seed",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "0"
+                },
+                {
+                    "portName": "result",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "condition",
+                    "portDirection": "output",
+                    "portType": "bool"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-276.427 4.72095"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "random_condition",
+                    "nodeType": "Hyuu::Logic::random_condition",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-533.531 -121.425"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "random_condition.output",
+                    "target": "if.condition"
+                },
+                {
+                    "source": ".true_case",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": ".false_case",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": ".probability",
+                    "target": "random_condition.probability"
+                },
+                {
+                    "source": ".seed",
+                    "target": "random_condition.seed"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".result"
+                },
+                {
+                    "source": "random_condition.output",
+                    "target": ".condition"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "random_condition.probability",
+                    "valueType": "float",
+                    "value": "0.5f"
+                },
+                {
+                    "valueName": "random_condition.seed",
+                    "valueType": "long",
+                    "value": "0"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

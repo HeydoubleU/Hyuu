@@ -1,0 +1,1 @@
+Returns random bool with the given probability of being true.

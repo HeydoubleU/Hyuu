@@ -1,0 +1,435 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Fur::Geometry::build_fur_roots_accelerator",
+            "uriImported": "file:///build_fur_roots_accelerator.json",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-2211.4 -352.271"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "33.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "fur"
+                                                },
+                                                {
+                                                    "metaName": "pre_optimize_iter"
+                                                },
+                                                {
+                                                    "metaName": "max_delete_iter"
+                                                },
+                                                {
+                                                    "metaName": "post_optimize_iter"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "fur_out"
+                                                },
+                                                {
+                                                    "metaName": "accelerator"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-429.969 -300.061"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "36.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-2655.83 -521 2010.65 1108"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "443.548 -1042.89"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "125.000000"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"fur\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Remesh\",\n                \"items\": [\n                    {\n                        \"port\": \"pre_optimize_iter\"\n                    },\n                    {\n                        \"port\": \"max_delete_iter\"\n                    },\n                    {\n                        \"port\": \"post_optimize_iter\"\n                    }\n                ],\n                \"unique_id\": 5\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Remesh",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/modules/Fur/Geometry/build_fur_roots_accelerator.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "fur",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "fur_out",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "accelerator",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "pre_optimize_iter",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "5"
+                },
+                {
+                    "portName": "max_delete_iter",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "50"
+                },
+                {
+                    "portName": "post_optimize_iter",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "1"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "build_closest_accelerator",
+                    "nodeType": "Geometry::Query::build_closest_accelerator",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1118.78 86.0724"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_geo_property1",
+                    "nodeType": "Geometry::Properties::get_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1844.01 253.652"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_property",
+                    "nodeType": "Core::Object::get_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1819.94 -16.8951"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "remesh_from_locations",
+                    "nodeType": "Hyuu::Geometry::Mesh::remesh_from_locations",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1484 88.2255"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Perfermance",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-955.57 -322.771"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "get_geo_property1.data",
+                    "target": "remesh_from_locations.locations"
+                },
+                {
+                    "source": "get_property.value",
+                    "target": "remesh_from_locations.mesh"
+                },
+                {
+                    "source": "remesh_from_locations.mesh_out",
+                    "target": "build_closest_accelerator.geo"
+                },
+                {
+                    "source": ".fur",
+                    "target": "get_geo_property1.geometry"
+                },
+                {
+                    "source": ".fur",
+                    "target": "get_property.object"
+                },
+                {
+                    "source": "build_closest_accelerator.accelerator",
+                    "target": "set_property.value"
+                },
+                {
+                    "source": ".fur",
+                    "target": "set_property.object"
+                },
+                {
+                    "source": "build_closest_accelerator.accelerator",
+                    "target": ".accelerator"
+                },
+                {
+                    "source": "set_property.out_object",
+                    "target": ".fur_out"
+                },
+                {
+                    "source": ".pre_optimize_iter",
+                    "target": "remesh_from_locations.pre_optimize_iter"
+                },
+                {
+                    "source": ".max_delete_iter",
+                    "target": "remesh_from_locations.max_delete_iter"
+                },
+                {
+                    "source": ".post_optimize_iter",
+                    "target": "remesh_from_locations.post_optimize_iter"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "build_closest_accelerator.geo_component",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "get_geo_property1.property",
+                    "valueType": "string",
+                    "value": "strand_root_location"
+                },
+                {
+                    "valueName": "get_geo_property1.type",
+                    "valueType": "array<Geometry::Common::GeoLocation>",
+                    "value": []
+                },
+                {
+                    "valueName": "get_property.default_and_type",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "get_property.key",
+                    "valueType": "string",
+                    "value": "root_mesh"
+                },
+                {
+                    "valueName": "remesh_from_locations.mesh",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "remesh_from_locations.locations",
+                    "valueType": "array<Geometry::Common::GeoLocation>",
+                    "value": []
+                },
+                {
+                    "valueName": "remesh_from_locations.max_delete_iter",
+                    "valueType": "long",
+                    "value": "50"
+                },
+                {
+                    "valueName": "remesh_from_locations.pre_optimize_iter",
+                    "valueType": "long",
+                    "value": "5"
+                },
+                {
+                    "valueName": "remesh_from_locations.post_optimize_iter",
+                    "valueType": "long",
+                    "value": "1"
+                },
+                {
+                    "valueName": "set_property.key",
+                    "valueType": "string",
+                    "value": "fur_roots_accelerator"
+                },
+                {
+                    "valueName": "set_property.value",
+                    "valueType": "Object",
+                    "value": {}
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

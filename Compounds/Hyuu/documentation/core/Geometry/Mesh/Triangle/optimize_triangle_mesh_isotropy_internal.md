@@ -1,0 +1,1 @@
+Internal component of `optimize_triangle_mesh_isotropy`.

@@ -1,0 +1,1 @@
+Returns `true` if `value` is in array.

@@ -1,0 +1,1 @@
+Creates sphere or semi-sphere of evenly spaced points, with options for randomization. Created with ray casting purposes in mind, where it may be required to cast a cone or dome rays from a given point.

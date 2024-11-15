@@ -13,8 +13,8 @@ cl::CommandQueue& getQueue();
 namespace Hyuu {
 	namespace OpenCL {
 		namespace Utilitiy {
-			//HYUU_DECL bool opencl_restart() AMINO_ANNOTATE("Amino::Node");  // doesn't work it seems, needs more investigation
-			HYUU_DECL void opencl_device_info(Amino::MutablePtr<Bifrost::Object>& device_info) AMINO_ANNOTATE("Amino::Node");
+			//HYUU_DECL bool opencl_restart() AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");  // doesn't work it seems, needs more investigation
+			HYUU_DECL void opencl_device_info(Amino::MutablePtr<Bifrost::Object>& device_info) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 		}  // namespace Utilitiy
 
 		namespace Memory {
@@ -75,43 +75,43 @@ namespace Hyuu {
 			};
 
 			HYUU_DECL
-				void allocate_buffer(MemoryType memory_type, Amino::ulong_t size_bytes, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node");
+				void allocate_buffer(MemoryType memory_type, Amino::ulong_t size_bytes, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 			HYUU_DECL
-				void allocate_local_buffer(Amino::ulong_t size_bytes, Amino::MutablePtr<LocalBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
+				void allocate_local_buffer(Amino::ulong_t size_bytes, Amino::MutablePtr<LocalBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
-			HYUU_DECL void type_size(const float_t& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void type_size(const float2& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void type_size(const float4& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void type_size(const Amino::int_t& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void type_size(const int2& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void type_size(const int4& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void type_size(const Amino::uint_t& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void type_size(const uint2& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void type_size(const uint4& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void type_size(const Amino::uchar_t& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node");
+			HYUU_DECL void type_size(const float_t& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void type_size(const float2& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void type_size(const float4& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void type_size(const Amino::int_t& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void type_size(const int2& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void type_size(const int4& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void type_size(const Amino::uint_t& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void type_size(const uint2& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void type_size(const uint4& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void type_size(const Amino::uchar_t& type, Amino::ulong_t& size_bytes) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
-			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<float_t>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<float2>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<float4>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<int_t>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<int2>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<int4>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<uint_t>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<uint2>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<uint4>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<uchar_t>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node");
+			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<float_t>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<float2>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<float4>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<int_t>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<int2>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<int4>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<uint_t>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<uint2>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<uint4>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void write_buffer(MemoryType memory_type, const Array<uchar_t>& data, Amino::MutablePtr<Buffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
-			HYUU_DECL void read_buffer(const Buffer& buffer, const float_t& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<float_t>& data) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void read_buffer(const Buffer& buffer, const float2& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<float2>& data) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void read_buffer(const Buffer& buffer, const float4& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<float4>& data) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void read_buffer(const Buffer& buffer, const int_t& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<int_t>& data) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void read_buffer(const Buffer& buffer, const int2& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<int2>& data) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void read_buffer(const Buffer& buffer, const int4& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<int4>& data) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void read_buffer(const Buffer& buffer, const uint_t& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<uint_t>& data) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void read_buffer(const Buffer& buffer, const uint2& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<uint2>& data) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void read_buffer(const Buffer& buffer, const uint4& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<uint4>& data) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void read_buffer(const Buffer& buffer, const uchar_t& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<uchar_t>& data) AMINO_ANNOTATE("Amino::Node");
+			HYUU_DECL void read_buffer(const Buffer& buffer, const float_t& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<float_t>& data) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void read_buffer(const Buffer& buffer, const float2& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<float2>& data) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void read_buffer(const Buffer& buffer, const float4& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<float4>& data) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void read_buffer(const Buffer& buffer, const int_t& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<int_t>& data) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void read_buffer(const Buffer& buffer, const int2& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<int2>& data) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void read_buffer(const Buffer& buffer, const int4& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<int4>& data) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void read_buffer(const Buffer& buffer, const uint_t& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<uint_t>& data) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void read_buffer(const Buffer& buffer, const uint2& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<uint2>& data) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void read_buffer(const Buffer& buffer, const uint4& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<uint4>& data) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void read_buffer(const Buffer& buffer, const uchar_t& type, Amino::bool_t slice, long_t start, long_t length, ArrayPtr<uchar_t>& data) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 			namespace Image {
 
@@ -166,7 +166,7 @@ namespace Hyuu {
 					~Image2DBuffer() = default;
 				};
 
-				HYUU_DECL int getCopyCount(const Image2DBuffer& buffer) AMINO_ANNOTATE("Amino::Node");
+				HYUU_DECL int getCopyCount(const Image2DBuffer& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 				class AMINO_ANNOTATE("Amino::Class") HYUU_DECL Image3DBuffer {
 				public:
@@ -244,65 +244,65 @@ namespace Hyuu {
 				};
 
 				// Allocate image buffer
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float_t& type, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float2& type, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float3& type, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float4& type, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float_t& type, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float2& type, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float3& type, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float4& type, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float_t& type, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float2& type, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float3& type, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float4& type, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float_t& type, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float2& type, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float3& type, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float4& type, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float_t& type, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float2& type, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float3& type, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float4& type, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float_t& type, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float2& type, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float3& type, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float4& type, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 				// Write image buffer
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float_t>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float2>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float3>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float4>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float_t>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float2>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float3>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float4>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float_t>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float2>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float3>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float4>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float_t>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float2>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float3>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float4>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float_t>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float2>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float3>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float4>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float_t>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float2>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float3>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void write_image_buffer(MemoryType memory_type, const Array<float4>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 				// Read image buffer
-				HYUU_DECL void read_image_buffer(const Image1DBuffer& buffer, const float_t& type, ArrayPtr<float_t>& data, uint_t& dimensions) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void read_image_buffer(const Image1DBuffer& buffer, const float2& type, ArrayPtr<float2>& data, uint_t& dimensions) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void read_image_buffer(const Image1DBuffer& buffer, const float3& type, ArrayPtr<float3>& data, uint_t& dimensions) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void read_image_buffer(const Image1DBuffer& buffer, const float4& type, ArrayPtr<float4>& data, uint_t& dimensions) AMINO_ANNOTATE("Amino::Node");
+				HYUU_DECL void read_image_buffer(const Image1DBuffer& buffer, const float_t& type, ArrayPtr<float_t>& data, uint_t& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void read_image_buffer(const Image1DBuffer& buffer, const float2& type, ArrayPtr<float2>& data, uint_t& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void read_image_buffer(const Image1DBuffer& buffer, const float3& type, ArrayPtr<float3>& data, uint_t& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void read_image_buffer(const Image1DBuffer& buffer, const float4& type, ArrayPtr<float4>& data, uint_t& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
-				HYUU_DECL void read_image_buffer(const Image2DBuffer& buffer, const float_t& type, ArrayPtr<float_t>& data, uint2& dimensions) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void read_image_buffer(const Image2DBuffer& buffer, const float2& type, ArrayPtr<float2>& data, uint2& dimensions) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void read_image_buffer(const Image2DBuffer& buffer, const float3& type, ArrayPtr<float3>& data, uint2& dimensions) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void read_image_buffer(const Image2DBuffer& buffer, const float4& type, ArrayPtr<float4>& data, uint2& dimensions) AMINO_ANNOTATE("Amino::Node");
+				HYUU_DECL void read_image_buffer(const Image2DBuffer& buffer, const float_t& type, ArrayPtr<float_t>& data, uint2& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void read_image_buffer(const Image2DBuffer& buffer, const float2& type, ArrayPtr<float2>& data, uint2& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void read_image_buffer(const Image2DBuffer& buffer, const float3& type, ArrayPtr<float3>& data, uint2& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void read_image_buffer(const Image2DBuffer& buffer, const float4& type, ArrayPtr<float4>& data, uint2& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
-				HYUU_DECL void read_image_buffer(const Image3DBuffer& buffer, const float_t& type, ArrayPtr<float_t>& data, uint3& dimensions) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void read_image_buffer(const Image3DBuffer& buffer, const float2& type, ArrayPtr<float2>& data, uint3& dimensions) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void read_image_buffer(const Image3DBuffer& buffer, const float3& type, ArrayPtr<float3>& data, uint3& dimensions) AMINO_ANNOTATE("Amino::Node");
-				HYUU_DECL void read_image_buffer(const Image3DBuffer& buffer, const float4& type, ArrayPtr<float4>& data, uint3& dimensions) AMINO_ANNOTATE("Amino::Node");
+				HYUU_DECL void read_image_buffer(const Image3DBuffer& buffer, const float_t& type, ArrayPtr<float_t>& data, uint3& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void read_image_buffer(const Image3DBuffer& buffer, const float2& type, ArrayPtr<float2>& data, uint3& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void read_image_buffer(const Image3DBuffer& buffer, const float3& type, ArrayPtr<float3>& data, uint3& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void read_image_buffer(const Image3DBuffer& buffer, const float4& type, ArrayPtr<float4>& data, uint3& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 			}  // namespace Image
 
-			HYUU_DECL void buffer_size_bytes(const Buffer& buffer, Amino::long_t& size) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void buffer_size_bytes(const LocalBuffer& buffer, Amino::long_t& size) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void buffer_size_bytes(const Image::Image1DBuffer& buffer, Amino::long_t& size) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void buffer_size_bytes(const Image::Image2DBuffer& buffer, Amino::long_t& size) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void buffer_size_bytes(const Image::Image3DBuffer& buffer, Amino::long_t& size) AMINO_ANNOTATE("Amino::Node");
+			HYUU_DECL void buffer_size_bytes(const Buffer& buffer, Amino::long_t& size) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void buffer_size_bytes(const LocalBuffer& buffer, Amino::long_t& size) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void buffer_size_bytes(const Image::Image1DBuffer& buffer, Amino::long_t& size) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void buffer_size_bytes(const Image::Image2DBuffer& buffer, Amino::long_t& size) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void buffer_size_bytes(const Image::Image3DBuffer& buffer, Amino::long_t& size) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
-			HYUU_DECL void copy_buffer(Buffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Buffer& source) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void copy_buffer(Image::Image1DBuffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Image::Image1DBuffer& source) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void copy_buffer(Image::Image2DBuffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Image::Image2DBuffer& source) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void copy_buffer(Image::Image3DBuffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Image::Image3DBuffer& source) AMINO_ANNOTATE("Amino::Node");
+			HYUU_DECL void copy_buffer(Buffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Buffer& source) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void copy_buffer(Image::Image1DBuffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Image::Image1DBuffer& source) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void copy_buffer(Image::Image2DBuffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Image::Image2DBuffer& source) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void copy_buffer(Image::Image3DBuffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Image::Image3DBuffer& source) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 		}  // namespace Memory
 
@@ -346,32 +346,32 @@ namespace Hyuu {
 			};
 
 			HYUU_DECL
-				void build_program(const Amino::String& source, Amino::MutablePtr<Bifrost::Object>& kernels, Amino::String& log, bool& success) AMINO_ANNOTATE("Amino::Node");
+				void build_program(const Amino::String& source, Amino::MutablePtr<Bifrost::Object>& kernels, Amino::String& log, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 			// Set arg buffer
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::Buffer& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::LocalBuffer& value, bool& success) AMINO_ANNOTATE("Amino::Node");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::Buffer& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::LocalBuffer& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 			// Set arg image
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::Image::ImageSampler& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::Image::Image1DBuffer& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::Image::Image2DBuffer& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::Image::Image3DBuffer& value, bool& success) AMINO_ANNOTATE("Amino::Node");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::Image::ImageSampler& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::Image::Image1DBuffer& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::Image::Image2DBuffer& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const Memory::Image::Image3DBuffer& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 			// Set arg scalar
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const float_t& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const float2& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const float4& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const int_t& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const int2& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const int4& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const uint_t& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const uint2& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const uint4& value, bool& success) AMINO_ANNOTATE("Amino::Node");
-			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const uchar_t& value, bool& success) AMINO_ANNOTATE("Amino::Node");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const float_t& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const float2& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const float4& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const int_t& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const int2& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const int4& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const uint_t& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const uint2& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const uint4& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void set_kernel_arg(Kernel& kernel AMINO_ANNOTATE("Amino::InOut outName=kernel_out"), Amino::long_t arg_id, const uchar_t& value, bool& success) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 			HYUU_DECL
-				void get_kernel_args(const Kernel& kernel, ArrayPtr<Amino::Any>& args) AMINO_ANNOTATE("Amino::Node");
+				void get_kernel_args(const Kernel& kernel, ArrayPtr<Amino::Any>& args) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 			HYUU_DECL
 				void execute_kernel(
@@ -381,7 +381,7 @@ namespace Hyuu {
 					const Array<Amino::ulong_t>& local_size,
 					bool& success,
 					Amino::String& error
-				) AMINO_ANNOTATE("Amino::Node");
+				) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 		}
 	}
 }

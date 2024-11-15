@@ -1,0 +1,1 @@
+Basic copy/transfer property from one object to another.

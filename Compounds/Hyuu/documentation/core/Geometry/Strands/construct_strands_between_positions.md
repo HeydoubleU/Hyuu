@@ -1,0 +1,1 @@
+Given start and end positions, creates strands connecting the two.

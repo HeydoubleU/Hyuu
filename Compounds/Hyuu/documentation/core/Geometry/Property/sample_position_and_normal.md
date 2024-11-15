@@ -1,0 +1,1 @@
+Sample position and normal properties.

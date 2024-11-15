@@ -1,0 +1,1 @@
+Internal node for identifying where a number is present in a string.

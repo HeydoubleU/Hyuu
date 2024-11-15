@@ -1,0 +1,1 @@
+Calls `find_mesh_islands` and then creates a `point_island_id` property from it.

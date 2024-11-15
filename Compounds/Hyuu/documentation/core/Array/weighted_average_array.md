@@ -1,0 +1,1 @@
+Weighted average of array.

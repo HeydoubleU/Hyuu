@@ -1,0 +1,1 @@
+Ger specific kernel from output of `build_program` node.

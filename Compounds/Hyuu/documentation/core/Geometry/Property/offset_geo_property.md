@@ -1,0 +1,1 @@
+Update property with sum of itself and `offset`.

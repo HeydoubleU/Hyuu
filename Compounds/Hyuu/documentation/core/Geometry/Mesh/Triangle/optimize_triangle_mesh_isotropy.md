@@ -1,0 +1,1 @@
+Iteratively flips triangles to improve triangle quality, i.e. maximize the minimum angle in each triangle.

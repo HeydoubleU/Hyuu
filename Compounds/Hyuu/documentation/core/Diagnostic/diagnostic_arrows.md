@@ -1,0 +1,1 @@
+Variant of create_arrow_strands for visualizing vectors.

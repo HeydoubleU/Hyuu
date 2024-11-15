@@ -1,0 +1,806 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Graphs::containers_voxel_grid_filter",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes"
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports"
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1140.23 -36.008"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "sticky_note",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "sticky_note"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#ffb2b2b5"
+                        },
+                        {
+                            "metaName": "format",
+                            "metaType": "string",
+                            "metaValue": "md"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-3076.91 -1108.09 1316.66 597"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "## Reduce point cloud via voxel grid filter\nThis graph demos point cloud reduction via voxel grid filtering using `Hyuu::Containers::HashMap`. Hyuu::Containers also adds `HashSet`, these are Bifrost implementations of `unordered_map` and `unordered_set`.\n\n#### HashMap\nHashMap is similar to a Bifrost Object where some key is associated with some value, but using a hash (ulong) as the key instead of string.\n\nHashing is the process of generating a unique identifier from some input. There are many hashing methods depending on the data type, `value_to_hash` supports a few common data types and does this process efficiently.\n\nIn short, HashMap is like an Bifrost Object where anything can be the key.\n\n#### HashSet\nThis works the same as a HashMap but without any associated value. Uses are more limited but this performers better than map where applicable.\n\n---\n\n#### Performance\nIf a given task can be accomplished using an Array, most of the it will compute faster than doing the same task using a HashMap/Set. Generally these containers' advantage will be convenience, fewer nodes to accomplish the same task.<br>"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "41.000000"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "title",
+                            "metaType": "string",
+                            "metaValue": "Make some points"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-3892.5 -568.805 283.522 330.605"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop1",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "title",
+                            "metaType": "string",
+                            "metaValue": "Add random offsets to add disorder/break up grid lines."
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-3531.3 -289.573 717.629 511.783"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop2",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#286487ce"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-2675.77 -236.757 829.539 592.566"
+                        },
+                        {
+                            "metaName": "title",
+                            "metaType": "string",
+                            "metaValue": "Snap points to grid cells"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "sticky_note1",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "sticky_note"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#ff7b99d5"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "First we divide the positions by some value. This is effectively the cell size, larger the cell the sparser the final point cloud. \n\nNext we round_to_nearest, making all points within a cell overlap"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-2339.01 63.064 424.356 200"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop3",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#2835b073"
+                        },
+                        {
+                            "metaName": "title",
+                            "metaType": "string",
+                            "metaValue": "Construct map from points"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-1622.27 -259.298 980.564 662.864"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "sticky_note2",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "sticky_note"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#ff53bc88"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "Construct HashMap using the positions as keys and their indices as values.\n\nSince points within a cell overlap, they'll generate the same hash, overwriting each other in the map.\n\nThen we can simply retrieve all the map values, where only one index per cell remains."
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-1253.76 105.388 513.375 256"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "sticky_note3",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "sticky_note"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#ffb2b2b5"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "We're not offset the actual final positions, just the positions used for filtering."
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-3254.65 16.3681 402.529 88"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-4207.91 -1075 4179.82 872"
+                },
+                {
+                    "metaName": "compoundIsGraph",
+                    "metaValue": "true"
+                },
+                {
+                    "metaName": "category",
+                    "metaType": "string",
+                    "metaValue": "Hyuu"
+                },
+                {
+                    "metaName": "description",
+                    "metaType": "string",
+                    "metaValue": "Example of using HashMap for reducing a point cloud."
+                },
+                {
+                    "metaName": "thumbnail",
+                    "metaType": "string",
+                    "metaValue": "containers_voxel_grid_filter_thumb.png"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [],
+            "compoundNodes": [
+                {
+                    "nodeName": "points_sphere",
+                    "nodeType": "Hyuu::Geometry::Points::points_sphere",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-3857.85 -487.264"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "positions_scope",
+                    "nodeType": "Hyuu::Diagnostic::positions_scope",
+                    "fanInPortNames": {
+                        "positions": []
+                    },
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-309.187 -467.748"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "46.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "filter_points_in_points",
+                    "nodeType": "Hyuu::Geometry::Points::filter_points_in_points",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-658.984 -487.305"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_point_position",
+                    "nodeType": "Geometry::Properties::get_point_position",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-3150.53 -198.448"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "round_to_nearest",
+                    "nodeType": "Core::Math::round_to_nearest",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2217.02 -133.234"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_map_items2",
+                    "nodeType": "Hyuu::Containers::Map::set_map_items",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1282.55 -139.248"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_map_values1",
+                    "nodeType": "Hyuu::Containers::Map::get_map_values",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-935.911 -137.729"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_array_indices",
+                    "nodeType": "Core::Array::get_array_indices",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1556.55 15.6374"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "divide",
+                    "nodeType": "Core::Math::divide",
+                    "multiInPortNames": [
+                        "point_position",
+                        "output1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2606.93 -121.333"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "float",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2620.3 94.3923"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "randomize_geo_property",
+                    "nodeType": "Geometry::Common::randomize_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Randomization",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-3492.51 -201.861"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "47.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "positions_scope1",
+                    "nodeType": "Hyuu::Diagnostic::positions_scope",
+                    "fanInPortNames": {
+                        "positions": []
+                    },
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-3514.58 -726.901"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "45.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "points_sphere.points",
+                    "target": "filter_points_in_points.points"
+                },
+                {
+                    "source": "filter_points_in_points.out_points",
+                    "target": "positions_scope.geometry"
+                },
+                {
+                    "source": "set_map_items2.map_out",
+                    "target": "get_map_values1.map"
+                },
+                {
+                    "source": "get_array_indices.indices",
+                    "target": "set_map_items2.values"
+                },
+                {
+                    "source": "value.output",
+                    "target": "divide.first.output1"
+                },
+                {
+                    "source": "get_map_values1.values",
+                    "target": "filter_points_in_points.points_to_keep"
+                },
+                {
+                    "source": "divide.output",
+                    "target": "round_to_nearest.value"
+                },
+                {
+                    "source": "points_sphere.points",
+                    "target": "randomize_geo_property.geometry"
+                },
+                {
+                    "source": "get_point_position.point_position",
+                    "target": "divide.first.point_position"
+                },
+                {
+                    "source": "round_to_nearest.nearest",
+                    "target": "set_map_items2.keys"
+                },
+                {
+                    "source": "round_to_nearest.nearest",
+                    "target": "get_array_indices.array"
+                },
+                {
+                    "source": "points_sphere.points",
+                    "target": "positions_scope1.geometry"
+                },
+                {
+                    "source": "randomize_geo_property.out_geometry",
+                    "target": "get_point_position.geometry"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "points_sphere.divisions",
+                    "valueType": "long",
+                    "value": "191"
+                },
+                {
+                    "valueName": "points_sphere.radius_min",
+                    "valueType": "float",
+                    "value": "1.96099997f"
+                },
+                {
+                    "valueName": "points_sphere.radius_max",
+                    "valueType": "float",
+                    "value": "3.34299994f"
+                },
+                {
+                    "valueName": "points_sphere.spread",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "positions_scope.size",
+                    "valueType": "float",
+                    "value": "0.0109999999f"
+                },
+                {
+                    "valueName": "positions_scope.color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "positions_scope.shape",
+                    "valueType": "Geometry::PointShapes",
+                    "value": "Sphere"
+                },
+                {
+                    "valueName": "filter_points_in_points.points",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "filter_points_in_points.points_to_keep",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "filter_points_in_points.properties",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "set_map_items2.keys",
+                    "valueType": "array<float>",
+                    "value": []
+                },
+                {
+                    "valueName": "get_map_values1.default_and_type",
+                    "valueType": "long",
+                    "value": "0"
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "float",
+                    "value": "0.377999991f"
+                },
+                {
+                    "valueName": "randomize_geo_property.min",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "-0.0858699977f",
+                        "y": "-0.0858699977f",
+                        "z": "-0.0858699977f"
+                    }
+                },
+                {
+                    "valueName": "randomize_geo_property.max",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.1919f",
+                        "y": "0.1919f",
+                        "z": "0.1919f"
+                    }
+                },
+                {
+                    "valueName": "randomize_geo_property.property",
+                    "valueType": "string",
+                    "value": "point_position"
+                },
+                {
+                    "valueName": "randomize_geo_property.randomization_mode",
+                    "valueType": "Geometry::Common::RandomizeGeoPropertyType",
+                    "value": "Offset"
+                },
+                {
+                    "valueName": "positions_scope1.geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "positions_scope1.positions",
+                    "valueType": "array<Math::float3>",
+                    "value": []
+                },
+                {
+                    "valueName": "positions_scope1.size",
+                    "valueType": "float",
+                    "value": "0.00400000019f"
+                },
+                {
+                    "valueName": "positions_scope1.color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0.0780000016f",
+                        "y": "0.173500001f",
+                        "z": "0.370700002f"
+                    }
+                },
+                {
+                    "valueName": "positions_scope1.shape",
+                    "valueType": "Geometry::PointShapes",
+                    "value": "Sphere"
+                },
+                {
+                    "valueName": "positions_scope1.screen_aligned",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "positions_scope1.numeric_property",
+                    "valueType": "string",
+                    "value": "point_position"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+Get mesh adjacency properties.

@@ -1,0 +1,1 @@
+Create simple a mesh cube from the input geometry's bounding box.

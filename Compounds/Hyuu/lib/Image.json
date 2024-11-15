@@ -1,0 +1,94 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [
+        {
+            "structName": "Hyuu::Image::Filter::Kernel::KernelMask",
+            "msTypeNameMangleName": "UKernelMask@Kernel@Filter@Image@Hyuu@@",
+            "itaniumTypeNameMangleName": "N4Hyuu5Image6Filter6Kernel10KernelMaskE",
+            "structMembers": [
+                {
+                    "memberName": "weights",
+                    "memberType": "array<float>"
+                },
+                {
+                    "memberName": "extents",
+                    "memberType": "Math::uint2"
+                }
+            ]
+        }
+    ],
+    "operators": [
+        {
+            "name": "Hyuu::Image::pixel_kernel_indices",
+            "msMangle": "?pixel_kernel_indices@Image@Hyuu@@YAXAEBIAEBUuint2@Math@Bifrost@@1AEAV?$Ptr@V?$Array@I@Amino@@@Amino@@@Z",
+            "itaniumMangle": "_ZN4Hyuu5Image20pixel_kernel_indicesERKjRKN7Bifrost4Math5uint2ES7_RN5Amino3PtrINS8_5ArrayIjEEEE",
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "pixel",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "pixel_dimensions",
+                    "portDirection": "input",
+                    "portType": "Math::uint2",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "extents",
+                    "portDirection": "input",
+                    "portType": "Math::uint2",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "kernel_indices",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Image::filter_pixel",
+            "msMangle": "?filter_pixel@Image@Hyuu@@YAXAEBV?$Array@Ufloat4@Math@Bifrost@@@Amino@@AEBV?$Array@I@4@AEBV?$Array@M@4@AEAUfloat4@Math@Bifrost@@@Z",
+            "itaniumMangle": "_ZN4Hyuu5Image12filter_pixelERKN5Amino5ArrayIN7Bifrost4Math6float4EEERKNS2_IjEERKNS2_IfEERS5_",
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "pixel_color",
+                    "portDirection": "input",
+                    "portType": "array<Math::float4>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "kernel_indices",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "kernel_weights",
+                    "portDirection": "input",
+                    "portType": "array<float>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "filtered_color",
+                    "portDirection": "output",
+                    "portType": "Math::float4",
+                    "portConvention": "byReference"
+                }
+            ]
+        }
+    ]
+}

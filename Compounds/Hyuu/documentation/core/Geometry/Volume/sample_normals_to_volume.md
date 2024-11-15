@@ -1,0 +1,1 @@
+Transfer mesh normals to volume using closest_locations. This gives more "true to the original" normal data that can be required for certain calculations.

@@ -1,0 +1,1378 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Geometry::Points::reduce_points_closest_to_positions",
+            "uriImported": "stream:/bifrostGraphShape2",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-733.007 -231.472"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "points"
+                                                },
+                                                {
+                                                    "metaName": "positions"
+                                                },
+                                                {
+                                                    "metaName": "properties"
+                                                },
+                                                {
+                                                    "metaName": "use_cutoff_distance"
+                                                },
+                                                {
+                                                    "metaName": "cutoff_distance"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "filtered_points"
+                                                },
+                                                {
+                                                    "metaName": "filtered_indices"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1354.17 -40.1543"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "35.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1178.79 -309 3269.59 1187"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "55.000000"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "1426.14 466.681"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"points\"\n            },\n            {\n                \"port\": \"cell_space\"\n            },\n            {\n                \"port\": \"disorder\"\n            },\n            {\n                \"port\": \"probability\"\n            },\n            {\n                \"port\": \"positions\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"General\",\n                \"items\": [\n                    {\n                        \"port\": \"properties\"\n                    },\n                    {\n                        \"port\": \"seed\"\n                    },\n                    {\n                        \"port\": \"invert\"\n                    },\n                    {\n                        \"port\": \"use_cutoff_distance\"\n                    },\n                    {\n                        \"condition\": {\n                            \"action\": \"enable\",\n                            \"op\": \"==\",\n                            \"port\": \"use_cutoff_distance\",\n                            \"value\": \"\"\n                        },\n                        \"group\": \"Enable based on: use_cutoff_distance\",\n                        \"items\": [\n                            {\n                                \"port\": \"cutoff_distance\"\n                            }\n                        ],\n                        \"unique_id\": 31\n                    }\n                ],\n                \"unique_id\": 20\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "General",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/core/Geometry/Points/reduce_points_closest_to_positions.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/hyuu_icon.png"
+                }
+            ],
+            "isDefaultOverload": "true",
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "points",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "filtered_points",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "positions",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "properties",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "*"
+                },
+                {
+                    "portName": "filtered_indices",
+                    "portDirection": "output",
+                    "portType": "array<long>"
+                },
+                {
+                    "portName": "use_cutoff_distance",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "cutoff_distance",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "10f"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "remove_duplicates",
+                    "uriImported": "stream:/bifrostGraphShape2",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "points"
+                                                        },
+                                                        {
+                                                            "metaName": "point_indices"
+                                                        },
+                                                        {
+                                                            "metaName": "found"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "indices"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "indices",
+                            "portDirection": "output",
+                            "portType": "array<long>"
+                        },
+                        {
+                            "portName": "points",
+                            "portDirection": "input",
+                            "portType": "Object"
+                        },
+                        {
+                            "portName": "point_indices",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "found",
+                            "portDirection": "input"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "find_all_true_in_array",
+                            "nodeType": "Core::Array::find_all_true_in_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "45.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1403.6 40.8872"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "get_point_count",
+                            "nodeType": "Geometry::Properties::get_point_count",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "42.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "385.562 40.5873"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "resize_array",
+                            "nodeType": "Core::Array::resize_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "43.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "662.356 1.37396"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "set_in_array",
+                            "nodeType": "Core::Array::set_in_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "44.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1105.67 15.5147"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "set_in_array.out_array",
+                            "target": "find_all_true_in_array.boolean_array"
+                        },
+                        {
+                            "source": "find_all_true_in_array.indices",
+                            "target": ".indices"
+                        },
+                        {
+                            "source": ".points",
+                            "target": "get_point_count.geometry"
+                        },
+                        {
+                            "source": "get_point_count.count",
+                            "target": "resize_array.new_size"
+                        },
+                        {
+                            "source": "resize_array.resized",
+                            "target": "set_in_array.array"
+                        },
+                        {
+                            "source": ".point_indices",
+                            "target": "set_in_array.index"
+                        },
+                        {
+                            "source": ".found",
+                            "target": "set_in_array.value"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "resize_array.default",
+                            "valueType": "bool",
+                            "value": "false"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "filter_points_in_points",
+                    "nodeType": "Hyuu::Geometry::Points::filter_points_in_points",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "993.176 -159.672"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_closest_point",
+                    "nodeType": "Geometry::Query::get_closest_point",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "259.574 249.858"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "remove_duplicates",
+                    "nodeType": "remove_duplicates",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "667.287 143.366"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".points",
+                    "target": "filter_points_in_points.points"
+                },
+                {
+                    "source": ".properties",
+                    "target": "filter_points_in_points.properties"
+                },
+                {
+                    "source": "filter_points_in_points.out_points",
+                    "target": ".filtered_points"
+                },
+                {
+                    "source": ".points",
+                    "target": "get_closest_point.geometry"
+                },
+                {
+                    "source": ".use_cutoff_distance",
+                    "target": "get_closest_point.use_cutoff_distance"
+                },
+                {
+                    "source": ".cutoff_distance",
+                    "target": "get_closest_point.cutoff_distance"
+                },
+                {
+                    "source": "remove_duplicates.indices",
+                    "target": "filter_points_in_points.points_to_keep"
+                },
+                {
+                    "source": "remove_duplicates.indices",
+                    "target": ".filtered_indices"
+                },
+                {
+                    "source": ".points",
+                    "target": "remove_duplicates.points"
+                },
+                {
+                    "source": "get_closest_point.point_indices",
+                    "target": "remove_duplicates.point_indices"
+                },
+                {
+                    "source": "get_closest_point.found",
+                    "target": "remove_duplicates.found"
+                },
+                {
+                    "source": ".positions",
+                    "target": "get_closest_point.positions"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "remove_duplicates.points",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "remove_duplicates.point_indices",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "remove_duplicates.found",
+                    "valueType": "array<bool>",
+                    "value": []
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Geometry::Points::reduce_points_closest_to_positions",
+            "uriImported": "stream:/bifrostGraphShape2",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-733.007 -231.472"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "points"
+                                                },
+                                                {
+                                                    "metaName": "positions"
+                                                },
+                                                {
+                                                    "metaName": "properties"
+                                                },
+                                                {
+                                                    "metaName": "use_cutoff_distance"
+                                                },
+                                                {
+                                                    "metaName": "cutoff_distance"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "filtered_points"
+                                                },
+                                                {
+                                                    "metaName": "filtered_indices"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1354.17 -40.1543"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "34.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1179.67 -309 3272.34 1188"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "57.000000"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "1413.26 472.538"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"points\"\n            },\n            {\n                \"port\": \"cell_space\"\n            },\n            {\n                \"port\": \"disorder\"\n            },\n            {\n                \"port\": \"probability\"\n            },\n            {\n                \"port\": \"positions\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"General\",\n                \"items\": [\n                    {\n                        \"port\": \"properties\"\n                    },\n                    {\n                        \"port\": \"seed\"\n                    },\n                    {\n                        \"port\": \"invert\"\n                    },\n                    {\n                        \"port\": \"use_cutoff_distance\"\n                    },\n                    {\n                        \"condition\": {\n                            \"action\": \"enable\",\n                            \"op\": \"==\",\n                            \"port\": \"use_cutoff_distance\",\n                            \"value\": \"\"\n                        },\n                        \"group\": \"Enable based on: use_cutoff_distance\",\n                        \"items\": [\n                            {\n                                \"port\": \"cutoff_distance\"\n                            }\n                        ],\n                        \"unique_id\": 31\n                    }\n                ],\n                \"unique_id\": 20\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "General",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/core/Geometry/Points/reduce_points_closest_to_positions.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/hyuu_icon.png"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "true"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "points",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "filtered_points",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "positions",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "properties",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "*"
+                },
+                {
+                    "portName": "filtered_indices",
+                    "portDirection": "output",
+                    "portType": "array<long>"
+                },
+                {
+                    "portName": "use_cutoff_distance",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "cutoff_distance",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "10f"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "remove_duplicates",
+                    "uriImported": "stream:/bifrostGraphShape2",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "points"
+                                                        },
+                                                        {
+                                                            "metaName": "point_indices"
+                                                        },
+                                                        {
+                                                            "metaName": "found"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "indices"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "indices",
+                            "portDirection": "output",
+                            "portType": "array<long>"
+                        },
+                        {
+                            "portName": "points",
+                            "portDirection": "input",
+                            "portType": "Object"
+                        },
+                        {
+                            "portName": "point_indices",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "found",
+                            "portDirection": "input"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "find_all_true_in_array",
+                            "nodeType": "Core::Array::find_all_true_in_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "45.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1403.6 40.8872"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "get_point_count",
+                            "nodeType": "Geometry::Properties::get_point_count",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "42.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "385.562 40.5873"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "resize_array",
+                            "nodeType": "Core::Array::resize_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "43.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "662.356 1.37396"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "set_in_array",
+                            "nodeType": "Core::Array::set_in_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "44.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1105.67 15.5147"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "set_in_array.out_array",
+                            "target": "find_all_true_in_array.boolean_array"
+                        },
+                        {
+                            "source": "find_all_true_in_array.indices",
+                            "target": ".indices"
+                        },
+                        {
+                            "source": ".points",
+                            "target": "get_point_count.geometry"
+                        },
+                        {
+                            "source": "get_point_count.count",
+                            "target": "resize_array.new_size"
+                        },
+                        {
+                            "source": "resize_array.resized",
+                            "target": "set_in_array.array"
+                        },
+                        {
+                            "source": ".point_indices",
+                            "target": "set_in_array.index"
+                        },
+                        {
+                            "source": ".found",
+                            "target": "set_in_array.value"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "resize_array.default",
+                            "valueType": "bool",
+                            "value": "false"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                },
+                {
+                    "name": "get_position_property",
+                    "metadata": [
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-344.576 -149.485 2244.35 814.793"
+                        },
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "69.000000"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "47.8392 -59.4742"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "geo"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "41.000000"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1230 10"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "positions"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "geo",
+                            "portDirection": "input",
+                            "portType": "Object"
+                        },
+                        {
+                            "portName": "positions",
+                            "portDirection": "output",
+                            "portType": "array<Math::float3>"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "if",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "64.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "620 329"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "point_position",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "65.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "315 476"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "voxel_position_name",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "66.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "315 281"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "get_geo_property",
+                            "nodeType": "Geometry::Properties::get_geo_property",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "39.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "925 105"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "is_a_volume",
+                            "nodeType": "Geometry::Internal::is_a_volume",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "61.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "315 86"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "if.output",
+                            "target": "get_geo_property.property"
+                        },
+                        {
+                            "source": "point_position.output",
+                            "target": "if.false_case"
+                        },
+                        {
+                            "source": "voxel_position_name.output",
+                            "target": "if.true_case"
+                        },
+                        {
+                            "source": "get_geo_property.data",
+                            "target": ".positions"
+                        },
+                        {
+                            "source": "is_a_volume.matches_volume",
+                            "target": "if.condition"
+                        },
+                        {
+                            "source": ".geo",
+                            "target": "get_geo_property.geometry"
+                        },
+                        {
+                            "source": ".geo",
+                            "target": "is_a_volume.geometry"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "point_position.value",
+                            "valueType": "string",
+                            "value": "point_position"
+                        },
+                        {
+                            "valueName": "voxel_position_name.value",
+                            "valueType": "string",
+                            "value": "voxel_position"
+                        },
+                        {
+                            "valueName": "get_geo_property.property",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "get_geo_property.type",
+                            "valueType": "array<Math::float3>",
+                            "value": []
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "filter_points_in_points",
+                    "nodeType": "Hyuu::Geometry::Points::filter_points_in_points",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "993.176 -159.672"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_closest_point",
+                    "nodeType": "Geometry::Query::get_closest_point",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "259.574 249.858"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "remove_duplicates",
+                    "nodeType": "remove_duplicates",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "667.287 143.366"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_position_property",
+                    "nodeType": "get_position_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-121.691 438.172"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".points",
+                    "target": "filter_points_in_points.points"
+                },
+                {
+                    "source": ".properties",
+                    "target": "filter_points_in_points.properties"
+                },
+                {
+                    "source": "filter_points_in_points.out_points",
+                    "target": ".filtered_points"
+                },
+                {
+                    "source": ".points",
+                    "target": "get_closest_point.geometry"
+                },
+                {
+                    "source": ".use_cutoff_distance",
+                    "target": "get_closest_point.use_cutoff_distance"
+                },
+                {
+                    "source": ".cutoff_distance",
+                    "target": "get_closest_point.cutoff_distance"
+                },
+                {
+                    "source": "remove_duplicates.indices",
+                    "target": "filter_points_in_points.points_to_keep"
+                },
+                {
+                    "source": "remove_duplicates.indices",
+                    "target": ".filtered_indices"
+                },
+                {
+                    "source": ".points",
+                    "target": "remove_duplicates.points"
+                },
+                {
+                    "source": "get_closest_point.point_indices",
+                    "target": "remove_duplicates.point_indices"
+                },
+                {
+                    "source": "get_closest_point.found",
+                    "target": "remove_duplicates.found"
+                },
+                {
+                    "source": ".positions",
+                    "target": "get_position_property.geo"
+                },
+                {
+                    "source": "get_position_property.positions",
+                    "target": "get_closest_point.positions"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "remove_duplicates.points",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "remove_duplicates.point_indices",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "remove_duplicates.found",
+                    "valueType": "array<bool>",
+                    "value": []
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+Creates a per-point array from per-strand array.

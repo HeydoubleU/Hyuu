@@ -1,0 +1,1 @@
+Combines turbulence field with directional field for the effect of turbulent wind.

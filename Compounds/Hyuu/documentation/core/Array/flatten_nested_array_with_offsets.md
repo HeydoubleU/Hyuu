@@ -1,0 +1,1 @@
+Flatten a 2D array and generate offsets array. e.g. provided a 2D array of face vertices, the result is face_vertex and face_offset arrays which could be used to construct a mesh.

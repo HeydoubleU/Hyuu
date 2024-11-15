@@ -1,0 +1,532 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Fur::Property::random_modifier_weights",
+            "uriImported": "file:///random_modifier_weights.json",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "3.64801 -1.75587"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "fur"
+                                                },
+                                                {
+                                                    "metaName": "min"
+                                                },
+                                                {
+                                                    "metaName": "max"
+                                                },
+                                                {
+                                                    "metaName": "seed"
+                                                },
+                                                {
+                                                    "metaName": "distribution"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "627.94 25.854"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "32.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "random_per_strand"
+                                                },
+                                                {
+                                                    "metaName": "random_per_point"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"fur\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Range\",\n                \"items\": [\n                    {\n                        \"port\": \"min\"\n                    },\n                    {\n                        \"port\": \"max\"\n                    },\n                    {\n                        \"port\": \"seed\"\n                    },\n                    {\n                        \"port\": \"distribution\"\n                    }\n                ],\n                \"unique_id\": 6\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Range",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-191.434 -37.7076 1140.94 563.661"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-2258.41 913.68"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "499.000000"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/modules/Fur/Property/random_modifier_weights.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "fur",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "random_per_strand",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "min",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "0.200000003f"
+                },
+                {
+                    "portName": "max",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "0.5f"
+                },
+                {
+                    "portName": "seed",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "22"
+                },
+                {
+                    "portName": "distribution",
+                    "portDirection": "input",
+                    "portType": "Math::FCurve",
+                    "portDefault": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "-0.92711900000000003",
+                                        "yp": "-0.01129",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.92711900000000003",
+                                        "yn": "0.01129"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "0.98305100000000001",
+                                        "yp": "0.45161299999999999",
+                                        "x": "1",
+                                        "y": "1",
+                                        "xn": "1.0169490000000001",
+                                        "yn": "1.548387"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "portName": "random_per_point",
+                    "portDirection": "output"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "randomize_geo_property1",
+                    "nodeType": "Geometry::Common::randomize_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Randomization",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Property",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "NodeValueDisplay",
+                            "metadata": [
+                                {
+                                    "metaName": "show",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "format",
+                                    "metaType": "string",
+                                    "metaValue": "Randomize geo {property}"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "315.134 -132.722"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "randomize_geo_property2",
+                    "nodeType": "Geometry::Common::randomize_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Randomization",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Property",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "show",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        },
+                        {
+                            "metaName": "format",
+                            "metaType": "string",
+                            "metaValue": "Randomize geo {property}"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "294.519 214.905"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".fur",
+                    "target": "randomize_geo_property1.geometry"
+                },
+                {
+                    "source": ".min",
+                    "target": "randomize_geo_property1.min"
+                },
+                {
+                    "source": ".max",
+                    "target": "randomize_geo_property1.max"
+                },
+                {
+                    "source": ".seed",
+                    "target": "randomize_geo_property1.seed"
+                },
+                {
+                    "source": ".distribution",
+                    "target": "randomize_geo_property1.distribution"
+                },
+                {
+                    "source": "randomize_geo_property1.random_value",
+                    "target": ".random_per_strand"
+                },
+                {
+                    "source": ".fur",
+                    "target": "randomize_geo_property2.geometry"
+                },
+                {
+                    "source": ".min",
+                    "target": "randomize_geo_property2.min"
+                },
+                {
+                    "source": ".max",
+                    "target": "randomize_geo_property2.max"
+                },
+                {
+                    "source": ".seed",
+                    "target": "randomize_geo_property2.seed"
+                },
+                {
+                    "source": ".distribution",
+                    "target": "randomize_geo_property2.distribution"
+                },
+                {
+                    "source": "randomize_geo_property2.random_value",
+                    "target": ".random_per_point"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "randomize_geo_property1.min",
+                    "valueType": "float",
+                    "value": "0.200000003f"
+                },
+                {
+                    "valueName": "randomize_geo_property1.max",
+                    "valueType": "float",
+                    "value": "0.5f"
+                },
+                {
+                    "valueName": "randomize_geo_property1.seed",
+                    "valueType": "long",
+                    "value": "22"
+                },
+                {
+                    "valueName": "randomize_geo_property1.property",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "randomize_geo_property1.target",
+                    "valueType": "string",
+                    "value": "strand_component"
+                },
+                {
+                    "valueName": "randomize_geo_property1.distribution",
+                    "valueType": "Math::FCurve",
+                    "value": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "-0.92711900000000003",
+                                        "yp": "-0.01129",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.92711900000000003",
+                                        "yn": "0.01129"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "0.98305100000000001",
+                                        "yp": "0.45161299999999999",
+                                        "x": "1",
+                                        "y": "1",
+                                        "xn": "1.0169490000000001",
+                                        "yn": "1.548387"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "randomize_geo_property1.default_value",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "randomize_geo_property1.randomization_mode",
+                    "valueType": "Geometry::Common::RandomizeGeoPropertyType",
+                    "value": "Replace"
+                },
+                {
+                    "valueName": "randomize_geo_property2.min",
+                    "valueType": "float",
+                    "value": "0.200000003f"
+                },
+                {
+                    "valueName": "randomize_geo_property2.max",
+                    "valueType": "float",
+                    "value": "0.5f"
+                },
+                {
+                    "valueName": "randomize_geo_property2.seed",
+                    "valueType": "long",
+                    "value": "22"
+                },
+                {
+                    "valueName": "randomize_geo_property2.property",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "randomize_geo_property2.target",
+                    "valueType": "string",
+                    "value": "point_component"
+                },
+                {
+                    "valueName": "randomize_geo_property2.distribution",
+                    "valueType": "Math::FCurve",
+                    "value": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "-0.92711900000000003",
+                                        "yp": "-0.01129",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.92711900000000003",
+                                        "yn": "0.01129"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "0.98305100000000001",
+                                        "yp": "0.45161299999999999",
+                                        "x": "1",
+                                        "y": "1",
+                                        "xn": "1.0169490000000001",
+                                        "yn": "1.548387"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "randomize_geo_property2.default_value",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "randomize_geo_property2.randomization_mode",
+                    "valueType": "Geometry::Common::RandomizeGeoPropertyType",
+                    "value": "Replace"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

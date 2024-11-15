@@ -1,0 +1,120 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "operators": [
+        {
+            "name": "Hyuu::Geometry::Mesh::chose_collapse_edge",
+            "msMangle": "?chose_collapse_edge@Mesh@Geometry@Hyuu@@YAXAEB_JAEBV?$Array@Ufloat3@Math@Bifrost@@@Amino@@AEBV?$Array@I@5@2AEBV?$Array@UFaceEdge@Mesh@Geometry@Bifrost@@@5@32AEBV?$Array@_N@5@AEAUFaceEdge@12Bifrost@@AEAMAEA_N@Z",
+            "itaniumMangle": "_ZN4Hyuu8Geometry4Mesh19chose_collapse_edgeERKxRKN5Amino5ArrayIN7Bifrost4Math6float3EEERKNS5_IjEESE_RKNS5_INS6_8Geometry4Mesh8FaceEdgeEEESK_SE_RKNS5_IbEERSH_RfRb",
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "point_id",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "fv_adj",
+                    "portDirection": "input",
+                    "portType": "array<Geometry::Mesh::FaceEdge>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "point_adj",
+                    "portDirection": "input",
+                    "portType": "array<Geometry::Mesh::FaceEdge>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "point_adj_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "edge_creased",
+                    "portDirection": "input",
+                    "portType": "array<bool>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "shortest_edge",
+                    "portDirection": "output",
+                    "portType": "Geometry::Mesh::FaceEdge",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "edge_length",
+                    "portDirection": "output",
+                    "portType": "float",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "collapsable",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Geometry::Mesh::get_face_edge_unique_internal",
+            "msMangle": "?get_face_edge_unique_internal@Mesh@Geometry@Hyuu@@YAXAEBV?$Array@I@Amino@@AEBV?$Array@UFaceEdge@Mesh@Geometry@Bifrost@@@5@AEAV?$Ptr@V?$Array@UFaceEdge@Mesh@Geometry@Bifrost@@@Amino@@@5@AEAV?$Ptr@V?$Array@I@Amino@@@5@@Z",
+            "itaniumMangle": "_ZN4Hyuu8Geometry4Mesh29get_face_edge_unique_internalERKN5Amino5ArrayIjEERKNS3_IN7Bifrost8Geometry4Mesh8FaceEdgeEEERNS2_3PtrISB_EERNSE_IS4_EE",
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "fv_adj",
+                    "portDirection": "input",
+                    "portType": "array<Geometry::Mesh::FaceEdge>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "unique_edge",
+                    "portDirection": "output",
+                    "portType": "array<Geometry::Mesh::FaceEdge>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "fv_unique_edge_id",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+Slice of face vertices for given face.

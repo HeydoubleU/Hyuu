@@ -1,0 +1,1 @@
+Optimized strand length computation.

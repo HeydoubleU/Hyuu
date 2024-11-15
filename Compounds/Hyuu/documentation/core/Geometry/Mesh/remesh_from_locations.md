@@ -1,0 +1,1 @@
+Remeshes the input using the provided locations as the new vertices. Functionality is limited compared to `remesh`, but allows for exact control over resulting vertices.

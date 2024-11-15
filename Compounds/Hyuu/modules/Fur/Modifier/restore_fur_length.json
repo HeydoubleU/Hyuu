@@ -1,0 +1,480 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Fur::Modifier::restore_fur_length",
+            "uriImported": "file:///restore_fur_length.json",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "strands"
+                                                },
+                                                {
+                                                    "metaName": "weights"
+                                                },
+                                                {
+                                                    "metaName": "uniform_scale"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-830.986 -136.355"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "36.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "strands_out"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1366.94 -147.109"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "39.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-134.913 -638.782 1830.48 1252"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "6319.4 -286.302"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "178.000000"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/modules/Fur/Modifier/restore_fur_length.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/hyuu_icon.png"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "strands",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "strands_out",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "weights",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "1f",
+                    "metadata": [
+                        {
+                            "metaName": "TypeWranglingSuggestedTypes",
+                            "metaType": "string",
+                            "metaValue": "float, string, Core::Fields::ScalarField, array<float>, array<long>"
+                        },
+                        {
+                            "metaName": "UISoftMin",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "UISoftMax",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        }
+                    ]
+                },
+                {
+                    "portName": "uniform_scale",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "divide1",
+                    "nodeType": "Core::Math::divide",
+                    "multiInPortNames": [
+                        "strand_length",
+                        "strand_length1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "75.857 206.421"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_strand_length",
+                    "nodeType": "Hyuu::Geometry::Strands::get_strand_length",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-222.914 245.997"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "update_strands_length",
+                    "nodeType": "Hyuu::Geometry::Strands::update_strands_length",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-217.134 -160.372"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "interpret_auto_port_as_scalar_strands",
+                    "nodeType": "Geometry::Common::interpret_auto_port_as_scalar",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-215.195 597.456"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "lerp",
+                    "nodeType": "Core::Math::lerp",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "437.277 186.967"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "893.699 -261.915"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "is_weights_zero",
+                    "nodeType": "Hyuu::Logic::is_weights_zero",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-200.341 -375.828"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "scale_strands_length1",
+                    "nodeType": "Hyuu::Geometry::Strands::scale_strands_length",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "45.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "592.724 -81.745"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "get_strand_length.strand_length",
+                    "target": "divide1.first.strand_length"
+                },
+                {
+                    "source": "update_strands_length.strand_length",
+                    "target": "divide1.first.strand_length1"
+                },
+                {
+                    "source": ".strands",
+                    "target": "get_strand_length.strands"
+                },
+                {
+                    "source": ".strands",
+                    "target": "update_strands_length.strands"
+                },
+                {
+                    "source": ".strands",
+                    "target": "interpret_auto_port_as_scalar_strands.geometry"
+                },
+                {
+                    "source": ".weights",
+                    "target": "interpret_auto_port_as_scalar_strands.interpreted_scalar_port"
+                },
+                {
+                    "source": "interpret_auto_port_as_scalar_strands.data",
+                    "target": "lerp.fraction"
+                },
+                {
+                    "source": "divide1.output",
+                    "target": "lerp.second"
+                },
+                {
+                    "source": "update_strands_length.strands_out",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".strands_out"
+                },
+                {
+                    "source": ".weights",
+                    "target": "is_weights_zero.weights_input"
+                },
+                {
+                    "source": "is_weights_zero.is_zero",
+                    "target": "if.condition"
+                },
+                {
+                    "source": "update_strands_length.strands_out",
+                    "target": "scale_strands_length1.strands"
+                },
+                {
+                    "source": "lerp.interpolated",
+                    "target": "scale_strands_length1.factor"
+                },
+                {
+                    "source": ".uniform_scale",
+                    "target": "scale_strands_length1.uniform_scale"
+                },
+                {
+                    "source": "scale_strands_length1.strands_out",
+                    "target": "if.false_case"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "get_strand_length.strands",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "update_strands_length.strands",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "interpret_auto_port_as_scalar_strands.interpreted_scalar_port",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_scalar_strands.default_value",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_scalar_strands.indices",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "interpret_auto_port_as_scalar_strands.geometry_component",
+                    "valueType": "string",
+                    "value": "strand_component"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_scalar_strands.position_property",
+                    "valueType": "string",
+                    "value": "strand_root_position"
+                },
+                {
+                    "valueName": "lerp.first",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "lerp.second",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "is_weights_zero.threshold",
+                    "valueType": "float",
+                    "value": "0.00100000005f"
+                },
+                {
+                    "valueName": "scale_strands_length1.factor",
+                    "valueType": "float",
+                    "value": "1f"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

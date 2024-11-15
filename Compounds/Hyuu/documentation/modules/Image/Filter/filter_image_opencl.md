@@ -1,0 +1,1 @@
+Identical to `filter_image` but implemented in OpenCL.

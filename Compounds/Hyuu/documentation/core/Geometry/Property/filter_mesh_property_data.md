@@ -1,0 +1,1 @@
+Filter mesh property data for effects like smoothing/blur and expand/contract.

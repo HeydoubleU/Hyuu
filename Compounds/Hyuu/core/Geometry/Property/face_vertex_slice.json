@@ -1,0 +1,333 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Geometry::Properties::face_vertex_slice",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1171 -61"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "face_id"
+                                                },
+                                                {
+                                                    "metaName": "face_vertex"
+                                                },
+                                                {
+                                                    "metaName": "face_offset"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "934.156 79.2005"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "values"
+                                                },
+                                                {
+                                                    "metaName": "indices"
+                                                },
+                                                {
+                                                    "metaName": "count"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1315 1 2694 720"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-1024.55 -737.63"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/core/Geometry/Property/face_vertex_slice.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/hyuu_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "face_id",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "0"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "values",
+                    "portDirection": "output",
+                    "portType": "array<uint>"
+                },
+                {
+                    "portName": "indices",
+                    "portDirection": "output",
+                    "portType": "array<uint>"
+                },
+                {
+                    "portName": "count",
+                    "portDirection": "output",
+                    "portType": "uint"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portDefault": []
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "get_from_array",
+                    "nodeType": "Core::Array::get_from_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-445.675 242.344"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_from_array1",
+                    "nodeType": "Core::Array::get_from_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-873.515 617.171"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "increment",
+                    "nodeType": "Core::Math::increment",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-745.577 296.142"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "subtract",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "value",
+                        "value1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-128 240"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "sequence_array",
+                    "nodeType": "Core::Array::sequence_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "291 566"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_from_array2",
+                    "nodeType": "Core::Array::get_from_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "564 77"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "get_from_array.value",
+                    "target": "subtract.first.value"
+                },
+                {
+                    "source": "get_from_array1.value",
+                    "target": "subtract.first.value1"
+                },
+                {
+                    "source": "increment.output",
+                    "target": "get_from_array.index"
+                },
+                {
+                    "source": ".face_id",
+                    "target": "get_from_array1.index"
+                },
+                {
+                    "source": ".face_id",
+                    "target": "increment.value"
+                },
+                {
+                    "source": ".face_offset",
+                    "target": "get_from_array.array"
+                },
+                {
+                    "source": ".face_offset",
+                    "target": "get_from_array1.array"
+                },
+                {
+                    "source": "subtract.output",
+                    "target": ".count"
+                },
+                {
+                    "source": "subtract.output",
+                    "target": "sequence_array.size"
+                },
+                {
+                    "source": "get_from_array1.value",
+                    "target": "sequence_array.start"
+                },
+                {
+                    "source": "sequence_array.sequence",
+                    "target": "get_from_array2.index"
+                },
+                {
+                    "source": ".face_vertex",
+                    "target": "get_from_array2.array"
+                },
+                {
+                    "source": "get_from_array2.value",
+                    "target": ".values"
+                },
+                {
+                    "source": "sequence_array.sequence",
+                    "target": ".indices"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "increment.by",
+                    "valueType": "char",
+                    "value": "1"
+                },
+                {
+                    "valueName": "sequence_array.step",
+                    "valueType": "uint",
+                    "value": "1U"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

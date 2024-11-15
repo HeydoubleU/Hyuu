@@ -1,0 +1,1 @@
+Filters image with the given kernel weights.

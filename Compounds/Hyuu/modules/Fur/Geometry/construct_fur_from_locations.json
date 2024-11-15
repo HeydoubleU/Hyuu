@@ -1,0 +1,934 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            },
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Fur::Geometry::construct_fur_from_locations",
+            "uriImported": "file:///construct_fur_from_locations.json",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-4914.09 -186.848"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "root_mesh"
+                                                },
+                                                {
+                                                    "metaName": "root_locations"
+                                                },
+                                                {
+                                                    "metaName": "length"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "34.000000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "input1",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "points_per_strand"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-3812.53 -266.147"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "33.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "fur"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1822.55 -508.797"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "38.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "NodeWidthOffset",
+                    "metaType": "string",
+                    "metaValue": "-313.519"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-4325.09 -705.497 2457.11 993.1"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-1189.71 106.919"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "120.000000"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/modules/Fur/Geometry/construct_fur_from_locations.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/hyuu_icon.png"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "root_mesh",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "root_locations",
+                    "portDirection": "input",
+                    "portType": "array<Geometry::Common::GeoLocation>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "fur",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "length",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "1f"
+                },
+                {
+                    "portName": "points_per_strand",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "6"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "compound",
+                    "uriImported": "file:///construct_fur_from_locations.json",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-1458.46 13.6545"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_mesh"
+                                                        },
+                                                        {
+                                                            "metaName": "root_locations"
+                                                        },
+                                                        {
+                                                            "metaName": "length"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "34.000000"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "225.5 -61"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "position"
+                                                        },
+                                                        {
+                                                            "metaName": "ends"
+                                                        },
+                                                        {
+                                                            "metaName": "normal"
+                                                        },
+                                                        {
+                                                            "metaName": "tangent"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "31.000000"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-2089.83 8 1850.67 886"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "position",
+                            "portDirection": "output",
+                            "portType": "array<Math::float3>"
+                        },
+                        {
+                            "portName": "ends",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "out_mesh",
+                            "portDirection": "input",
+                            "portType": "Object"
+                        },
+                        {
+                            "portName": "root_locations",
+                            "portDirection": "input",
+                            "portType": "array<Geometry::Common::GeoLocation>"
+                        },
+                        {
+                            "portName": "length",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "normal",
+                            "portDirection": "output",
+                            "portType": "array<Math::float3>"
+                        },
+                        {
+                            "portName": "tangent",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "add",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "position",
+                                "normal"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-422.456 99.6679"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "33.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "multiply",
+                            "nodeType": "Core::Math::multiply",
+                            "multiInPortNames": [
+                                "normal",
+                                "port"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-725.636 194.492"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "32.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "sample_position_and_normal",
+                            "nodeType": "Hyuu::Geometry::Properties::sample_position_and_normal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-973.616 -22.7801"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "35.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "sample_property2",
+                            "nodeType": "Geometry::Query::sample_property",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-873.055 488.184"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "36.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "get_property",
+                            "nodeType": "Core::Object::get_property",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "38.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1299.86 491.282"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "sample_position_and_normal.position",
+                            "target": "add.first.position"
+                        },
+                        {
+                            "source": "multiply.output",
+                            "target": "add.first.normal"
+                        },
+                        {
+                            "source": "add.output",
+                            "target": ".ends"
+                        },
+                        {
+                            "source": "sample_position_and_normal.normal",
+                            "target": "multiply.first.normal"
+                        },
+                        {
+                            "source": ".out_mesh",
+                            "target": "sample_position_and_normal.geo"
+                        },
+                        {
+                            "source": ".root_locations",
+                            "target": "sample_position_and_normal.locations"
+                        },
+                        {
+                            "source": "sample_position_and_normal.position",
+                            "target": ".position"
+                        },
+                        {
+                            "source": ".out_mesh",
+                            "target": "sample_property2.geometry"
+                        },
+                        {
+                            "source": "sample_position_and_normal.normal",
+                            "target": ".normal"
+                        },
+                        {
+                            "source": ".length",
+                            "target": "multiply.first.port"
+                        },
+                        {
+                            "source": ".root_locations",
+                            "target": "sample_property2.locations"
+                        },
+                        {
+                            "source": "sample_property2.sampled_data",
+                            "target": ".tangent"
+                        },
+                        {
+                            "source": ".out_mesh",
+                            "target": "get_property.object"
+                        },
+                        {
+                            "source": "get_property.value",
+                            "target": "sample_property2.property"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "sample_position_and_normal.geo",
+                            "valueType": "Object",
+                            "value": {}
+                        },
+                        {
+                            "valueName": "sample_position_and_normal.locations",
+                            "valueType": "array<Geometry::Common::GeoLocation>",
+                            "value": []
+                        },
+                        {
+                            "valueName": "sample_property2.default",
+                            "valueType": "Math::float3",
+                            "value": {
+                                "x": "0f",
+                                "y": "0f",
+                                "z": "0f"
+                            }
+                        },
+                        {
+                            "valueName": "sample_property2.property",
+                            "valueType": "string",
+                            "value": "face_tangent"
+                        },
+                        {
+                            "valueName": "sample_property2.method",
+                            "valueType": "BifrostExp::Geometry::SampleMethod",
+                            "value": "interpolated"
+                        },
+                        {
+                            "valueName": "get_property.default_and_type",
+                            "valueType": "string",
+                            "value": ""
+                        },
+                        {
+                            "valueName": "get_property.key",
+                            "valueType": "string",
+                            "value": "tangent_property"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "set_property",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "NodeWidthOffset",
+                            "metaType": "string",
+                            "metaValue": "-276.465"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2305 -562.804"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "compound",
+                    "nodeType": "compound",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-4068.62 -412.037"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "construct_strands_between_positions3",
+                    "nodeType": "Hyuu::Geometry::Strands::construct_strands_between_positions",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-3564.7 -427.24"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "check_mesh_normals",
+                    "nodeType": "Hyuu::Geometry::Mesh::check_mesh_normals",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-4293.62 -549.87"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_geo_property1",
+                    "nodeType": "Geometry::Properties::set_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-3233.59 -309.237"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_geo_property7",
+                    "nodeType": "Geometry::Properties::set_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2957.56 -178.835"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_geo_property8",
+                    "nodeType": "Geometry::Properties::set_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2706.54 35.6281"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_geo_property9",
+                    "nodeType": "Geometry::Properties::set_geo_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-2446.62 196.399"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "update_face_tangent_for_fur1",
+                    "nodeType": "Hyuu::Fur::Geometry::update_face_tangent_for_fur",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-4647.7 -697.659"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "41.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".root_locations",
+                    "target": "compound.root_locations"
+                },
+                {
+                    "source": "set_property.out_object",
+                    "target": ".fur"
+                },
+                {
+                    "source": "compound.position",
+                    "target": "construct_strands_between_positions3.starts"
+                },
+                {
+                    "source": "compound.ends",
+                    "target": "construct_strands_between_positions3.ends"
+                },
+                {
+                    "source": ".points_per_strand",
+                    "target": "construct_strands_between_positions3.points_per_strand"
+                },
+                {
+                    "source": "check_mesh_normals.out_mesh",
+                    "target": "compound.out_mesh"
+                },
+                {
+                    "source": "check_mesh_normals.out_mesh",
+                    "target": "set_property.value"
+                },
+                {
+                    "source": ".length",
+                    "target": "compound.length"
+                },
+                {
+                    "source": "set_geo_property1.out_geometry",
+                    "target": "set_geo_property7.geometry"
+                },
+                {
+                    "source": ".root_locations",
+                    "target": "set_geo_property1.data"
+                },
+                {
+                    "source": "compound.position",
+                    "target": "set_geo_property7.data"
+                },
+                {
+                    "source": "set_geo_property7.out_geometry",
+                    "target": "set_geo_property8.geometry"
+                },
+                {
+                    "source": "compound.normal",
+                    "target": "set_geo_property8.data"
+                },
+                {
+                    "source": "set_geo_property8.out_geometry",
+                    "target": "set_geo_property9.geometry"
+                },
+                {
+                    "source": "set_geo_property9.out_geometry",
+                    "target": "set_property.object"
+                },
+                {
+                    "source": "compound.tangent",
+                    "target": "set_geo_property9.data"
+                },
+                {
+                    "source": ".root_mesh",
+                    "target": "update_face_tangent_for_fur1.mesh"
+                },
+                {
+                    "source": "update_face_tangent_for_fur1.out_mesh",
+                    "target": "check_mesh_normals.mesh"
+                },
+                {
+                    "source": "construct_strands_between_positions3.strands",
+                    "target": "set_geo_property1.geometry"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "set_property.key",
+                    "valueType": "string",
+                    "value": "root_mesh"
+                },
+                {
+                    "valueName": "set_property.value",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "compound.out_mesh",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "compound.root_locations",
+                    "valueType": "array<Geometry::Common::GeoLocation>",
+                    "value": []
+                },
+                {
+                    "valueName": "check_mesh_normals.mesh",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "set_geo_property1.property",
+                    "valueType": "string",
+                    "value": "strand_root_location"
+                },
+                {
+                    "valueName": "set_geo_property1.target",
+                    "valueType": "string",
+                    "value": "strand_component"
+                },
+                {
+                    "valueName": "set_geo_property1.interpolation_mode",
+                    "valueType": "Geometry::Common::DataInterpolationMode",
+                    "value": "Linear"
+                },
+                {
+                    "valueName": "set_geo_property7.property",
+                    "valueType": "string",
+                    "value": "strand_root_position"
+                },
+                {
+                    "valueName": "set_geo_property7.target",
+                    "valueType": "string",
+                    "value": "strand_component"
+                },
+                {
+                    "valueName": "set_geo_property7.interpolation_mode",
+                    "valueType": "Geometry::Common::DataInterpolationMode",
+                    "value": "Linear"
+                },
+                {
+                    "valueName": "set_geo_property8.property",
+                    "valueType": "string",
+                    "value": "strand_root_normal"
+                },
+                {
+                    "valueName": "set_geo_property8.target",
+                    "valueType": "string",
+                    "value": "strand_component"
+                },
+                {
+                    "valueName": "set_geo_property8.interpolation_mode",
+                    "valueType": "Geometry::Common::DataInterpolationMode",
+                    "value": "Linear"
+                },
+                {
+                    "valueName": "set_geo_property9.property",
+                    "valueType": "string",
+                    "value": "strand_root_tangent"
+                },
+                {
+                    "valueName": "set_geo_property9.target",
+                    "valueType": "string",
+                    "value": "strand_component"
+                },
+                {
+                    "valueName": "set_geo_property9.interpolation_mode",
+                    "valueType": "Geometry::Common::DataInterpolationMode",
+                    "value": "Linear"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                },
+                {
+                    "name": "input1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+```output = first - subtract```

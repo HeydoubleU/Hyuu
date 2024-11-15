@@ -1,0 +1,1 @@
+Updates mesh normals if not present.

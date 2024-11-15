@@ -1,0 +1,1 @@
+Native `extract_property` node wrapped with type cast.

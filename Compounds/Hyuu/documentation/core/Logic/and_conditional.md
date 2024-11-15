@@ -1,0 +1,1 @@
+Equivalent to the native `and` node, but using an if node. This has the advantage that `second` is only evaluated if `first` is true, whereas the native `and` node evaluates both inputs regardless.

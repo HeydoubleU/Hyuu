@@ -1,0 +1,1 @@
+Copy the input geo to each of the input points. This is for generating geometry similar to bake_instances, but is optimized for copying low to medium detail geometry to a large number of points.
