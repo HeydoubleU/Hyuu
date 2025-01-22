@@ -12,7 +12,6 @@
     "compounds": [
         {
             "name": "Hyuu::Shatter::post_process_shatter",
-            "uriImported": "stream:/stream",
             "metadata": [
                 {
                     "metaName": "io_nodes",
@@ -330,21 +329,6 @@
                     "metaValue": "-2045 -659.366 2805 1310.73"
                 },
                 {
-                    "metaName": "DisplayMode",
-                    "metaType": "string",
-                    "metaValue": "2"
-                },
-                {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "-37.714 -187.722"
-                },
-                {
-                    "metaName": "zValue",
-                    "metaType": "string",
-                    "metaValue": "62.000000"
-                },
-                {
                     "metaName": "UILayout",
                     "metaType": "string",
                     "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"shards\"\n            },\n            {\n                \"port\": \"original_mesh\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"General\",\n                \"items\": [\n                    {\n                        \"port\": \"lock_input\"\n                    },\n                    {\n                        \"port\": \"cache_input\"\n                    },\n                    {\n                        \"port\": \"update_normals\"\n                    },\n                    {\n                        \"port\": \"hard_edge_angle\"\n                    },\n                    {\n                        \"port\": \"lock_output\"\n                    }\n                ],\n                \"unique_id\": 16\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Subdivide\",\n                \"items\": [\n                    {\n                        \"port\": \"divisions\"\n                    },\n                    {\n                        \"port\": \"crease_strength\"\n                    }\n                ],\n                \"unique_id\": 203\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Remesh\",\n                \"items\": [\n                    {\n                        \"port\": \"remesh\"\n                    },\n                    {\n                        \"condition\": {\n                            \"action\": \"enable\",\n                            \"op\": \"==\",\n                            \"port\": \"remesh\",\n                            \"value\": \"\"\n                        },\n                        \"group\": \"Enable based on: remesh\",\n                        \"items\": [\n                            {\n                                \"port\": \"max_length\"\n                            },\n                            {\n                                \"port\": \"collapse_threshold\"\n                            },\n                            {\n                                \"port\": \"preserve_exterior\"\n                            },\n                            {\n                                \"condition\": {\n                                    \"action\": \"hide\",\n                                    \"op\": \"==\",\n                                    \"port\": \"preserve_exterior\",\n                                    \"value\": \"\"\n                                },\n                                \"group\": \"Hide based on: preserve_exterior\",\n                                \"items\": [\n                                    {\n                                        \"port\": \"preserve_vertices\"\n                                    }\n                                ],\n                                \"unique_id\": 63\n                            },\n                            {\n                                \"port\": \"flip_iterations\"\n                            },\n                            {\n                                \"port\": \"flip_edges\"\n                            },\n                            {\n                                \"port\": \"lock_remesh\"\n                            }\n                        ],\n                        \"unique_id\": 25\n                    }\n                ],\n                \"unique_id\": 8\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Displacement\",\n                \"items\": [\n                    {\n                        \"port\": \"disp_enable\"\n                    },\n                    {\n                        \"port\": \"displacement\"\n                    },\n                    {\n                        \"condition\": {\n                            \"action\": \"enable\",\n                            \"op\": \"==\",\n                            \"port\": \"disp_enable\",\n                            \"value\": \"\"\n                        },\n                        \"group\": \"Enable based on: disp_enable\",\n                        \"items\": [\n                            {\n                                \"expanded\": false,\n                                \"group\": \"Scale\",\n                                \"items\": [\n                                    {\n                                        \"port\": \"disp_scale\"\n                                    },\n                                    {\n                                        \"port\": \"scale_external\"\n                                    },\n                                    {\n                                        \"port\": \"scale_perimeter\"\n                                    },\n                                    {\n                                        \"port\": \"scale_internal\"\n                                    }\n                                ],\n                                \"unique_id\": 88\n                            },\n                            {\n                                \"expanded\": false,\n                                \"group\": \"Project\",\n                                \"items\": [\n                                    {\n                                        \"port\": \"project_to_surface\"\n                                    },\n                                    {\n                                        \"port\": \"push_in_perimeter\"\n                                    },\n                                    {\n                                        \"port\": \"push_in_internal\"\n                                    }\n                                ],\n                                \"unique_id\": 116\n                            },\n                            {\n                                \"expanded\": false,\n                                \"group\": \"Post Displacement\",\n                                \"items\": [\n                                    {\n                                        \"port\": \"expand\"\n                                    },\n                                    {\n                                        \"port\": \"smooth\"\n                                    },\n                                    {\n                                        \"port\": \"smooth_weights\"\n                                    }\n                                ],\n                                \"unique_id\": 144\n                            }\n                        ],\n                        \"unique_id\": 172\n                    },\n                    {\n                        \"port\": \"use_raw_disp\"\n                    }\n                ],\n                \"unique_id\": 47\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Transform\",\n                \"items\": [\n                    {\n                        \"port\": \"translate_to_origin\"\n                    },\n                    {\n                        \"port\": \"scale\"\n                    }\n                ],\n                \"unique_id\": 34\n            }\n        ]\n    }\n}\n"
@@ -373,6 +357,21 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../../icons/hyuu_icon.png"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "433 -129"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "86.000000"
                 }
             ],
             "terminalStates": [
@@ -398,13 +397,13 @@
                     "portName": "disp_enable",
                     "portDirection": "input",
                     "portType": "bool",
-                    "portDefault": "true"
+                    "portDefault": "false"
                 },
                 {
                     "portName": "remesh",
                     "portDirection": "input",
                     "portType": "bool",
-                    "portDefault": "true"
+                    "portDefault": "false"
                 },
                 {
                     "portName": "lock_output",
@@ -593,7 +592,6 @@
             "compounds": [
                 {
                     "name": "cache",
-                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "ViewportRect",
@@ -751,7 +749,6 @@
                 },
                 {
                     "name": "remesh_shards",
-                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -933,13 +930,7 @@
                     "compounds": [
                         {
                             "name": "for_each",
-                            "uriImported": "stream:/stream",
                             "metadata": [
-                                {
-                                    "metaName": "icon",
-                                    "metaType": "string",
-                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
-                                },
                                 {
                                     "metaName": "icon",
                                     "metaType": "string",
@@ -1063,13 +1054,7 @@
                             "compounds": [
                                 {
                                     "name": "loop_while_true",
-                                    "uriImported": "stream:/stream",
                                     "metadata": [
-                                        {
-                                            "metaName": "icon",
-                                            "metaType": "string",
-                                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
-                                        },
                                         {
                                             "metaName": "icon",
                                             "metaType": "string",
@@ -2137,7 +2122,6 @@
                 },
                 {
                     "name": "transform",
-                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "ViewportRect",
@@ -2245,13 +2229,7 @@
                     "compounds": [
                         {
                             "name": "for_each",
-                            "uriImported": "stream:/stream",
                             "metadata": [
-                                {
-                                    "metaName": "icon",
-                                    "metaType": "string",
-                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
-                                },
                                 {
                                     "metaName": "icon",
                                     "metaType": "string",
@@ -2379,7 +2357,6 @@
                             "compounds": [
                                 {
                                     "name": "offset_geo_property",
-                                    "uriImported": "stream:/stream",
                                     "metadata": [
                                         {
                                             "metaName": "DisplayMode",
@@ -3193,7 +3170,6 @@
                 },
                 {
                     "name": "cache1",
-                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "ViewportRect",
@@ -3351,13 +3327,7 @@
                 },
                 {
                     "name": "displace",
-                    "uriImported": "stream:/stream",
                     "metadata": [
-                        {
-                            "metaName": "icon",
-                            "metaType": "string",
-                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
-                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -3785,13 +3755,7 @@
                     "compounds": [
                         {
                             "name": "for_each",
-                            "uriImported": "stream:/stream",
                             "metadata": [
-                                {
-                                    "metaName": "icon",
-                                    "metaType": "string",
-                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
-                                },
                                 {
                                     "metaName": "icon",
                                     "metaType": "string",
@@ -3988,13 +3952,7 @@
                             "compounds": [
                                 {
                                     "name": "do_while",
-                                    "uriImported": "stream:/stream",
                                     "metadata": [
-                                        {
-                                            "metaName": "icon",
-                                            "metaType": "string",
-                                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
-                                        },
                                         {
                                             "metaName": "icon",
                                             "metaType": "string",
@@ -4964,7 +4922,6 @@
                         },
                         {
                             "name": "sample_closest_normal",
-                            "uriImported": "stream:/stream",
                             "metadata": [
                                 {
                                     "metaName": "io_nodes",
@@ -5166,7 +5123,6 @@
                         },
                         {
                             "name": "chose_smooth_weights",
-                            "uriImported": "stream:/stream",
                             "metadata": [
                                 {
                                     "metaName": "io_nodes",
@@ -6353,7 +6309,6 @@
                 },
                 {
                     "name": "cache2",
-                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "ViewportRect",
@@ -6511,7 +6466,6 @@
                 },
                 {
                     "name": "orig_to_accel",
-                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -6643,7 +6597,6 @@
                 },
                 {
                     "name": "subd",
-                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "ViewportRect",
@@ -6759,7 +6712,6 @@
                     "compounds": [
                         {
                             "name": "subd_foreach_shard",
-                            "uriImported": "stream:/stream",
                             "metadata": [
                                 {
                                     "metaName": "ViewportRect",

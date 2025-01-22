@@ -39,6 +39,40 @@
             "itaniumTypeNameMangleName": "N4Hyuu6OpenCL6Memory11LocalBufferE"
         },
         {
+            "enumName": "Hyuu::OpenCL::Memory::Image::ChannelOrder",
+            "msTypeNameMangleName": "W4ChannelOrder@Image@Memory@OpenCL@Hyuu@@",
+            "itaniumTypeNameMangleName": "N4Hyuu6OpenCL6Memory5Image12ChannelOrderE",
+            "enumMembers": [
+                {
+                    "enumKey": "R",
+                    "enumValue": "0"
+                },
+                {
+                    "enumKey": "RG",
+                    "enumValue": "1"
+                },
+                {
+                    "enumKey": "RGB",
+                    "enumValue": "2"
+                },
+                {
+                    "enumKey": "RGBA",
+                    "enumValue": "3"
+                }
+            ]
+        },
+        {
+            "enumName": "Hyuu::OpenCL::Memory::Image::ChannelType",
+            "msTypeNameMangleName": "W4ChannelType@Image@Memory@OpenCL@Hyuu@@",
+            "itaniumTypeNameMangleName": "N4Hyuu6OpenCL6Memory5Image11ChannelTypeE",
+            "enumMembers": [
+                {
+                    "enumKey": "FLOAT",
+                    "enumValue": "0"
+                }
+            ]
+        },
+        {
             "className": "Hyuu::OpenCL::Memory::Image::Image1DBuffer",
             "msTypeNameMangleName": "VImage1DBuffer@Image@Memory@OpenCL@Hyuu@@",
             "itaniumTypeNameMangleName": "N4Hyuu6OpenCL6Memory5Image13Image1DBufferE"
@@ -3004,6 +3038,105 @@
             ]
         },
         {
+            "name": "Hyuu::OpenCL::Memory::Image::get_image_format",
+            "msMangle": "?get_image_format@Image@Memory@OpenCL@Hyuu@@YAXAEBVImage1DBuffer@1234@AEAW4ChannelOrder@1234@AEAW4ChannelType@1234@@Z",
+            "itaniumMangle": "_ZN4Hyuu6OpenCL6Memory5Image16get_image_formatERKNS2_13Image1DBufferERNS2_12ChannelOrderERNS2_11ChannelTypeE",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/opencl_icon.png"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "buffer",
+                    "portDirection": "input",
+                    "portType": "Hyuu::OpenCL::Memory::Image::Image1DBuffer",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "channel_order",
+                    "portDirection": "output",
+                    "portType": "Hyuu::OpenCL::Memory::Image::ChannelOrder",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "channel_type",
+                    "portDirection": "output",
+                    "portType": "Hyuu::OpenCL::Memory::Image::ChannelType",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::OpenCL::Memory::Image::get_image_format",
+            "msMangle": "?get_image_format@Image@Memory@OpenCL@Hyuu@@YAXAEBVImage2DBuffer@1234@AEAW4ChannelOrder@1234@AEAW4ChannelType@1234@@Z",
+            "itaniumMangle": "_ZN4Hyuu6OpenCL6Memory5Image16get_image_formatERKNS2_13Image2DBufferERNS2_12ChannelOrderERNS2_11ChannelTypeE",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/opencl_icon.png"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "buffer",
+                    "portDirection": "input",
+                    "portType": "Hyuu::OpenCL::Memory::Image::Image2DBuffer",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "channel_order",
+                    "portDirection": "output",
+                    "portType": "Hyuu::OpenCL::Memory::Image::ChannelOrder",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "channel_type",
+                    "portDirection": "output",
+                    "portType": "Hyuu::OpenCL::Memory::Image::ChannelType",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::OpenCL::Memory::Image::get_image_format",
+            "msMangle": "?get_image_format@Image@Memory@OpenCL@Hyuu@@YAXAEBVImage3DBuffer@1234@AEAW4ChannelOrder@1234@AEAW4ChannelType@1234@@Z",
+            "itaniumMangle": "_ZN4Hyuu6OpenCL6Memory5Image16get_image_formatERKNS2_13Image3DBufferERNS2_12ChannelOrderERNS2_11ChannelTypeE",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/opencl_icon.png"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "buffer",
+                    "portDirection": "input",
+                    "portType": "Hyuu::OpenCL::Memory::Image::Image3DBuffer",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "channel_order",
+                    "portDirection": "output",
+                    "portType": "Hyuu::OpenCL::Memory::Image::ChannelOrder",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "channel_type",
+                    "portDirection": "output",
+                    "portType": "Hyuu::OpenCL::Memory::Image::ChannelType",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
             "name": "Hyuu::OpenCL::Execute::build_program",
             "msMangle": "?build_program@Execute@OpenCL@Hyuu@@YAXAEBVString@Amino@@AEAV?$MutablePtr@VObject@Bifrost@@@5@AEAV45@AEA_N@Z",
             "itaniumMangle": "_ZN4Hyuu6OpenCL7Execute13build_programERKN5Amino6StringERNS2_10MutablePtrIN7Bifrost6ObjectEEERS3_Rb",
@@ -4121,6 +4254,27 @@
                     "portDirection": "output",
                     "portType": "Object",
                     "portConvention": "byReferenceToMutablePtr"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::OpenCL::Utilitiy::opencl_device_image_formats",
+            "msMangle": "?opencl_device_image_formats@Utilitiy@OpenCL@Hyuu@@YAXAEAV?$Ptr@V?$Array@VString@Amino@@@Amino@@@Amino@@@Z",
+            "itaniumMangle": "_ZN4Hyuu6OpenCL8Utilitiy27opencl_device_image_formatsERN5Amino3PtrINS2_5ArrayINS2_6StringEEEEE",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/opencl_icon.png"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "formats",
+                    "portDirection": "output",
+                    "portType": "array<string>",
+                    "portConvention": "byReferenceToPtr"
                 }
             ]
         }

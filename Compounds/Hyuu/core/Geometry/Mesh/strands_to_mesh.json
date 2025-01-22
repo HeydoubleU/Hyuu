@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "Hyuu::Geometry::Mesh::strands_to_mesh",
-            "uriImported": "stream:/stream",
+            "uriImported": "file:///strands_to_mesh.json",
             "metadata": [
                 {
                     "metaName": "io_nodes",
@@ -29,6 +29,16 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-663.842 -829"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -42,18 +52,11 @@
                                                 },
                                                 {
                                                     "metaName": "create_UVs"
+                                                },
+                                                {
+                                                    "metaName": "twist"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-663.842 -829"
-                                        },
-                                        {
-                                            "metaName": "zValue",
-                                            "metaType": "string",
-                                            "metaValue": "31.000000"
                                         }
                                     ]
                                 }
@@ -95,44 +98,9 @@
                     ]
                 },
                 {
-                    "metaName": "UILayout",
-                    "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"in_strands\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Conversion\",\n                \"items\": [\n                    {\n                        \"port\": \"properties\"\n                    },\n                    {\n                        \"port\": \"axis_segments\"\n                    },\n                    {\n                        \"port\": \"create_UVs\"\n                    }\n                ],\n                \"unique_id\": 5\n            }\n        ]\n    }\n}\n"
-                },
-                {
-                    "metaName": "PortExpandedState",
-                    "metadata": [
-                        {
-                            "metaName": "Conversion",
-                            "metaType": "string",
-                            "metaValue": "0"
-                        }
-                    ]
-                },
-                {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-645.843 -1541 2690.69 1101"
-                },
-                {
-                    "metaName": "DisplayMode",
-                    "metaType": "string",
-                    "metaValue": "2"
-                },
-                {
                     "metaName": "NodeWidthOffset",
                     "metaType": "string",
                     "metaValue": "0"
-                },
-                {
-                    "metaName": "zValue",
-                    "metaType": "string",
-                    "metaValue": "133.000000"
-                },
-                {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "954 -318"
                 },
                 {
                     "metaName": "documentation",
@@ -143,6 +111,41 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../../../icons/hyuu_icon.png"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-842.465 -1541 3084.93 1102"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-5267.97 -304.828"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "677.000000"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"in_strands\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Conversion\",\n                \"items\": [\n                    {\n                        \"port\": \"twist\"\n                    },\n                    {\n                        \"port\": \"properties\"\n                    },\n                    {\n                        \"port\": \"axis_segments\"\n                    },\n                    {\n                        \"port\": \"create_UVs\"\n                    }\n                ],\n                \"unique_id\": 5\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Conversion",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
                 }
             ],
             "terminalStates": [
@@ -188,12 +191,25 @@
                     "portDirection": "input",
                     "portType": "bool",
                     "portDefault": "false"
+                },
+                {
+                    "portName": "twist",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "0f",
+                    "metadata": [
+                        {
+                            "metaName": "TypeWranglingSuggestedTypes",
+                            "metaType": "string",
+                            "metaValue": "float, string, Core::Fields::ScalarField, array<float>, array<long>"
+                        }
+                    ]
                 }
             ],
             "compounds": [
                 {
                     "name": "for_each1",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "file:///strands_to_mesh.json",
                     "metadata": [
                         {
                             "metaName": "icon",
@@ -372,7 +388,7 @@
                 },
                 {
                     "name": "for_each2",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "file:///strands_to_mesh.json",
                     "metadata": [
                         {
                             "metaName": "icon",
@@ -521,7 +537,7 @@
                     "compounds": [
                         {
                             "name": "iterate2",
-                            "uriImported": "stream:/stream",
+                            "uriImported": "file:///strands_to_mesh.json",
                             "metadata": [
                                 {
                                     "metaName": "icon",
@@ -717,8 +733,13 @@
                             "compounds": [
                                 {
                                     "name": "iterate",
-                                    "uriImported": "stream:/stream",
+                                    "uriImported": "file:///strands_to_mesh.json",
                                     "metadata": [
+                                        {
+                                            "metaName": "icon",
+                                            "metaType": "string",
+                                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                        },
                                         {
                                             "metaName": "icon",
                                             "metaType": "string",
@@ -1488,7 +1509,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "36.000000"
+                            "metaValue": "34.000000"
                         }
                     ]
                 },
@@ -1515,7 +1536,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "39.000000"
+                            "metaValue": "37.000000"
                         }
                     ]
                 },
@@ -1536,7 +1557,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "42.000000"
+                            "metaValue": "39.000000"
                         }
                     ]
                 },
@@ -1557,7 +1578,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "41.000000"
+                            "metaValue": "38.000000"
                         }
                     ]
                 },
@@ -1578,7 +1599,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "34.000000"
+                            "metaValue": "33.000000"
                         }
                     ]
                 },
@@ -1599,7 +1620,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "44.000000"
+                            "metaValue": "40.000000"
                         }
                     ]
                 },
@@ -1620,7 +1641,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "37.000000"
+                            "metaValue": "35.000000"
                         }
                     ]
                 },
@@ -1640,14 +1661,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "173.101 -1372.52"
-                        },
-                        {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "38.000000"
+                            "metaValue": "41.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "173.101 -1373.64"
                         }
                     ]
                 }
@@ -1724,6 +1745,10 @@
                 {
                     "source": "strands_to_transforms.point_transform",
                     "target": "for_each2.point_transform"
+                },
+                {
+                    "source": ".twist",
+                    "target": "strands_to_transforms.twist"
                 }
             ],
             "values": [
@@ -1761,6 +1786,11 @@
                     "valueName": "for_each2.create_UVs",
                     "valueType": "bool",
                     "value": "true"
+                },
+                {
+                    "valueName": "strands_to_transforms.twist",
+                    "valueType": "float",
+                    "value": "0f"
                 }
             ],
             "reservedNodeNames": [

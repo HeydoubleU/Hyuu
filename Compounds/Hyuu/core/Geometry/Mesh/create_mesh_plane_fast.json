@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "Hyuu::Geometry::Mesh::create_mesh_plane_fast",
-            "uriImported": "stream:/stream",
+            "uriImported": "file:///create_mesh_plane_fast.json",
             "metadata": [
                 {
                     "metaName": "io_nodes",
@@ -214,7 +214,12 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-2906.01 -296.44 2591.87 828.041"
+                    "metaValue": "-1922.9 -393.41 2593 1320.5"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-2464 -371"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -222,14 +227,9 @@
                     "metaValue": "2"
                 },
                 {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "-1070 -224"
-                },
-                {
                     "metaName": "zValue",
                     "metaType": "string",
-                    "metaValue": "74.000000"
+                    "metaValue": "157.000000"
                 }
             ],
             "ports": [
@@ -310,7 +310,7 @@
             "compounds": [
                 {
                     "name": "connectivity",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "file:///create_mesh_plane_fast.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -412,8 +412,18 @@
                     "compounds": [
                         {
                             "name": "for_each1",
-                            "uriImported": "stream:/stream",
+                            "uriImported": "file:///create_mesh_plane_fast.json",
                             "metadata": [
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                },
                                 {
                                     "metaName": "icon",
                                     "metaType": "string",
@@ -538,7 +548,7 @@
                             "compounds": [
                                 {
                                     "name": "switch_on_index",
-                                    "uriImported": "stream:/stream",
+                                    "uriImported": "file:///create_mesh_plane_fast.json",
                                     "metadata": [
                                         {
                                             "metaName": "DisplayMode",
@@ -1587,7 +1597,7 @@
                 },
                 {
                     "name": "construct_mesh",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "file:///create_mesh_plane_fast.json",
                     "metadata": [
                         {
                             "metaName": "documentation",
@@ -2198,7 +2208,7 @@
                 },
                 {
                     "name": "transform_points",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "file:///create_mesh_plane_fast.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -2397,7 +2407,7 @@
                     "compounds": [
                         {
                             "name": "to_v3",
-                            "uriImported": "stream:/stream",
+                            "uriImported": "file:///create_mesh_plane_fast.json",
                             "metadata": [
                                 {
                                     "metaName": "io_nodes",
@@ -3053,7 +3063,7 @@
                 },
                 {
                     "name": "cell_divisor",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "file:///create_mesh_plane_fast.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -3260,7 +3270,7 @@
                 },
                 {
                     "name": "mode_and_clamp",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "file:///create_mesh_plane_fast.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -3534,8 +3544,18 @@
                 },
                 {
                     "name": "compute_positions1",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "file:///create_mesh_plane_fast.json",
                     "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                        },
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -3923,7 +3943,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "52.000000"
+                            "metaValue": "51.000000"
                         }
                     ]
                 },
@@ -4186,6 +4206,27 @@
                             "metaValue": "48.000000"
                         }
                     ]
+                },
+                {
+                    "nodeName": "to_unsigned_int",
+                    "nodeType": "Core::Type_Conversion::to_unsigned_int",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "54.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1166.29 418.557"
+                        }
+                    ]
                 }
             ],
             "connections": [
@@ -4322,10 +4363,6 @@
                     "target": "set_property.object"
                 },
                 {
-                    "source": "mode_and_clamp.output",
-                    "target": "set_property.value"
-                },
-                {
                     "source": "vector2_to_scalar1.y",
                     "target": "scalar_to_vector3.y"
                 },
@@ -4336,6 +4373,14 @@
                 {
                     "source": "set_property.out_object",
                     "target": "if.false_case"
+                },
+                {
+                    "source": "mode_and_clamp.output",
+                    "target": "to_unsigned_int.from"
+                },
+                {
+                    "source": "to_unsigned_int.unsigned_int",
+                    "target": "set_property.value"
                 }
             ],
             "values": [

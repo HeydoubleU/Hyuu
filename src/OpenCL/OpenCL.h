@@ -15,6 +15,7 @@ namespace Hyuu {
 		namespace Utilitiy {
 			//HYUU_DECL bool opencl_restart() AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");  // doesn't work it seems, needs more investigation
 			HYUU_DECL void opencl_device_info(Amino::MutablePtr<Bifrost::Object>& device_info) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void opencl_device_image_formats(ArrayPtr<Amino::String>& formats) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 		}  // namespace Utilitiy
 
 		namespace Memory {
@@ -115,6 +116,19 @@ namespace Hyuu {
 
 			namespace Image {
 
+				enum class AMINO_ANNOTATE("Amino::Enum") ChannelOrder : int
+				{
+					R = 0,
+					RG = 1,
+					RGB = 2,
+					RGBA = 3
+				};
+
+				enum class AMINO_ANNOTATE("Amino::Enum") ChannelType : int
+				{
+					FLOAT = 0  // can only make float images for now
+				};
+
 				class AMINO_ANNOTATE("Amino::Class") HYUU_DECL Image1DBuffer {
 				public:
 					cl::Image1D m_climage;
@@ -166,7 +180,7 @@ namespace Hyuu {
 					~Image2DBuffer() = default;
 				};
 
-				HYUU_DECL int getCopyCount(const Image2DBuffer& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL int getCopyCount(const Image2DBuffer& buffer) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");  // TODO: remove this
 
 				class AMINO_ANNOTATE("Amino::Class") HYUU_DECL Image3DBuffer {
 				public:
@@ -290,6 +304,11 @@ namespace Hyuu {
 				HYUU_DECL void read_image_buffer(const Image3DBuffer& buffer, const float2& type, ArrayPtr<float2>& data, uint3& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 				HYUU_DECL void read_image_buffer(const Image3DBuffer& buffer, const float3& type, ArrayPtr<float3>& data, uint3& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 				HYUU_DECL void read_image_buffer(const Image3DBuffer& buffer, const float4& type, ArrayPtr<float4>& data, uint3& dimensions) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+
+				// Get image format
+				HYUU_DECL void get_image_format(const Image1DBuffer& buffer, ChannelOrder& channel_order, ChannelType& channel_type) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void get_image_format(const Image2DBuffer& buffer, ChannelOrder& channel_order, ChannelType& channel_type) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+				HYUU_DECL void get_image_format(const Image3DBuffer& buffer, ChannelOrder& channel_order, ChannelType& channel_type) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 
 			}  // namespace Image
 

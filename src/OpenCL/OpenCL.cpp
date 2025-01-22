@@ -175,6 +175,59 @@ void Hyuu::OpenCL::Utilitiy::opencl_device_info(Amino::MutablePtr<Bifrost::Objec
 	device_info->setProperty("device_specs", device_specs.toImmutable());
 }
 
+Amino::String formatToString(cl::ImageFormat format) {
+	Amino::String channel_order;
+	Amino::String channel_data_type;
+
+	switch (format.image_channel_order) {
+	case CL_R: channel_order = "CL_R"; break;
+	case CL_A: channel_order = "CL_A"; break;
+	case CL_RG: channel_order = "CL_RG"; break;
+	case CL_RA: channel_order = "CL_RA"; break;
+	case CL_RGB: channel_order = "CL_RGB"; break;
+	case CL_RGBA: channel_order = "CL_RGBA"; break;
+	case CL_BGRA: channel_order = "CL_BGRA"; break;
+	case CL_ARGB: channel_order = "CL_ARGB"; break;
+	case CL_INTENSITY: channel_order = "CL_INTENSITY"; break;
+	case CL_LUMINANCE: channel_order = "CL_LUMINANCE"; break;
+	default: channel_order = "UNKNOWN"; break;
+	}
+
+	switch (format.image_channel_data_type) {
+	case CL_SNORM_INT8: channel_data_type = "CL_SNORM_INT8"; break;
+	case CL_SNORM_INT16: channel_data_type = "CL_SNORM_INT16"; break;
+	case CL_UNORM_INT8: channel_data_type = "CL_UNORM_INT8"; break;
+	case CL_UNORM_INT16: channel_data_type = "CL_UNORM_INT16"; break;
+	case CL_UNORM_SHORT_565: channel_data_type = "CL_UNORM_SHORT_565"; break;
+	case CL_UNORM_SHORT_555: channel_data_type = "CL_UNORM_SHORT_555"; break;
+	case CL_UNORM_INT_101010: channel_data_type = "CL_UNORM_INT_101010"; break;
+	case CL_SIGNED_INT8: channel_data_type = "CL_SIGNED_INT8"; break;
+	case CL_SIGNED_INT16: channel_data_type = "CL_SIGNED_INT16"; break;
+	case CL_SIGNED_INT32: channel_data_type = "CL_SIGNED_INT32"; break;
+	case CL_UNSIGNED_INT8: channel_data_type = "CL_UNSIGNED_INT8"; break;
+	case CL_UNSIGNED_INT16: channel_data_type = "CL_UNSIGNED_INT16"; break;
+	case CL_UNSIGNED_INT32: channel_data_type = "CL_UNSIGNED_INT32"; break;
+	case CL_HALF_FLOAT: channel_data_type = "CL_HALF_FLOAT"; break;
+	case CL_FLOAT: channel_data_type = "CL_FLOAT"; break;
+	default: channel_data_type = "UNKNOWN"; break;
+	}
+
+	return channel_order + Amino::String(" ") + channel_data_type;
+}
+
+void Hyuu::OpenCL::Utilitiy::opencl_device_image_formats(ArrayPtr<Amino::String>& formats) {
+	std::vector<cl::ImageFormat> _formats;
+	CL_CONTEXT.getSupportedImageFormats(CL_MEM_READ_WRITE, CL_MEM_OBJECT_IMAGE2D, &_formats);
+
+	auto _data = Array<Amino::String>();
+
+	for (auto& format : _formats) {
+		_data.push_back(formatToString(format));
+	}
+
+	formats = Amino::newClassPtr<Array<Amino::String>>(std::move(_data));
+}
+
 
 // Memory::Buffer ======================================================================================================
 
@@ -519,6 +572,62 @@ void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image3DBuffer& buffer,
 
 // ---------------------------------------------------------------------------------------------------------------------
 
+// Get Channel Format --------------------------------------------------------------------------------------------------
+void convertFormat(const cl_image_format cl_image_format, Hyuu::OpenCL::Memory::Image::ChannelOrder& channel_order, Hyuu::OpenCL::Memory::Image::ChannelType& channel_type)
+{
+	switch (cl_image_format.image_channel_order) {
+	case CL_R:
+		channel_order = Hyuu::OpenCL::Memory::Image::ChannelOrder::R;
+		break;
+	case CL_RG:
+		channel_order = Hyuu::OpenCL::Memory::Image::ChannelOrder::RG;
+		break;
+	case CL_RGB:
+		channel_order = Hyuu::OpenCL::Memory::Image::ChannelOrder::RGB;
+		break;
+	case CL_RGBA:
+		channel_order = Hyuu::OpenCL::Memory::Image::ChannelOrder::RGBA;
+		break;
+	default:
+		channel_order = Hyuu::OpenCL::Memory::Image::ChannelOrder::R;
+		break;
+	}
+
+	channel_type = Hyuu::OpenCL::Memory::Image::ChannelType::FLOAT;  // only supported type at the moment
+}
+
+void Hyuu::OpenCL::Memory::Image::get_image_format(const Image1DBuffer& buffer, ChannelOrder& channel_order, ChannelType& channel_type) {
+	if (!buffer.valid) {
+		channel_order = ChannelOrder::R;
+		channel_type = ChannelType::FLOAT;
+		return;
+	}
+
+	auto cl_image_format = buffer.m_climage.getImageInfo<CL_IMAGE_FORMAT>();
+	convertFormat(cl_image_format, channel_order, channel_type);
+}
+
+void Hyuu::OpenCL::Memory::Image::get_image_format(const Image2DBuffer& buffer, ChannelOrder& channel_order, ChannelType& channel_type) {
+	if (!buffer.valid) {
+		channel_order = ChannelOrder::R;
+		channel_type = ChannelType::FLOAT;
+		return;
+	}
+
+	auto cl_image_format = buffer.m_climage.getImageInfo<CL_IMAGE_FORMAT>();
+	convertFormat(cl_image_format, channel_order, channel_type);
+}
+
+void Hyuu::OpenCL::Memory::Image::get_image_format(const Image3DBuffer& buffer, ChannelOrder& channel_order, ChannelType& channel_type) {
+	if (!buffer.valid) {
+		channel_order = ChannelOrder::R;
+		channel_type = ChannelType::FLOAT;
+		return;
+	}
+
+	auto cl_image_format = buffer.m_climage.getImageInfo<CL_IMAGE_FORMAT>();
+	convertFormat(cl_image_format, channel_order, channel_type);
+}
 
 // Program/Kernel ======================================================================================================
 
