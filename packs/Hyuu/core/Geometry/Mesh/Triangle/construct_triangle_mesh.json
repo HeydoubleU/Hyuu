@@ -1,0 +1,436 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Geometry::Mesh::Triangle::construct_triangle_mesh",
+            "uriImported": "stream:/stream",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "point_position"
+                                                },
+                                                {
+                                                    "metaName": "face_vertex"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-588 -61"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "37.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "443.503 -53.8122"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "mesh"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-853.252 -754.622 2337.47 1279.42"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "394.792 -69.7581"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "106.000000"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "mesh",
+                    "portDirection": "output",
+                    "portType": "Object"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "triangle_mesh_fo",
+                    "uriImported": "stream:/stream",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "face_vertex"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "sequence"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "face_vertex",
+                            "portDirection": "input",
+                            "portType": "array<uint>"
+                        },
+                        {
+                            "portName": "sequence",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "array_size",
+                            "nodeType": "Core::Array::array_size",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "82.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "240.142 76.2007"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "divide",
+                            "nodeType": "Core::Math::divide",
+                            "multiInPortNames": [
+                                "size",
+                                "output1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "87.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "495.598 108.852"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "increment",
+                            "nodeType": "Core::Math::increment",
+                            "metadata": [
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "810 130"
+                                },
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "88.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "sequence_array",
+                            "nodeType": "Core::Array::sequence_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "93.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1133.5 79.3223"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value",
+                            "valueType": "long",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "95.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "233.001 235.118"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "array_size.size",
+                            "target": "divide.first.size"
+                        },
+                        {
+                            "source": "divide.output",
+                            "target": "increment.value"
+                        },
+                        {
+                            "source": "increment.output",
+                            "target": "sequence_array.size"
+                        },
+                        {
+                            "source": "sequence_array.sequence",
+                            "target": ".sequence"
+                        },
+                        {
+                            "source": "value.output",
+                            "target": "divide.first.output1"
+                        },
+                        {
+                            "source": ".face_vertex",
+                            "target": "array_size.array"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "increment.by",
+                            "valueType": "char",
+                            "value": "1"
+                        },
+                        {
+                            "valueName": "sequence_array.step",
+                            "valueType": "uint",
+                            "value": "3U"
+                        },
+                        {
+                            "valueName": "value.value",
+                            "valueType": "long",
+                            "value": "3"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "triangle_mesh_fo",
+                    "nodeType": "triangle_mesh_fo",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-175.053 67.064"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "construct_mesh",
+                    "nodeType": "Geometry::Mesh::construct_mesh",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "106.957 -76.15"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".point_position",
+                    "target": "construct_mesh.point_position"
+                },
+                {
+                    "source": "triangle_mesh_fo.sequence",
+                    "target": "construct_mesh.face_offset"
+                },
+                {
+                    "source": ".face_vertex",
+                    "target": "construct_mesh.face_vertex"
+                },
+                {
+                    "source": ".face_vertex",
+                    "target": "triangle_mesh_fo.face_vertex"
+                },
+                {
+                    "source": "construct_mesh.mesh",
+                    "target": ".mesh"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "triangle_mesh_fo.face_vertex",
+                    "valueType": "array<uint>",
+                    "value": []
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

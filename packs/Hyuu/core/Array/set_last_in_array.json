@@ -1,0 +1,201 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Array::set_last_in_array",
+            "uriImported": "stream:/ikTail_solver",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "array"
+                                                },
+                                                {
+                                                    "metaName": "last"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "out_array"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "275.000000"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "41.5922 -1699.46"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "array",
+                    "portDirection": "input",
+                    "portDefaultType": "array<float>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "last",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "out_array",
+                    "portDirection": "output"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "array_size",
+                    "nodeType": "Core::Array::array_size",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "260.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-153.724 -1354.85"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "decrement",
+                    "nodeType": "Core::Math::decrement",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "261.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "130.024 -1360.22"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_in_array",
+                    "nodeType": "Core::Array::set_in_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "263.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "436.431 -1378.92"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "array_size.size",
+                    "target": "decrement.value"
+                },
+                {
+                    "source": "decrement.output",
+                    "target": "set_in_array.index"
+                },
+                {
+                    "source": "set_in_array.out_array",
+                    "target": ".out_array"
+                },
+                {
+                    "source": ".array",
+                    "target": "array_size.array"
+                },
+                {
+                    "source": ".array",
+                    "target": "set_in_array.array"
+                },
+                {
+                    "source": ".last",
+                    "target": "set_in_array.value"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "decrement.by",
+                    "valueType": "char",
+                    "value": "1"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

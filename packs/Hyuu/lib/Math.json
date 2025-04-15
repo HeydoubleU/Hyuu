@@ -14,7 +14,6 @@
             "name": "Hyuu::Math::sort_members",
             "msMangle": "?sort_members@Math@Hyuu@@YAXAEBUfloat2@1Bifrost@@AEAU314@@Z",
             "itaniumMangle": "_ZN4Hyuu4Math12sort_membersERKN7Bifrost4Math6float2ERS3_",
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "input",
@@ -34,7 +33,6 @@
             "name": "Hyuu::Math::sort_members",
             "msMangle": "?sort_members@Math@Hyuu@@YAXAEBUfloat3@1Bifrost@@AEAU314@@Z",
             "itaniumMangle": "_ZN4Hyuu4Math12sort_membersERKN7Bifrost4Math6float3ERS3_",
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "input",
@@ -54,7 +52,6 @@
             "name": "Hyuu::Math::sort_members",
             "msMangle": "?sort_members@Math@Hyuu@@YAXAEBUfloat4@1Bifrost@@AEAU314@@Z",
             "itaniumMangle": "_ZN4Hyuu4Math12sort_membersERKN7Bifrost4Math6float4ERS3_",
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "input",
@@ -74,7 +71,6 @@
             "name": "Hyuu::Math::sort_members",
             "msMangle": "?sort_members@Math@Hyuu@@YAXAEBUlong2@1Bifrost@@AEAU314@@Z",
             "itaniumMangle": "_ZN4Hyuu4Math12sort_membersERKN7Bifrost4Math5long2ERS3_",
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "input",
@@ -94,7 +90,6 @@
             "name": "Hyuu::Math::sort_members",
             "msMangle": "?sort_members@Math@Hyuu@@YAXAEBUlong3@1Bifrost@@AEAU314@@Z",
             "itaniumMangle": "_ZN4Hyuu4Math12sort_membersERKN7Bifrost4Math5long3ERS3_",
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "input",
@@ -114,7 +109,6 @@
             "name": "Hyuu::Math::sort_members",
             "msMangle": "?sort_members@Math@Hyuu@@YAXAEBUlong4@1Bifrost@@AEAU314@@Z",
             "itaniumMangle": "_ZN4Hyuu4Math12sort_membersERKN7Bifrost4Math5long4ERS3_",
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "input",
@@ -131,10 +125,83 @@
             ]
         },
         {
+            "name": "Hyuu::Math::sphere_intersects_aabb",
+            "msMangle": "?sphere_intersects_aabb@Math@Hyuu@@YA_NAEBUfloat3@1Bifrost@@AEBM00@Z",
+            "itaniumMangle": "_ZN4Hyuu4Math22sphere_intersects_aabbERKN7Bifrost4Math6float3ERKfS5_S5_",
+            "ports": [
+                {
+                    "portName": "center",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "radius",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "box_min",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "box_max",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "output",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReturnValue"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Math::sphere_to_aabb",
+            "msMangle": "?sphere_to_aabb@Math@Hyuu@@YA_NAEBUfloat3@1Bifrost@@AEBMAEAU314@2@Z",
+            "itaniumMangle": "_ZN4Hyuu4Math14sphere_to_aabbERKN7Bifrost4Math6float3ERKfRS3_S8_",
+            "ports": [
+                {
+                    "portName": "center",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "radius",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "output",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReturnValue"
+                },
+                {
+                    "portName": "box_min",
+                    "portDirection": "output",
+                    "portType": "Math::float3",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "box_max",
+                    "portDirection": "output",
+                    "portType": "Math::float3",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
             "name": "Hyuu::Random::random_nondeterminstic",
             "msMangle": "?random_nondeterminstic@Random@Hyuu@@YAXAEBMAEAM@Z",
             "itaniumMangle": "_ZN4Hyuu6Random22random_nondeterminsticERKfRf",
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "type",
@@ -154,7 +221,6 @@
             "name": "Hyuu::Random::random_nondeterminstic",
             "msMangle": "?random_nondeterminstic@Random@Hyuu@@YAXAEB_JAEA_J@Z",
             "itaniumMangle": "_ZN4Hyuu6Random22random_nondeterminsticERKxRx",
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "type",
@@ -174,7 +240,6 @@
             "name": "Hyuu::Random::random_nondeterminstic",
             "msMangle": "?random_nondeterminstic@Random@Hyuu@@YAXAEBIAEAI@Z",
             "itaniumMangle": "_ZN4Hyuu6Random22random_nondeterminsticERKjRj",
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "type",
@@ -194,7 +259,6 @@
             "name": "Hyuu::Random::random_nondeterminstic",
             "msMangle": "?random_nondeterminstic@Random@Hyuu@@YAXAEBHAEAH@Z",
             "itaniumMangle": "_ZN4Hyuu6Random22random_nondeterminsticERKiRi",
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "type",

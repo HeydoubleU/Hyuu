@@ -1,0 +1,327 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Geometry::Mesh::Triangle::compute_triangle_normal",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "face_id"
+                                                },
+                                                {
+                                                    "metaName": "point_position"
+                                                },
+                                                {
+                                                    "metaName": "face_vertex"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "40.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1264.79 -28.9019"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "41.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "562.419 -183.509"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "normal"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-925.524 -479.139 1801.12 976.172"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-390.307 -179.946"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "56.000000"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "face_id",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "0"
+                },
+                {
+                    "portName": "point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "normal",
+                    "portDirection": "output",
+                    "portType": "Math::float3"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "cross",
+                    "nodeType": "Core::Math::cross",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-98.136 -183.366"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_triangle_vertices",
+                    "nodeType": "Hyuu::Geometry::Mesh::Triangle::get_triangle_vertices",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-816.141 -170.218"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "normalize",
+                    "nodeType": "Core::Math::normalize",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "216.864 -183.366"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "subtract",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "p1",
+                        "p0"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-434.632 -347.464"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "subtract1",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "p1",
+                        "p0"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-442.285 -147.836"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "subtract.output",
+                    "target": "cross.first"
+                },
+                {
+                    "source": "subtract1.output",
+                    "target": "cross.second"
+                },
+                {
+                    "source": "cross.cross_product",
+                    "target": "normalize.value"
+                },
+                {
+                    "source": ".face_id",
+                    "target": "get_triangle_vertices.face_id"
+                },
+                {
+                    "source": "get_triangle_vertices.p0",
+                    "target": "subtract.first.p0"
+                },
+                {
+                    "source": "get_triangle_vertices.p0",
+                    "target": "subtract1.first.p0"
+                },
+                {
+                    "source": "get_triangle_vertices.p1",
+                    "target": "subtract.first.p1"
+                },
+                {
+                    "source": "get_triangle_vertices.p2",
+                    "target": "subtract1.first.p1"
+                },
+                {
+                    "source": ".face_vertex",
+                    "target": "get_triangle_vertices.face_vertex"
+                },
+                {
+                    "source": ".point_position",
+                    "target": "get_triangle_vertices.point_position"
+                },
+                {
+                    "source": "normalize.normalized",
+                    "target": ".normal"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "get_triangle_vertices.face_id",
+                    "valueType": "long",
+                    "value": "0"
+                },
+                {
+                    "valueName": "get_triangle_vertices.point_position",
+                    "valueType": "array<Math::float3>",
+                    "value": []
+                },
+                {
+                    "valueName": "get_triangle_vertices.face_vertex",
+                    "valueType": "array<uint>",
+                    "value": []
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

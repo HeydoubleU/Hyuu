@@ -1,0 +1,443 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Utility::Time::check_time_property",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-773 -348"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "object"
+                                                },
+                                                {
+                                                    "metaName": "start_frame"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1117.78 -673.557"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "32.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "elapsed"
+                                                },
+                                                {
+                                                    "metaName": "is_start_frame"
+                                                },
+                                                {
+                                                    "metaName": "delta_seconds"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-743.201 -1124.12 2067.1 1159"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-499.267 -611.822"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "38.000000"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "object",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "start_frame",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0f"
+                },
+                {
+                    "portName": "elapsed",
+                    "portDirection": "output",
+                    "portType": "bool"
+                },
+                {
+                    "portName": "is_start_frame",
+                    "portDirection": "output",
+                    "portType": "bool"
+                },
+                {
+                    "portName": "delta_seconds",
+                    "portDirection": "output",
+                    "portType": "float"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "get_property",
+                    "nodeType": "Core::Object::get_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "NodeWidthOffset",
+                            "metaType": "string",
+                            "metaValue": "-254.505"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "63.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-486.35 -980.666"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "time",
+                    "nodeType": "Core::Time::time",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-506.255 57.8659"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "subtract",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "seconds",
+                        "value"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "48.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-83.901 -395.06"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "equal",
+                    "nodeType": "Core::Logic::equal",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "47.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-45.9153 -129.198"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "greater",
+                    "nodeType": "Core::Logic::greater",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-84.9388 -823.363"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "and_conditional",
+                    "nodeType": "Hyuu::Logic::and_conditional",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "57.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "436.31 -980.455"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "49.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "270.097 -457.942"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "greater_or_equal",
+                    "nodeType": "Core::Logic::greater_or_equal",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "50.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-78.7631 -629.542"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "and",
+                    "nodeType": "Core::Logic::and",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "61.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "194.309 -769.573"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".object",
+                    "target": "get_property.object"
+                },
+                {
+                    "source": "time.seconds",
+                    "target": "subtract.first.seconds"
+                },
+                {
+                    "source": "get_property.value",
+                    "target": "subtract.first.value"
+                },
+                {
+                    "source": "equal.output",
+                    "target": ".is_start_frame"
+                },
+                {
+                    "source": "time.seconds",
+                    "target": "greater.first"
+                },
+                {
+                    "source": "get_property.value",
+                    "target": "greater.second"
+                },
+                {
+                    "source": "get_property.found_property",
+                    "target": "and_conditional.first"
+                },
+                {
+                    "source": "time.frame",
+                    "target": "equal.second"
+                },
+                {
+                    "source": ".start_frame",
+                    "target": "equal.first"
+                },
+                {
+                    "source": "get_property.found_property",
+                    "target": "if.condition"
+                },
+                {
+                    "source": "subtract.output",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".delta_seconds"
+                },
+                {
+                    "source": "time.seconds",
+                    "target": "greater_or_equal.first"
+                },
+                {
+                    "source": ".start_frame",
+                    "target": "greater_or_equal.second"
+                },
+                {
+                    "source": "greater.output",
+                    "target": "and.first"
+                },
+                {
+                    "source": "greater_or_equal.output",
+                    "target": "and.second"
+                },
+                {
+                    "source": "and.output",
+                    "target": "and_conditional.second"
+                },
+                {
+                    "source": "and_conditional.output",
+                    "target": ".elapsed"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "get_property.default_and_type",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "get_property.key",
+                    "valueType": "string",
+                    "value": "time"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

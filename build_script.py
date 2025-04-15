@@ -1,7 +1,7 @@
 import os, shutil
 
 source_path = os.path.expanduser("~") + "/source"
-compounds_path = "A:/TeamEnvironment/Compounds"
+compounds_path = f"{source_path}/repos/HeydoubleU/Hyuu/packs"
 source_folder = "Hyuu"
 lib_name = "Hyuu"
 
