@@ -15,11 +15,6 @@
             "itaniumTypeNameMangleName": "N4Hyuu10Containers3Map7HashMapE"
         },
         {
-            "className": "Hyuu::Containers::Map::IndexMap",
-            "msTypeNameMangleName": "VIndexMap@Map@Containers@Hyuu@@",
-            "itaniumTypeNameMangleName": "N4Hyuu10Containers3Map8IndexMapE"
-        },
-        {
             "className": "Hyuu::Containers::Set::HashSet",
             "msTypeNameMangleName": "VHashSet@Set@Containers@Hyuu@@",
             "itaniumTypeNameMangleName": "N4Hyuu10Containers3Set7HashSetE"
@@ -35,25 +30,6 @@
                     "portName": "container",
                     "portDirection": "input",
                     "portType": "Hyuu::Containers::Map::HashMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "size",
-                    "portDirection": "output",
-                    "portType": "long",
-                    "portConvention": "byReference"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::container_size",
-            "msMangle": "?container_size@Containers@Hyuu@@YAXAEBVIndexMap@Map@12@AEA_J@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers14container_sizeERKNS0_3Map8IndexMapERx",
-            "ports": [
-                {
-                    "portName": "container",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
                     "portConvention": "byValue"
                 },
                 {
@@ -92,31 +68,6 @@
                     "portName": "container",
                     "portDirection": "input",
                     "portType": "Hyuu::Containers::Map::HashMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "hash",
-                    "portDirection": "input",
-                    "portType": "ulong",
-                    "portConvention": "byReference"
-                },
-                {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "bool",
-                    "portConvention": "byReturnValue"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::container_contains",
-            "msMangle": "?container_contains@Containers@Hyuu@@YA_NAEBVIndexMap@Map@12@AEB_K@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers18container_containsERKNS0_3Map8IndexMapERKy",
-            "ports": [
-                {
-                    "portName": "container",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
                     "portConvention": "byValue"
                 },
                 {
@@ -179,25 +130,6 @@
         },
         {
             "name": "Hyuu::Containers::container_empty",
-            "msMangle": "?container_empty@Containers@Hyuu@@YA_NAEBVIndexMap@Map@12@@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers15container_emptyERKNS0_3Map8IndexMapE",
-            "ports": [
-                {
-                    "portName": "container",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "bool",
-                    "portConvention": "byReturnValue"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::container_empty",
             "msMangle": "?container_empty@Containers@Hyuu@@YA_NAEBVHashSet@Set@12@@Z",
             "itaniumMangle": "_ZN4Hyuu10Containers15container_emptyERKNS0_3Set7HashSetE",
             "ports": [
@@ -224,25 +156,6 @@
                     "portName": "value",
                     "portDirection": "input",
                     "portType": "ulong",
-                    "portConvention": "byReference"
-                },
-                {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "ulong",
-                    "portConvention": "byReturnValue"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::hash_value",
-            "msMangle": "?hash_value@Containers@Hyuu@@YA_KAEBH@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers10hash_valueERKi",
-            "ports": [
-                {
-                    "portName": "value",
-                    "portDirection": "input",
-                    "portType": "int",
                     "portConvention": "byReference"
                 },
                 {
@@ -369,63 +282,6 @@
         },
         {
             "name": "Hyuu::Containers::hash_value",
-            "msMangle": "?hash_value@Containers@Hyuu@@YA_KAEBUint2@Math@Bifrost@@@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers10hash_valueERKN7Bifrost4Math4int2E",
-            "ports": [
-                {
-                    "portName": "value",
-                    "portDirection": "input",
-                    "portType": "Math::int2",
-                    "portConvention": "byReference"
-                },
-                {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "ulong",
-                    "portConvention": "byReturnValue"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::hash_value",
-            "msMangle": "?hash_value@Containers@Hyuu@@YA_KAEBUint3@Math@Bifrost@@@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers10hash_valueERKN7Bifrost4Math4int3E",
-            "ports": [
-                {
-                    "portName": "value",
-                    "portDirection": "input",
-                    "portType": "Math::int3",
-                    "portConvention": "byReference"
-                },
-                {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "ulong",
-                    "portConvention": "byReturnValue"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::hash_value",
-            "msMangle": "?hash_value@Containers@Hyuu@@YA_KAEBUint4@Math@Bifrost@@@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers10hash_valueERKN7Bifrost4Math4int4E",
-            "ports": [
-                {
-                    "portName": "value",
-                    "portDirection": "input",
-                    "portType": "Math::int4",
-                    "portConvention": "byReference"
-                },
-                {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "ulong",
-                    "portConvention": "byReturnValue"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::hash_value",
             "msMangle": "?hash_value@Containers@Hyuu@@YA_KAEBUlong2@Math@Bifrost@@@Z",
             "itaniumMangle": "_ZN4Hyuu10Containers10hash_valueERKN7Bifrost4Math5long2E",
             "ports": [
@@ -514,38 +370,6 @@
             ]
         },
         {
-            "name": "Hyuu::Containers::Map::map_set",
-            "msMangle": "?map_set@Map@Containers@Hyuu@@YAXAEAVIndexMap@123@AEB_KAEBI@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers3Map7map_setERNS1_8IndexMapERKyRKj",
-            "ports": [
-                {
-                    "portName": "map",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "map_out",
-                    "portDirection": "output",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portAssociated": "map",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "hash",
-                    "portDirection": "input",
-                    "portType": "ulong",
-                    "portConvention": "byReference"
-                },
-                {
-                    "portName": "value",
-                    "portDirection": "input",
-                    "portType": "uint",
-                    "portConvention": "byReference"
-                }
-            ]
-        },
-        {
             "name": "Hyuu::Containers::Map::map_get",
             "msMangle": "?map_get@Map@Containers@Hyuu@@YA_NAEBVHashMap@123@AEB_KAEAVAny@Amino@@@Z",
             "itaniumMangle": "_ZN4Hyuu10Containers3Map7map_getERKNS1_7HashMapERKyRN5Amino3AnyE",
@@ -572,37 +396,6 @@
                     "portName": "value",
                     "portDirection": "output",
                     "portType": "any",
-                    "portConvention": "byReference"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::Map::map_get",
-            "msMangle": "?map_get@Map@Containers@Hyuu@@YA_NAEBVIndexMap@123@AEB_KAEAI@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers3Map7map_getERKNS1_8IndexMapERKyRj",
-            "ports": [
-                {
-                    "portName": "map",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "hash",
-                    "portDirection": "input",
-                    "portType": "ulong",
-                    "portConvention": "byReference"
-                },
-                {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "bool",
-                    "portConvention": "byReturnValue"
-                },
-                {
-                    "portName": "value",
-                    "portDirection": "output",
-                    "portType": "uint",
                     "portConvention": "byReference"
                 }
             ]
@@ -641,38 +434,6 @@
         },
         {
             "name": "Hyuu::Containers::Map::map_remove",
-            "msMangle": "?map_remove@Map@Containers@Hyuu@@YA_NAEAVIndexMap@123@AEB_K@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers3Map10map_removeERNS1_8IndexMapERKy",
-            "ports": [
-                {
-                    "portName": "map",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "map_out",
-                    "portDirection": "output",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portAssociated": "map",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "hash",
-                    "portDirection": "input",
-                    "portType": "ulong",
-                    "portConvention": "byReference"
-                },
-                {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "bool",
-                    "portConvention": "byReturnValue"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::Map::map_remove",
             "msMangle": "?map_remove@Map@Containers@Hyuu@@YA_NAEAVHashMap@123@AEBV?$Ptr@V?$Array@_K@Amino@@@Amino@@@Z",
             "itaniumMangle": "_ZN4Hyuu10Containers3Map10map_removeERNS1_7HashMapERKN5Amino3PtrINS4_5ArrayIyEEEE",
             "ports": [
@@ -686,38 +447,6 @@
                     "portName": "map_out",
                     "portDirection": "output",
                     "portType": "Hyuu::Containers::Map::HashMap",
-                    "portAssociated": "map",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "hash",
-                    "portDirection": "input",
-                    "portType": "array<ulong>",
-                    "portConvention": "byReferenceToPtr"
-                },
-                {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "bool",
-                    "portConvention": "byReturnValue"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::Map::map_remove",
-            "msMangle": "?map_remove@Map@Containers@Hyuu@@YA_NAEAVIndexMap@123@AEBV?$Ptr@V?$Array@_K@Amino@@@Amino@@@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers3Map10map_removeERNS1_8IndexMapERKN5Amino3PtrINS4_5ArrayIyEEEE",
-            "ports": [
-                {
-                    "portName": "map",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "map_out",
-                    "portDirection": "output",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
                     "portAssociated": "map",
                     "portConvention": "byValue"
                 },
@@ -774,44 +503,6 @@
             ]
         },
         {
-            "name": "Hyuu::Containers::Map::map_pop",
-            "msMangle": "?map_pop@Map@Containers@Hyuu@@YA_NAEAVIndexMap@123@AEB_KAEAI@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers3Map7map_popERNS1_8IndexMapERKyRj",
-            "ports": [
-                {
-                    "portName": "map",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "map_out",
-                    "portDirection": "output",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portAssociated": "map",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "hash",
-                    "portDirection": "input",
-                    "portType": "ulong",
-                    "portConvention": "byReference"
-                },
-                {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "bool",
-                    "portConvention": "byReturnValue"
-                },
-                {
-                    "portName": "value",
-                    "portDirection": "output",
-                    "portType": "uint",
-                    "portConvention": "byReference"
-                }
-            ]
-        },
-        {
             "name": "Hyuu::Containers::Map::map_hashes",
             "msMangle": "?map_hashes@Map@Containers@Hyuu@@YAXAEBVHashMap@123@AEAV?$Ptr@V?$Array@_K@Amino@@@Amino@@@Z",
             "itaniumMangle": "_ZN4Hyuu10Containers3Map10map_hashesERKNS1_7HashMapERN5Amino3PtrINS5_5ArrayIyEEEE",
@@ -820,25 +511,6 @@
                     "portName": "map",
                     "portDirection": "input",
                     "portType": "Hyuu::Containers::Map::HashMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "hashes",
-                    "portDirection": "output",
-                    "portType": "array<ulong>",
-                    "portConvention": "byReferenceToPtr"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::Map::map_hashes",
-            "msMangle": "?map_hashes@Map@Containers@Hyuu@@YAXAEBVIndexMap@123@AEAV?$Ptr@V?$Array@_K@Amino@@@Amino@@@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers3Map10map_hashesERKNS1_8IndexMapERN5Amino3PtrINS5_5ArrayIyEEEE",
-            "ports": [
-                {
-                    "portName": "map",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
                     "portConvention": "byValue"
                 },
                 {
@@ -864,25 +536,6 @@
                     "portName": "values",
                     "portDirection": "output",
                     "portType": "array<any>",
-                    "portConvention": "byReferenceToPtr"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::Map::map_values",
-            "msMangle": "?map_values@Map@Containers@Hyuu@@YAXAEBVIndexMap@123@AEAV?$Ptr@V?$Array@I@Amino@@@Amino@@@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers3Map10map_valuesERKNS1_8IndexMapERN5Amino3PtrINS5_5ArrayIjEEEE",
-            "ports": [
-                {
-                    "portName": "map",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "values",
-                    "portDirection": "output",
-                    "portType": "array<uint>",
                     "portConvention": "byReferenceToPtr"
                 }
             ]
@@ -920,38 +573,6 @@
             ]
         },
         {
-            "name": "Hyuu::Containers::Map::map_set_items",
-            "msMangle": "?map_set_items@Map@Containers@Hyuu@@YAXAEAVIndexMap@123@AEBV?$Ptr@V?$Array@_K@Amino@@@Amino@@AEBV?$Ptr@V?$Array@I@Amino@@@6@@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers3Map13map_set_itemsERNS1_8IndexMapERKN5Amino3PtrINS4_5ArrayIyEEEERKNS5_INS6_IjEEEE",
-            "ports": [
-                {
-                    "portName": "map",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "map_out",
-                    "portDirection": "output",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portAssociated": "map",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "hashes",
-                    "portDirection": "input",
-                    "portType": "array<ulong>",
-                    "portConvention": "byReferenceToPtr"
-                },
-                {
-                    "portName": "values",
-                    "portDirection": "input",
-                    "portType": "array<uint>",
-                    "portConvention": "byReferenceToPtr"
-                }
-            ]
-        },
-        {
             "name": "Hyuu::Containers::Map::map_get_first",
             "msMangle": "?map_get_first@Map@Containers@Hyuu@@YA_NAEBVHashMap@123@AEA_KAEAVAny@Amino@@@Z",
             "itaniumMangle": "_ZN4Hyuu10Containers3Map13map_get_firstERKNS1_7HashMapERyRN5Amino3AnyE",
@@ -978,37 +599,6 @@
                     "portName": "value",
                     "portDirection": "output",
                     "portType": "any",
-                    "portConvention": "byReference"
-                }
-            ]
-        },
-        {
-            "name": "Hyuu::Containers::Map::map_get_first",
-            "msMangle": "?map_get_first@Map@Containers@Hyuu@@YA_NAEBVIndexMap@123@AEA_KAEAI@Z",
-            "itaniumMangle": "_ZN4Hyuu10Containers3Map13map_get_firstERKNS1_8IndexMapERyRj",
-            "ports": [
-                {
-                    "portName": "map",
-                    "portDirection": "input",
-                    "portType": "Hyuu::Containers::Map::IndexMap",
-                    "portConvention": "byValue"
-                },
-                {
-                    "portName": "output",
-                    "portDirection": "output",
-                    "portType": "bool",
-                    "portConvention": "byReturnValue"
-                },
-                {
-                    "portName": "hash",
-                    "portDirection": "output",
-                    "portType": "ulong",
-                    "portConvention": "byReference"
-                },
-                {
-                    "portName": "value",
-                    "portDirection": "output",
-                    "portType": "uint",
                     "portConvention": "byReference"
                 }
             ]

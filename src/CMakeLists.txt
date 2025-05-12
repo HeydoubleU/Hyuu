@@ -1,9 +1,6 @@
 add_library(HyuuOps SHARED)
 
 # OpenCL
-string(REPLACE "\\" "/" UserProfileUnfucked $ENV{UserProfile})
-set(OpenCL_INCLUDE_DIR "${UserProfileUnfucked}/vcpkg/packages/opencl_x64-windows/include")
-set(OpenCL_LIBRARY "${UserProfileUnfucked}/vcpkg/packages/opencl_x64-windows/lib/OpenCL.lib")
 find_package(OpenCL REQUIRED)
 target_link_libraries(HyuuOps PRIVATE OpenCL::OpenCL)
 
