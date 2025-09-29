@@ -1,0 +1,781 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Terrain::voronoi_displace_terrain",
+            "uriImported": "file:///voronoi_displace_terrain.json",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1366.5 -828.142"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "terrain"
+                                                },
+                                                {
+                                                    "metaName": "displacement"
+                                                },
+                                                {
+                                                    "metaName": "scale"
+                                                },
+                                                {
+                                                    "metaName": "points"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "35.000000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "input1",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "normalize"
+                                                },
+                                                {
+                                                    "metaName": "radius"
+                                                },
+                                                {
+                                                    "metaName": "coeffs"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-476.477 -514.022"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "41.000000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "input2",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-890.777 5.81006"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "scatter_mode"
+                                                },
+                                                {
+                                                    "metaName": "amount"
+                                                },
+                                                {
+                                                    "metaName": "seed"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "42.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "terrain_out"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "682.91 -650.514"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "34.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"terrain\"\n            },\n            {\n                \"port\": \"displacement\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Voronoi\",\n                \"items\": [\n                    {\n                        \"port\": \"scale\"\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Scatter\",\n                        \"items\": [\n                            {\n                                \"port\": \"scatter_mode\"\n                            },\n                            {\n                                \"port\": \"amount\"\n                            },\n                            {\n                                \"port\": \"seed\"\n                            }\n                        ],\n                        \"unique_id\": 10\n                    },\n                    {\n                        \"expanded\": false,\n                        \"group\": \"Sampling\",\n                        \"items\": [\n                            {\n                                \"port\": \"normalize\"\n                            },\n                            {\n                                \"port\": \"radius\"\n                            },\n                            {\n                                \"port\": \"coeffs\"\n                            }\n                        ],\n                        \"unique_id\": 20\n                    }\n                ],\n                \"unique_id\": 30\n            },\n            {\n                \"port\": \"points\"\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Scatter",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "Voronoi Sampling",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "Sampling",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "Voronoi.Sampling",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "Voronoi.Scatter",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "Voronoi",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-340.309 -1130.33 1478.77 1197.74"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-74 -58"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "44.000000"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../documentation/modules/Terrain/voronoi_displace_terrain.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../icons/terrain_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "terrain",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "displacement",
+                    "portDirection": "input",
+                    "portDefaultType": "Core::Fields::VectorField",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "terrain_out",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "scale",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "500f"
+                },
+                {
+                    "portName": "points",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "normalize",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "radius",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "10000f"
+                },
+                {
+                    "portName": "coeffs",
+                    "portDirection": "input",
+                    "portType": "array<float>",
+                    "portDefault": [
+                        "-1f",
+                        "1f",
+                        "0.100000001f",
+                        "0.25f"
+                    ]
+                },
+                {
+                    "portName": "scatter_mode",
+                    "portDirection": "input",
+                    "portType": "Modeling::Points::ScatteringMode",
+                    "portDefault": "Random"
+                },
+                {
+                    "portName": "amount",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "30f",
+                    "metadata": [
+                        {
+                            "metaName": "quick_create",
+                            "metaType": "string",
+                            "metaValue": "Simulation::MPM::mpm_settings_to_scatter_density"
+                        }
+                    ]
+                },
+                {
+                    "portName": "seed",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "0"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "AxB4",
+                    "nodeType": "Hyuu::Math::AxB",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "211.184 -600.422"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add1",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "point_position",
+                        "result"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-470.962 -693.904"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_point_position1",
+                    "nodeType": "Geometry::Properties::get_point_position",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-949.73 -594.551"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "interpret_auto_port_as_vector",
+                    "nodeType": "Geometry::Common::interpret_auto_port_as_vector",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-946.946 -389.065"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "multi_sample_voronoi1",
+                    "nodeType": "Hyuu::Geometry::multi_sample_voronoi",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-113.306 -568"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "scatter_points",
+                    "nodeType": "Modeling::Points::scatter_points",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-515.833 -150.623"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Scatter Settings",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_terrain_height1",
+                    "nodeType": "Hyuu::Terrain::set_terrain_height",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "409 -825"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "is_a_points",
+                    "nodeType": "Geometry::Internal::is_a_points",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-526.246 -335.089"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-35 -221"
+                        },
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "multi_sample_voronoi1.distance",
+                    "target": "AxB4.A"
+                },
+                {
+                    "source": "AxB4.output",
+                    "target": "set_terrain_height1.height"
+                },
+                {
+                    "source": "get_point_position1.point_position",
+                    "target": "add1.first.point_position"
+                },
+                {
+                    "source": "interpret_auto_port_as_vector.data",
+                    "target": "add1.first.result"
+                },
+                {
+                    "source": "add1.output",
+                    "target": "multi_sample_voronoi1.sample_points"
+                },
+                {
+                    "source": ".terrain",
+                    "target": "get_point_position1.geometry"
+                },
+                {
+                    "source": ".terrain",
+                    "target": "interpret_auto_port_as_vector.geometry"
+                },
+                {
+                    "source": ".displacement",
+                    "target": "interpret_auto_port_as_vector.interpreted_vector_port"
+                },
+                {
+                    "source": ".terrain",
+                    "target": "scatter_points.geometry"
+                },
+                {
+                    "source": ".scale",
+                    "target": "AxB4.B"
+                },
+                {
+                    "source": ".points",
+                    "target": "is_a_points.geometry"
+                },
+                {
+                    "source": "is_a_points.matches_points",
+                    "target": "if.condition"
+                },
+                {
+                    "source": ".points",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": "scatter_points.points",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": "if.output",
+                    "target": "multi_sample_voronoi1.voronoi_points"
+                },
+                {
+                    "source": ".normalize",
+                    "target": "multi_sample_voronoi1.normalize"
+                },
+                {
+                    "source": ".radius",
+                    "target": "multi_sample_voronoi1.radius"
+                },
+                {
+                    "source": ".coeffs",
+                    "target": "multi_sample_voronoi1.coeffs"
+                },
+                {
+                    "source": ".scatter_mode",
+                    "target": "scatter_points.scatter_mode"
+                },
+                {
+                    "source": ".amount",
+                    "target": "scatter_points.amount"
+                },
+                {
+                    "source": ".seed",
+                    "target": "scatter_points.seed"
+                },
+                {
+                    "source": ".terrain",
+                    "target": "set_terrain_height1.terrain"
+                },
+                {
+                    "source": "set_terrain_height1.terrain_out",
+                    "target": ".terrain_out"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "AxB4.A",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "AxB4.B",
+                    "valueType": "float",
+                    "value": "300f"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_vector.indices",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "interpret_auto_port_as_vector.geometry_component",
+                    "valueType": "string",
+                    "value": "point_component"
+                },
+                {
+                    "valueName": "interpret_auto_port_as_vector.position_property",
+                    "valueType": "string",
+                    "value": "point_position"
+                },
+                {
+                    "valueName": "multi_sample_voronoi1.sample_points",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "multi_sample_voronoi1.voronoi_points",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "multi_sample_voronoi1.normalize",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "multi_sample_voronoi1.coeffs",
+                    "valueType": "array<float>",
+                    "value": [
+                        "-1f",
+                        "1f",
+                        "0.0335000008f",
+                        "0.207000002f"
+                    ]
+                },
+                {
+                    "valueName": "multi_sample_voronoi1.radius",
+                    "valueType": "float",
+                    "value": "10000f"
+                },
+                {
+                    "valueName": "scatter_points.geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "scatter_points.scatter_mode",
+                    "valueType": "Modeling::Points::ScatteringMode",
+                    "value": "Random"
+                },
+                {
+                    "valueName": "scatter_points.amount_mode",
+                    "valueType": "Modeling::Points::AmountMode",
+                    "value": "Number"
+                },
+                {
+                    "valueName": "scatter_points.amount",
+                    "valueType": "float",
+                    "value": "30f"
+                },
+                {
+                    "valueName": "scatter_points.density_weights_mode",
+                    "valueType": "Modeling::Points::DensityWeightsMode",
+                    "value": "Random"
+                },
+                {
+                    "valueName": "scatter_points.cull_overlapping",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "scatter_points.overlapping_radius",
+                    "valueType": "float",
+                    "value": "0.100000001f"
+                },
+                {
+                    "valueName": "scatter_points.transfer_properties",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "scatter_points.set_emit_location",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "scatter_points.set_orientations_from_geometry",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "scatter_points.normal_mode",
+                    "valueType": "Modeling::Points::OrientPointsNormalMode",
+                    "value": "point_normal"
+                },
+                {
+                    "valueName": "scatter_points.tangent_mode",
+                    "valueType": "Modeling::Points::OrientPointsTangentMode",
+                    "value": "UV"
+                },
+                {
+                    "valueName": "scatter_points.prioritize_normal",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "scatter_points.seed",
+                    "valueType": "long",
+                    "value": "0"
+                },
+                {
+                    "valueName": "scatter_points.max_number",
+                    "valueType": "long",
+                    "value": "1000000"
+                },
+                {
+                    "valueName": "set_terrain_height1.height",
+                    "valueType": "float",
+                    "value": "0f"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                },
+                {
+                    "name": "input1"
+                },
+                {
+                    "name": "input2"
+                }
+            ]
+        }
+    ]
+}

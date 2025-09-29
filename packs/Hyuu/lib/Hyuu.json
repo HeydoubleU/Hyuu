@@ -28,6 +28,63 @@
                     "portConvention": "byReferenceToPtr"
                 }
             ]
+        },
+        {
+            "name": "Hyuu::File::write_text_file",
+            "msMangle": "?write_text_file@File@Hyuu@@YAXAEBVString@Amino@@0AEA_N@Z",
+            "itaniumMangle": "_ZN4Hyuu4File15write_text_fileERKN5Amino6StringES4_Rb",
+            "ports": [
+                {
+                    "portName": "text",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "filename",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::File::write_json",
+            "msMangle": "?write_json@File@Hyuu@@YAXAEAVObject@Bifrost@@AEBVString@Amino@@AEA_N@Z",
+            "itaniumMangle": "_ZN4Hyuu4File10write_jsonERN7Bifrost6ObjectERKN5Amino6StringERb",
+            "ports": [
+                {
+                    "portName": "object",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "object_out",
+                    "portDirection": "output",
+                    "portType": "Object",
+                    "portAssociated": "object",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "filename",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
         }
     ]
 }

@@ -1,0 +1,511 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Terrain::Heightmap::get_heightmap_structure",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "10 324"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "heightmap"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "height_buffer"
+                                                },
+                                                {
+                                                    "metaName": "out_buffer"
+                                                },
+                                                {
+                                                    "metaName": "corner"
+                                                },
+                                                {
+                                                    "metaName": "cell_size"
+                                                },
+                                                {
+                                                    "metaName": "dimensions"
+                                                },
+                                                {
+                                                    "metaName": "pixel_count"
+                                                },
+                                                {
+                                                    "metaName": "global_size"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "71.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1330.15 206.253"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-118.649 -164.326 2400.56 1345.97"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "2442.17 -635.057"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "77.000000"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/modules/Terrain/Heightmap/get_heightmap_structure.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/heightmap_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "heightmap",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "height_buffer",
+                    "portDirection": "output",
+                    "portType": "Hyuu::OpenCL::Memory::Image::Image2DBuffer"
+                },
+                {
+                    "portName": "out_buffer",
+                    "portDirection": "output",
+                    "portType": "Hyuu::OpenCL::Memory::Image::Image2DBuffer"
+                },
+                {
+                    "portName": "corner",
+                    "portDirection": "output",
+                    "portType": "Math::float2"
+                },
+                {
+                    "portName": "cell_size",
+                    "portDirection": "output",
+                    "portType": "Math::float2"
+                },
+                {
+                    "portName": "dimensions",
+                    "portDirection": "output",
+                    "portType": "Math::uint2"
+                },
+                {
+                    "portName": "pixel_count",
+                    "portDirection": "output",
+                    "portType": "uint"
+                },
+                {
+                    "portName": "global_size",
+                    "portDirection": "output",
+                    "portType": "array<uint>"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "get_property1",
+                    "nodeType": "Core::Object::get_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "70.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "274.269 -101.719"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_property2",
+                    "nodeType": "Core::Object::get_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "69.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "292.883 171.287"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_image_dimensions",
+                    "nodeType": "Hyuu::OpenCL::Memory::Image::get_image_dimensions",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "62.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "281.032 931.159"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "vector2_to_scalar",
+                    "nodeType": "Core::Conversion::vector2_to_scalar",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "59.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "839.894 774.532"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "multiply",
+                    "nodeType": "Core::Math::multiply",
+                    "multiInPortNames": [
+                        "x",
+                        "y"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "58.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1145.68 752.664"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "vector2_to_scalar1",
+                    "nodeType": "Core::Conversion::vector2_to_scalar",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "55.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "835.929 1004.55"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "build_array",
+                    "nodeType": "Core::Array::build_array",
+                    "multiInPortNames": [
+                        "x",
+                        "y"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "56.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1153.58 982.156"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_property3",
+                    "nodeType": "Core::Object::get_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "68.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "277.589 664.087"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_property4",
+                    "nodeType": "Core::Object::get_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "67.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "291.029 417.11"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "get_property1.value",
+                    "target": ".height_buffer"
+                },
+                {
+                    "source": "get_property1.value",
+                    "target": "get_image_dimensions.buffer"
+                },
+                {
+                    "source": "get_property2.value",
+                    "target": ".out_buffer"
+                },
+                {
+                    "source": "get_image_dimensions.dimensions",
+                    "target": ".dimensions"
+                },
+                {
+                    "source": ".heightmap",
+                    "target": "get_property1.object"
+                },
+                {
+                    "source": ".heightmap",
+                    "target": "get_property2.object"
+                },
+                {
+                    "source": "get_image_dimensions.dimensions",
+                    "target": "vector2_to_scalar.vector2"
+                },
+                {
+                    "source": "vector2_to_scalar.x",
+                    "target": "multiply.first.x"
+                },
+                {
+                    "source": "vector2_to_scalar.y",
+                    "target": "multiply.first.y"
+                },
+                {
+                    "source": "multiply.output",
+                    "target": ".pixel_count"
+                },
+                {
+                    "source": "vector2_to_scalar1.x",
+                    "target": "build_array.first.x"
+                },
+                {
+                    "source": "vector2_to_scalar1.y",
+                    "target": "build_array.first.y"
+                },
+                {
+                    "source": "get_image_dimensions.dimensions",
+                    "target": "vector2_to_scalar1.vector2"
+                },
+                {
+                    "source": "build_array.array",
+                    "target": ".global_size"
+                },
+                {
+                    "source": ".heightmap",
+                    "target": "get_property3.object"
+                },
+                {
+                    "source": ".heightmap",
+                    "target": "get_property4.object"
+                },
+                {
+                    "source": "get_property4.value",
+                    "target": ".corner"
+                },
+                {
+                    "source": "get_property3.value",
+                    "target": ".cell_size"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "get_property1.default_and_type",
+                    "valueType": "Hyuu::OpenCL::Memory::Image::Image2DBuffer",
+                    "value": {}
+                },
+                {
+                    "valueName": "get_property1.key",
+                    "valueType": "string",
+                    "value": "height_buffer"
+                },
+                {
+                    "valueName": "get_property2.default_and_type",
+                    "valueType": "Hyuu::OpenCL::Memory::Image::Image2DBuffer",
+                    "value": {}
+                },
+                {
+                    "valueName": "get_property2.key",
+                    "valueType": "string",
+                    "value": "out_buffer"
+                },
+                {
+                    "valueName": "get_property3.default_and_type",
+                    "valueType": "Math::float2",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f"
+                    }
+                },
+                {
+                    "valueName": "get_property3.key",
+                    "valueType": "string",
+                    "value": "cell_size"
+                },
+                {
+                    "valueName": "get_property4.default_and_type",
+                    "valueType": "Math::float2",
+                    "value": {
+                        "x": "0f",
+                        "y": "0f"
+                    }
+                },
+                {
+                    "valueName": "get_property4.key",
+                    "valueType": "string",
+                    "value": "corner"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

@@ -361,31 +361,34 @@ void Hyuu::OpenCL::Memory::buffer_size_bytes(const Image::Image3DBuffer& buffer,
 }
 
 
-void Hyuu::OpenCL::Memory::copy_buffer(Buffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Buffer& source) {
+void Hyuu::OpenCL::Memory::copy_buffer(Buffer& target, const Buffer& source) {
 	if (!source.valid || !target.valid)
 		return;
 
 	CL_QUEUE.enqueueCopyBuffer(source.m_clbuffer, target.m_clbuffer, 0, 0, target.m_clbuffer.getInfo<CL_MEM_SIZE>());
+	CL_QUEUE.finish();
 }
 
-void Hyuu::OpenCL::Memory::copy_buffer(Image::Image1DBuffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Image::Image1DBuffer& source) {
+void Hyuu::OpenCL::Memory::copy_buffer(Image::Image1DBuffer& target, const Image::Image1DBuffer& source) {
 	if (!source.valid || !target.valid)
 		return;
 
 	auto width = target.m_climage.getImageInfo<CL_IMAGE_WIDTH>();
 	CL_QUEUE.enqueueCopyImage(source.m_climage, target.m_climage, { 0, 0, 0 }, { 0, 0, 0 }, { width, 1, 1 });
+	CL_QUEUE.finish();
 }
 
-void Hyuu::OpenCL::Memory::copy_buffer(Image::Image2DBuffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Image::Image2DBuffer& source) {
+void Hyuu::OpenCL::Memory::copy_buffer(Image::Image2DBuffer& target, const Image::Image2DBuffer& source) {
 	if (!source.valid || !target.valid)
 		return;
 
 	auto width = target.m_climage.getImageInfo<CL_IMAGE_WIDTH>();
 	auto height = target.m_climage.getImageInfo<CL_IMAGE_HEIGHT>();
 	CL_QUEUE.enqueueCopyImage(source.m_climage, target.m_climage, { 0, 0, 0 }, { 0, 0, 0 }, { width, height, 1 });
+	CL_QUEUE.finish();
 }
 
-void Hyuu::OpenCL::Memory::copy_buffer(Image::Image3DBuffer& target AMINO_ANNOTATE("Amino::InOut outName=buffer_out"), const Image::Image3DBuffer& source) {
+void Hyuu::OpenCL::Memory::copy_buffer(Image::Image3DBuffer& target, const Image::Image3DBuffer& source) {
 	if (!source.valid || !target.valid)
 		return;
 
@@ -393,6 +396,7 @@ void Hyuu::OpenCL::Memory::copy_buffer(Image::Image3DBuffer& target AMINO_ANNOTA
 	auto height = target.m_climage.getImageInfo<CL_IMAGE_HEIGHT>();
 	auto depth = target.m_climage.getImageInfo<CL_IMAGE_DEPTH>();
 	CL_QUEUE.enqueueCopyImage(source.m_climage, target.m_climage, { 0, 0, 0 }, { 0, 0, 0 }, { width, height, depth });
+	CL_QUEUE.finish();
 }
 
 
@@ -441,17 +445,14 @@ Amino::MutablePtr<Hyuu::OpenCL::Memory::Image::Image3DBuffer> allocate_image3d(H
 
 void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float_t& type, Amino::MutablePtr<Image1DBuffer>& buffer) { buffer = allocate_image1d(memory_type, dimensions, CL_R); }
 void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float2& type, Amino::MutablePtr<Image1DBuffer>& buffer) { buffer = allocate_image1d(memory_type, dimensions, CL_RG); }
-void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float3& type, Amino::MutablePtr<Image1DBuffer>& buffer) { buffer = allocate_image1d(memory_type, dimensions, CL_RGB); }
 void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint_t& dimensions, const float4& type, Amino::MutablePtr<Image1DBuffer>& buffer) { buffer = allocate_image1d(memory_type, dimensions, CL_RGBA); }
 
 void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float_t& type, Amino::MutablePtr<Image2DBuffer>& buffer) { buffer = allocate_image2d(memory_type, dimensions, CL_R); }
 void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float2& type, Amino::MutablePtr<Image2DBuffer>& buffer) { buffer = allocate_image2d(memory_type, dimensions, CL_RG); }
-void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float3& type, Amino::MutablePtr<Image2DBuffer>& buffer) { buffer = allocate_image2d(memory_type, dimensions, CL_RGB); }
 void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint2& dimensions, const float4& type, Amino::MutablePtr<Image2DBuffer>& buffer) { buffer = allocate_image2d(memory_type, dimensions, CL_RGBA); }
 
 void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float_t& type, Amino::MutablePtr<Image3DBuffer>& buffer) { buffer = allocate_image3d(memory_type, dimensions, CL_R); }
 void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float2& type, Amino::MutablePtr<Image3DBuffer>& buffer) { buffer = allocate_image3d(memory_type, dimensions, CL_RG); }
-void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float3& type, Amino::MutablePtr<Image3DBuffer>& buffer) { buffer = allocate_image3d(memory_type, dimensions, CL_RGB); }
 void Hyuu::OpenCL::Memory::Image::allocate_image_buffer(MemoryType memory_type, const uint3& dimensions, const float4& type, Amino::MutablePtr<Image3DBuffer>& buffer) { buffer = allocate_image3d(memory_type, dimensions, CL_RGBA); }
 // ---------------------------------------------------------------------------------------------------------------------
 
@@ -497,17 +498,14 @@ Amino::MutablePtr<Hyuu::OpenCL::Memory::Image::Image3DBuffer> write_image3d(Hyuu
 
 void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float_t>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) { buffer = write_image1d(memory_type, dimensions, CL_R, (void*)data.data()); }
 void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float2>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) { buffer = write_image1d(memory_type, dimensions, CL_RG, (void*)data.data()); }
-void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float3>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) { buffer = write_image1d(memory_type, dimensions, CL_RGB, (void*)data.data()); }
 void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float4>& data, const uint_t& dimensions, Amino::MutablePtr<Image1DBuffer>& buffer) { buffer = write_image1d(memory_type, dimensions, CL_RGBA, (void*)data.data()); }
 
 void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float_t>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) { buffer = write_image2d(memory_type, dimensions, CL_R, (void*)data.data()); }
 void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float2>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) { buffer = write_image2d(memory_type, dimensions, CL_RG, (void*)data.data()); }
-void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float3>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) { buffer = write_image2d(memory_type, dimensions, CL_RGB, (void*)data.data()); }
 void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float4>& data, const uint2& dimensions, Amino::MutablePtr<Image2DBuffer>& buffer) { buffer = write_image2d(memory_type, dimensions, CL_RGBA, (void*)data.data()); }
 
 void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float_t>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) { buffer = write_image3d(memory_type, dimensions, CL_R, (void*)data.data()); }
 void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float2>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) { buffer = write_image3d(memory_type, dimensions, CL_RG, (void*)data.data()); }
-void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float3>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) { buffer = write_image3d(memory_type, dimensions, CL_RGB, (void*)data.data()); }
 void Hyuu::OpenCL::Memory::Image::write_image_buffer(MemoryType memory_type, const Array<float4>& data, const uint3& dimensions, Amino::MutablePtr<Image3DBuffer>& buffer) { buffer = write_image3d(memory_type, dimensions, CL_RGBA, (void*)data.data()); }
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -557,17 +555,14 @@ ArrayPtr<T> read_image3d(const Hyuu::OpenCL::Memory::Image::Image3DBuffer& buffe
 
 void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image1DBuffer& buffer, const float_t& type, ArrayPtr<float_t>& data, uint_t& dimensions) { data = read_image1d<float_t>(buffer, dimensions); }
 void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image1DBuffer& buffer, const float2& type, ArrayPtr<float2>& data, uint_t& dimensions) { data = read_image1d<float2>(buffer, dimensions); }
-void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image1DBuffer& buffer, const float3& type, ArrayPtr<float3>& data, uint_t& dimensions) { data = read_image1d<float3>(buffer, dimensions); }
 void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image1DBuffer& buffer, const float4& type, ArrayPtr<float4>& data, uint_t& dimensions) { data = read_image1d<float4>(buffer, dimensions); }
 
 void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image2DBuffer& buffer, const float_t& type, ArrayPtr<float_t>& data, uint2& dimensions) { data = read_image2d<float_t>(buffer, dimensions); }
 void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image2DBuffer& buffer, const float2& type, ArrayPtr<float2>& data, uint2& dimensions) { data = read_image2d<float2>(buffer, dimensions); }
-void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image2DBuffer& buffer, const float3& type, ArrayPtr<float3>& data, uint2& dimensions) { data = read_image2d<float3>(buffer, dimensions); }
 void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image2DBuffer& buffer, const float4& type, ArrayPtr<float4>& data, uint2& dimensions) { data = read_image2d<float4>(buffer, dimensions); }
 
 void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image3DBuffer& buffer, const float_t& type, ArrayPtr<float_t>& data, uint3& dimensions) { data = read_image3d<float_t>(buffer, dimensions); }
 void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image3DBuffer& buffer, const float2& type, ArrayPtr<float2>& data, uint3& dimensions) { data = read_image3d<float2>(buffer, dimensions); }
-void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image3DBuffer& buffer, const float3& type, ArrayPtr<float3>& data, uint3& dimensions) { data = read_image3d<float3>(buffer, dimensions); }
 void Hyuu::OpenCL::Memory::Image::read_image_buffer(const Image3DBuffer& buffer, const float4& type, ArrayPtr<float4>& data, uint3& dimensions) { data = read_image3d<float4>(buffer, dimensions); }
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -627,6 +622,34 @@ void Hyuu::OpenCL::Memory::Image::get_image_format(const Image3DBuffer& buffer, 
 
 	auto cl_image_format = buffer.m_climage.getImageInfo<CL_IMAGE_FORMAT>();
 	convertFormat(cl_image_format, channel_order, channel_type);
+}
+
+void Hyuu::OpenCL::Memory::Image::get_image_dimensions(const Image1DBuffer& buffer, uint_t& dimensions) {
+	if (!buffer.valid) {
+		dimensions = 0U;
+		return;
+	}
+
+	dimensions = buffer.m_climage.getImageInfo<CL_IMAGE_WIDTH>();
+}
+
+void Hyuu::OpenCL::Memory::Image::get_image_dimensions(const Image2DBuffer& buffer, uint2& dimensions) {
+	if (!buffer.valid) {
+		dimensions = { 0U, 0U };
+		return;
+	}
+	dimensions.x = buffer.m_climage.getImageInfo<CL_IMAGE_WIDTH>();
+	dimensions.y = buffer.m_climage.getImageInfo<CL_IMAGE_HEIGHT>();
+}
+
+void Hyuu::OpenCL::Memory::Image::get_image_dimensions(const Image3DBuffer& buffer, uint3& dimensions) {
+	if (!buffer.valid) {
+		dimensions = { 0U, 0U, 0U };
+		return;
+	}
+	dimensions.x = buffer.m_climage.getImageInfo<CL_IMAGE_WIDTH>();
+	dimensions.y = buffer.m_climage.getImageInfo<CL_IMAGE_HEIGHT>();
+	dimensions.z = buffer.m_climage.getImageInfo<CL_IMAGE_DEPTH>();
 }
 
 // Program/Kernel ======================================================================================================
@@ -751,6 +774,7 @@ bool set_kernel_arg_scalar(Hyuu::OpenCL::Execute::Kernel& kernel, Amino::long_t 
 void Hyuu::OpenCL::Execute::set_kernel_arg(Kernel& kernel, Amino::long_t arg_id, const float_t& value, bool& success) { success = set_kernel_arg_scalar(kernel, arg_id, value); }
 void Hyuu::OpenCL::Execute::set_kernel_arg(Kernel& kernel, Amino::long_t arg_id, const float2& value, bool& success) { success = set_kernel_arg_scalar(kernel, arg_id, value); }
 void Hyuu::OpenCL::Execute::set_kernel_arg(Kernel& kernel, Amino::long_t arg_id, const float4& value, bool& success) { success = set_kernel_arg_scalar(kernel, arg_id, value); }
+void Hyuu::OpenCL::Execute::set_kernel_arg(Kernel& kernel, Amino::long_t arg_id, const Bifrost::Math::float4x4& value, bool& success) { success = set_kernel_arg_scalar(kernel, arg_id, value); }
 void Hyuu::OpenCL::Execute::set_kernel_arg(Kernel& kernel, Amino::long_t arg_id, const int_t& value, bool& success) { success = set_kernel_arg_scalar(kernel, arg_id, value); }
 void Hyuu::OpenCL::Execute::set_kernel_arg(Kernel& kernel, Amino::long_t arg_id, const int2& value, bool& success) { success = set_kernel_arg_scalar(kernel, arg_id, value); }
 void Hyuu::OpenCL::Execute::set_kernel_arg(Kernel& kernel, Amino::long_t arg_id, const int4& value, bool& success) { success = set_kernel_arg_scalar(kernel, arg_id, value); }

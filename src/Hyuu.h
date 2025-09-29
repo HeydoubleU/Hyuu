@@ -37,5 +37,9 @@ using uchar_t = Amino::uchar_t;
 namespace Hyuu {
 	namespace File {
 		HYUU_DECL void read_text_file(const Amino::String& filename, Amino::String& text) AMINO_ANNOTATE("Amino::Node");
+		HYUU_DECL void write_text_file(const Amino::String& text, const Amino::String& filename, bool& success) AMINO_ANNOTATE("Amino::Node");
+
+		HYUU_DECL void write_json(Bifrost::Object& object AMINO_ANNOTATE("Amino::InOut outName=object_out"),
+			const Amino::String& filename, bool& success) AMINO_ANNOTATE("Amino::Node");
 	}
 }

@@ -4,10 +4,15 @@ add_library(HyuuOps SHARED)
 find_package(OpenCL REQUIRED)
 target_link_libraries(HyuuOps PRIVATE OpenCL::OpenCL)
 
+# SndFile
+find_package(SndFile CONFIG REQUIRED)
+target_link_libraries(HyuuOps PRIVATE SndFile::sndfile)
+
 # Build and install the library
 target_compile_definitions( HyuuOps PRIVATE HYUU_BUILD_NODEDEF_DLL )
-target_sources( HyuuOps PRIVATE Hyuu.cpp Containers/Containers.cpp Mesh/Mesh.cpp Math/Math.cpp Image/Image.cpp OpenCL/OpenCL.cpp)
-target_link_libraries( HyuuOps PUBLIC Amino::Cpp Amino::Core Bifrost::Object)
+target_sources( HyuuOps PRIVATE Hyuu.cpp Containers/Containers.cpp Mesh/Mesh.cpp Math/Math.cpp Image/Image.cpp OpenCL/OpenCL.cpp Signal/Signal.cpp )
+
+target_link_libraries( HyuuOps PUBLIC Amino::Cpp Amino::Core Bifrost::Object Bifrost::Geometry)
 bifrost_set_install_rpath(HyuuOps)
 install( TARGETS HyuuOps DESTINATION lib )
 
@@ -19,6 +24,7 @@ set( headers_to_parse
     Math/Math.h
     Image/Image.h
     OpenCL/OpenCL.h
+    Signal/Signal.h
 )
 
 bifrost_header_parser( 

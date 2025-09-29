@@ -1,0 +1,282 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "operators": [
+        {
+            "name": "Hyuu::Signal::window_size_limits",
+            "msMangle": "?window_size_limits@Signal@Hyuu@@YAXAEAH0@Z",
+            "itaniumMangle": "_ZN4Hyuu6Signal18window_size_limitsERiS1_",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/signal_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "min",
+                    "portDirection": "output",
+                    "portType": "int",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "max",
+                    "portDirection": "output",
+                    "portType": "int",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Signal::linear_to_db",
+            "msMangle": "?linear_to_db@Signal@Hyuu@@YAMM@Z",
+            "itaniumMangle": "_ZN4Hyuu6Signal12linear_to_dbEf",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/signal_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "input",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "output",
+                    "portDirection": "output",
+                    "portType": "float",
+                    "portConvention": "byReturnValue"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Signal::linear_to_db_unclamped",
+            "msMangle": "?linear_to_db_unclamped@Signal@Hyuu@@YAMM@Z",
+            "itaniumMangle": "_ZN4Hyuu6Signal22linear_to_db_unclampedEf",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/signal_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "input",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "output",
+                    "portDirection": "output",
+                    "portType": "float",
+                    "portConvention": "byReturnValue"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Signal::db_to_linear",
+            "msMangle": "?db_to_linear@Signal@Hyuu@@YAMM@Z",
+            "itaniumMangle": "_ZN4Hyuu6Signal12db_to_linearEf",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/signal_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "input",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "output",
+                    "portDirection": "output",
+                    "portType": "float",
+                    "portConvention": "byReturnValue"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Signal::compute_spectrum",
+            "msMangle": "?compute_spectrum@Signal@Hyuu@@YAXAEBV?$Array@M@Amino@@_J11_N2AEAV?$Ptr@V?$Array@M@Amino@@@4@AEAM@Z",
+            "itaniumMangle": "_ZN4Hyuu6Signal16compute_spectrumERKN5Amino5ArrayIfEExxxbbRNS1_3PtrIS3_EERf",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/signal_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "signal",
+                    "portDirection": "input",
+                    "portType": "array<float>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "sample_rate",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "sample_index",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "window_size",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "hanning_window",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "normalize",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "spectrum",
+                    "portDirection": "output",
+                    "portType": "array<float>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "freq_step",
+                    "portDirection": "output",
+                    "portType": "float",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Signal::spectral_equalizer",
+            "msMangle": "?spectral_equalizer@Signal@Hyuu@@YAXAEBV?$Array@M@Amino@@0_J1_NAEAV?$Ptr@V?$Array@M@Amino@@@4@@Z",
+            "itaniumMangle": "_ZN4Hyuu6Signal18spectral_equalizerERKN5Amino5ArrayIfEES5_xxbRNS1_3PtrIS3_EE",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/signal_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "signal",
+                    "portDirection": "input",
+                    "portType": "array<float>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "freq_factor",
+                    "portDirection": "input",
+                    "portType": "array<float>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "sample_rate",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "sample_index",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "hanning_window",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "signal_window",
+                    "portDirection": "output",
+                    "portType": "array<float>",
+                    "portConvention": "byReferenceToPtr"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Signal::Audio::read_audio_wave",
+            "msMangle": "?read_audio_wave@Audio@Signal@Hyuu@@YAXVString@Amino@@AEA_NAEAV?$Ptr@V?$Array@M@Amino@@@5@AEA_J33@Z",
+            "itaniumMangle": "_ZN4Hyuu6Signal5Audio15read_audio_waveEN5Amino6StringERbRNS2_3PtrINS2_5ArrayIfEEEERxSA_SA_",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/signal_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "filename",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portConvention": "byPtrValue"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "frames",
+                    "portDirection": "output",
+                    "portType": "array<float>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "sample_rate",
+                    "portDirection": "output",
+                    "portType": "long",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "channel_count",
+                    "portDirection": "output",
+                    "portType": "long",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "frame_count",
+                    "portDirection": "output",
+                    "portType": "long",
+                    "portConvention": "byReference"
+                }
+            ]
+        }
+    ]
+}

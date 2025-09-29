@@ -125,6 +125,173 @@
             ]
         },
         {
+            "name": "Hyuu::Math::hermite_interp",
+            "msMangle": "?hermite_interp@Math@Hyuu@@YAMMMMMM@Z",
+            "itaniumMangle": "_ZN4Hyuu4Math14hermite_interpEfffff",
+            "ports": [
+                {
+                    "portName": "a",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "b",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "a_slope",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "b_slope",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "t",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "output",
+                    "portDirection": "output",
+                    "portType": "float",
+                    "portConvention": "byReturnValue"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Math::catmull_rom_interp",
+            "msMangle": "?catmull_rom_interp@Math@Hyuu@@YAMMMMMM@Z",
+            "itaniumMangle": "_ZN4Hyuu4Math18catmull_rom_interpEfffff",
+            "ports": [
+                {
+                    "portName": "a",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "b",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "c",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "d",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "t",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "output",
+                    "portDirection": "output",
+                    "portType": "float",
+                    "portConvention": "byReturnValue"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Math::rgb_hsv",
+            "msMangle": "?rgb_hsv@Math@Hyuu@@YAXAEBUfloat3@1Bifrost@@AEAU314@@Z",
+            "itaniumMangle": "_ZN4Hyuu4Math7rgb_hsvERKN7Bifrost4Math6float3ERS3_",
+            "ports": [
+                {
+                    "portName": "rgb",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "hsv",
+                    "portDirection": "output",
+                    "portType": "Math::float3",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Math::hsv_rgb",
+            "msMangle": "?hsv_rgb@Math@Hyuu@@YAXAEBUfloat3@1Bifrost@@AEAU314@@Z",
+            "itaniumMangle": "_ZN4Hyuu4Math7hsv_rgbERKN7Bifrost4Math6float3ERS3_",
+            "ports": [
+                {
+                    "portName": "hsv",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "rgb",
+                    "portDirection": "output",
+                    "portType": "Math::float3",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "Hyuu::Math::circular_interpolate",
+            "msMangle": "?circular_interpolate@Math@Hyuu@@YAXMMMMMAEAM@Z",
+            "itaniumMangle": "_ZN4Hyuu4Math20circular_interpolateEfffffRf",
+            "ports": [
+                {
+                    "portName": "a",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "b",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "start",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "end",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "t",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "output",
+                    "portDirection": "output",
+                    "portType": "float",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
             "name": "Hyuu::Random::random_nondeterminstic",
             "msMangle": "?random_nondeterminstic@Random@Hyuu@@YAXAEBMAEAM@Z",
             "itaniumMangle": "_ZN4Hyuu6Random22random_nondeterminsticERKfRf",

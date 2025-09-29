@@ -26,6 +26,26 @@ namespace Hyuu {
 			void sort_members(const Bifrost::Math::long4& input, Bifrost::Math::long4& sorted)
 			AMINO_ANNOTATE("Amino::Node");
 
+		HYUU_DECL
+			float hermite_interp(float a, float b, float a_slope, float b_slope, float t)
+			AMINO_ANNOTATE("Amino::Node");
+
+		HYUU_DECL
+			float catmull_rom_interp(float a, float b, float c, float d, float t)
+			AMINO_ANNOTATE("Amino::Node");
+
+		HYUU_DECL
+			void rgb_hsv(const float3& rgb, float3& hsv)
+			AMINO_ANNOTATE("Amino::Node");
+
+		HYUU_DECL
+			void hsv_rgb(const float3& hsv, float3& rgb)
+			AMINO_ANNOTATE("Amino::Node");
+
+		HYUU_DECL
+			void circular_interpolate(float a, float b, float start, float end, float t, float& output)
+			AMINO_ANNOTATE("Amino::Node");
+		
 	}
 
 	namespace Random {

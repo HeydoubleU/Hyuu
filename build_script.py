@@ -69,3 +69,5 @@ for operator in data["operators"]:
 
 with open(f"{root}/packs/Hyuu/lib/OpenCL.json", "w") as f:
     json.dump(data, f, indent=4)
+
+

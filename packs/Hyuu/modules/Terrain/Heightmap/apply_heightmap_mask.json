@@ -1,0 +1,495 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Terrain::Heightmap::apply_heightmap_mask",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "heightmap"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "heightmap_out"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "127.000000"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-334.292 -1044.54"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/modules/Terrain/Heightmap/apply_heightmap_mask.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/heightmap_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "heightmap",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "heightmap_out",
+                    "portDirection": "output",
+                    "portType": "Object"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "build_program1",
+                    "nodeType": "Hyuu::OpenCL::Execute::build_program",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "113.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-637.972 -652.062"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "cache_value1",
+                    "nodeType": "Hyuu::Utility::cache_value",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "114.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-350.207 -649.783"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "execute_kernel1",
+                    "nodeType": "Hyuu::OpenCL::Execute::execute_kernel",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "106.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1395.28 68.4343"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "force_eval",
+                    "nodeType": "Core::Internal::force_eval",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "115.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-249.786 -861.016"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_heightmap_structure1",
+                    "nodeType": "Hyuu::Terrain::Heightmap::get_heightmap_structure",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "93.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-523.576 -347.542"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_kernel1",
+                    "nodeType": "Hyuu::OpenCL::Execute::get_kernel",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "103.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-37.4793 -656.756"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_property1",
+                    "nodeType": "Core::Object::get_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "92.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-662.582 64.368"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "54.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "202.194 -1014.46"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_kernel_arg2",
+                    "nodeType": "Hyuu::OpenCL::Execute::set_kernel_arg",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "96.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "149.055 -448.642"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_kernel_arg3",
+                    "nodeType": "Hyuu::OpenCL::Execute::set_kernel_arg",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "109.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "480.853 -257.878"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_kernel_arg4",
+                    "nodeType": "Hyuu::OpenCL::Execute::set_kernel_arg",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "95.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "805.545 -201.886"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_kernel_arg5",
+                    "nodeType": "Hyuu::OpenCL::Execute::set_kernel_arg",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "97.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1123.23 2.12503"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "build_program1.kernels",
+                    "target": "cache_value1.value"
+                },
+                {
+                    "source": "cache_value1.value_out",
+                    "target": "get_kernel1.kernels"
+                },
+                {
+                    "source": "set_kernel_arg5.kernel_out",
+                    "target": "execute_kernel1.kernel"
+                },
+                {
+                    "source": "get_heightmap_structure1.global_size",
+                    "target": "execute_kernel1.global_size"
+                },
+                {
+                    "source": "execute_kernel1.success",
+                    "target": "force_eval.discard"
+                },
+                {
+                    "source": ".heightmap",
+                    "target": "force_eval.input"
+                },
+                {
+                    "source": "force_eval.output",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": ".heightmap",
+                    "target": "get_heightmap_structure1.heightmap"
+                },
+                {
+                    "source": "get_heightmap_structure1.height_buffer",
+                    "target": "set_kernel_arg3.value"
+                },
+                {
+                    "source": "get_heightmap_structure1.height_buffer",
+                    "target": "set_kernel_arg4.value"
+                },
+                {
+                    "source": "get_heightmap_structure1.out_buffer",
+                    "target": "set_kernel_arg2.value"
+                },
+                {
+                    "source": "get_kernel1.kernel",
+                    "target": "set_kernel_arg2.kernel"
+                },
+                {
+                    "source": ".heightmap",
+                    "target": "get_property1.object"
+                },
+                {
+                    "source": "get_property1.value",
+                    "target": "set_kernel_arg5.value"
+                },
+                {
+                    "source": "get_property1.found_property",
+                    "target": "if.condition"
+                },
+                {
+                    "source": ".heightmap",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": "set_kernel_arg2.kernel_out",
+                    "target": "set_kernel_arg3.kernel"
+                },
+                {
+                    "source": "set_kernel_arg3.kernel_out",
+                    "target": "set_kernel_arg4.kernel"
+                },
+                {
+                    "source": "set_kernel_arg4.kernel_out",
+                    "target": "set_kernel_arg5.kernel"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".heightmap_out"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "build_program1.source",
+                    "valueType": "string",
+                    "value": "\n\n__kernel void mask_image(\n    __read_only image2d_t height0,\n    __read_only image2d_t height1,\n    __write_only image2d_t out,\n    __read_only image2d_t mask\n) {\n    int2 icoord = (int2)(get_global_id(0), get_global_id(1));\n    float h0 = read_imagef(height0, icoord).x;\n    float h1 = read_imagef(height1, icoord).x;\n    float m = read_imagef(mask, icoord).x;\n    write_imagef(out, icoord, mix(h0, h1, m));\n}"
+                },
+                {
+                    "valueName": "cache_value1.update",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "get_heightmap_structure1.heightmap",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "get_kernel1.kernels",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "get_kernel1.name",
+                    "valueType": "string",
+                    "value": "mask_image"
+                },
+                {
+                    "valueName": "get_property1.default_and_type",
+                    "valueType": "Hyuu::OpenCL::Memory::Image::Image2DBuffer",
+                    "value": {}
+                },
+                {
+                    "valueName": "get_property1.key",
+                    "valueType": "string",
+                    "value": "mask_buffer"
+                },
+                {
+                    "valueName": "set_kernel_arg3.arg_id",
+                    "valueType": "long",
+                    "value": "1"
+                },
+                {
+                    "valueName": "set_kernel_arg4.arg_id",
+                    "valueType": "long",
+                    "value": "2"
+                },
+                {
+                    "valueName": "set_kernel_arg5.arg_id",
+                    "valueType": "long",
+                    "value": "3"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

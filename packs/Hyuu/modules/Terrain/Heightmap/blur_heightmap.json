@@ -1,0 +1,680 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Terrain::Heightmap::blur_heightmap",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "heightmap"
+                                                },
+                                                {
+                                                    "metaName": "radius"
+                                                },
+                                                {
+                                                    "metaName": "scale"
+                                                },
+                                                {
+                                                    "metaName": "gaussian"
+                                                },
+                                                {
+                                                    "metaName": "falloff_f"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "90.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1757.84 -551.945"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "input3",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "filter_mask"
+                                                },
+                                                {
+                                                    "metaName": "filter_height"
+                                                },
+                                                {
+                                                    "metaName": "mask"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "85.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1332 -81"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "input2",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "iterations"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "86.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-758 -38"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "heightmap_out"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "907 -475"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "31.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "NodeWidthOffset",
+                    "metaType": "string",
+                    "metaValue": "0"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1864.98 -948.564 1744.7 1026.96"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "2219.88 -937.887"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "464.000000"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"heightmap\"\n            },\n            {\n                \"port\": \"kernel_mask\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Filter\",\n                \"items\": [\n                    {\n                        \"port\": \"weights\"\n                    },\n                    {\n                        \"port\": \"mask\"\n                    },\n                    {\n                        \"port\": \"filter_height\"\n                    },\n                    {\n                        \"port\": \"filter_mask\"\n                    },\n                    {\n                        \"port\": \"iterations\"\n                    }\n                ],\n                \"unique_id\": 12\n            },\n            {\n                \"port\": \"kernel_weights\"\n            },\n            {\n                \"port\": \"kernel_extents\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Kernel Mask\",\n                \"items\": [\n                    {\n                        \"port\": \"radius\"\n                    },\n                    {\n                        \"port\": \"scale\"\n                    },\n                    {\n                        \"port\": \"gaussian\"\n                    },\n                    {\n                        \"condition\": {\n                            \"action\": \"disable\",\n                            \"op\": \"==\",\n                            \"port\": \"gaussian\",\n                            \"value\": \"\"\n                        },\n                        \"group\": \"Disable based on: gaussian\",\n                        \"items\": [\n                            {\n                                \"port\": \"falloff_f\"\n                            }\n                        ],\n                        \"unique_id\": 36\n                    }\n                ],\n                \"unique_id\": 22\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Kernel Mask",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "Filter",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/modules/Terrain/Heightmap/blur_heightmap.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/heightmap_icon.png"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "heightmap",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "heightmap_out",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "filter_mask",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "iterations",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "3"
+                },
+                {
+                    "portName": "filter_height",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "mask",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "radius",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portDefault": "16U"
+                },
+                {
+                    "portName": "scale",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "1.20000005f"
+                },
+                {
+                    "portName": "gaussian",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "falloff_f",
+                    "portDirection": "input",
+                    "portDefaultType": "float",
+                    "portDefault": "1f"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "scuffed_rounding_error_fix",
+                    "uriImported": "stream:/bifrostGraphShape1",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "kernel_mask"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "output"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "output",
+                            "portDirection": "output",
+                            "portType": "Hyuu::Image::Filter::Kernel::KernelMask"
+                        },
+                        {
+                            "portName": "kernel_mask",
+                            "portDirection": "input",
+                            "portType": "Hyuu::Image::Filter::Kernel::KernelMask"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "AxB",
+                            "nodeType": "Hyuu::Math::AxB",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "72.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-969 -698"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value1",
+                            "valueType": "Hyuu::Image::Filter::Kernel::KernelMask",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "69.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-694 -798"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "value",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value2",
+                            "valueType": "Hyuu::Image::Filter::Kernel::KernelMask",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "71.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1242 -789.5"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "value2.output.weights",
+                            "target": "AxB.A"
+                        },
+                        {
+                            "source": "AxB.output",
+                            "target": "value1.value.weights"
+                        },
+                        {
+                            "source": "value2.output",
+                            "target": "value1.value"
+                        },
+                        {
+                            "source": "value1.output",
+                            "target": ".output"
+                        },
+                        {
+                            "source": ".kernel_mask",
+                            "target": "value2.value"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "AxB.A",
+                            "valueType": "float",
+                            "value": "1f"
+                        },
+                        {
+                            "valueName": "AxB.B",
+                            "valueType": "float",
+                            "value": "0.999000013f"
+                        },
+                        {
+                            "valueName": "value1.value",
+                            "valueType": "Hyuu::Image::Filter::Kernel::KernelMask",
+                            "value": {
+                                "weights": [],
+                                "extents": {
+                                    "x": "0U",
+                                    "y": "0U"
+                                }
+                            }
+                        },
+                        {
+                            "valueName": "value2.value",
+                            "valueType": "Hyuu::Image::Filter::Kernel::KernelMask",
+                            "value": {
+                                "weights": [],
+                                "extents": {
+                                    "x": "0U",
+                                    "y": "0U"
+                                }
+                            }
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "filter_heightmap",
+                    "nodeType": "Hyuu::Terrain::Heightmap::filter_heightmap",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Filter",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "91.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-434.229 -515.74"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "circle_kernel_mask",
+                    "nodeType": "Hyuu::Image::Filter::Kernel::circle_kernel_mask",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Shape",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "Function",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "NodeWidthOffset",
+                            "metaType": "string",
+                            "metaValue": "-65"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1373 -439"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "75.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "scuffed_rounding_error_fix",
+                    "nodeType": "scuffed_rounding_error_fix",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "92.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1067.25 -403.918"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "filter_heightmap.heightmap_out",
+                    "target": ".heightmap_out"
+                },
+                {
+                    "source": ".heightmap",
+                    "target": "filter_heightmap.heightmap"
+                },
+                {
+                    "source": ".iterations",
+                    "target": "filter_heightmap.iterations"
+                },
+                {
+                    "source": ".mask",
+                    "target": "filter_heightmap.mask"
+                },
+                {
+                    "source": ".filter_mask",
+                    "target": "filter_heightmap.filter_mask"
+                },
+                {
+                    "source": ".filter_height",
+                    "target": "filter_heightmap.filter_height"
+                },
+                {
+                    "source": ".radius",
+                    "target": "circle_kernel_mask.extents"
+                },
+                {
+                    "source": ".gaussian",
+                    "target": "circle_kernel_mask.gaussian"
+                },
+                {
+                    "source": ".falloff_f",
+                    "target": "circle_kernel_mask.falloff_f"
+                },
+                {
+                    "source": "circle_kernel_mask.kernel_mask",
+                    "target": "scuffed_rounding_error_fix.kernel_mask"
+                },
+                {
+                    "source": "scuffed_rounding_error_fix.output",
+                    "target": "filter_heightmap.kernel_mask"
+                },
+                {
+                    "source": ".scale",
+                    "target": "circle_kernel_mask.scale"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "circle_kernel_mask.falloff_f",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "scuffed_rounding_error_fix.kernel_mask",
+                    "valueType": "Hyuu::Image::Filter::Kernel::KernelMask",
+                    "value": {
+                        "weights": [],
+                        "extents": {
+                            "x": "0U",
+                            "y": "0U"
+                        }
+                    }
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                },
+                {
+                    "name": "input3"
+                },
+                {
+                    "name": "input2"
+                }
+            ]
+        }
+    ]
+}

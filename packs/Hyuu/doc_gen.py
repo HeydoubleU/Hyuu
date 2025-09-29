@@ -19,9 +19,12 @@ def removeExistingIcon(compound):
             compound["metadata"].remove(item)
             return
 
-ROOT = "A:/TeamEnvironment/Compounds/Hyuu"
+ROOT = "C:/Users/MAIN/Autodesk/Bifrost/Compounds/Team/Hyuu"
 
 for root, dirs, files in os.walk(ROOT):
+    if not "Signal" in root:
+        continue
+
     for file in files:
         path = os.path.join(root, file).replace("\\", "/")
 
@@ -53,7 +56,7 @@ for root, dirs, files in os.walk(ROOT):
             compound["metadata"].append({
                 "metaName": "icon",
                 "metaType": "string",
-                "metaValue": icon_root + ("opencl_icon.png" if is_opencl else "hyuu_icon.png")
+                "metaValue": icon_root + ("opencl_icon.png" if is_opencl else "signal_icon.png")
             })
 
             doc_filename = f"{ROOT}/documentation/{os.path.dirname(rel_path)}/{comp_name}.md"

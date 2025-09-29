@@ -1,0 +1,540 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Signal::Audio::audio_to_signal",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "audio"
+                                                },
+                                                {
+                                                    "metaName": "channel_index"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "121.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-868.685 101.353"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "input1",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "stereo_to_mono"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "113.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "177.876 -530.08"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "signal"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "76.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1261.84 54.1409"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "output1",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "sample_rate"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "116.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-481.324 20.0689"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-952.068 -548.802 1893.2 1242.5"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-3208.8 -632.746"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "89.000000"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"audio\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Channel\",\n                \"items\": [\n                    {\n                        \"port\": \"stereo_to_mono\"\n                    },\n                    {\n                        \"condition\": {\n                            \"action\": \"disable\",\n                            \"op\": \"==\",\n                            \"port\": \"stereo_to_mono\",\n                            \"value\": \"\"\n                        },\n                        \"group\": \"Disable based on: stereo_to_mono\",\n                        \"items\": [\n                            {\n                                \"port\": \"channel_index\"\n                            }\n                        ],\n                        \"unique_id\": 4\n                    }\n                ],\n                \"unique_id\": 8\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Channel",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../../../documentation/modules/Signal/Audio/audio_to_signal.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../../../icons/signal_icon.png"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "audio",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "signal",
+                    "portDirection": "output",
+                    "portType": "array<float>"
+                },
+                {
+                    "portName": "sample_rate",
+                    "portDirection": "output",
+                    "portType": "long"
+                },
+                {
+                    "portName": "stereo_to_mono",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "channel_index",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "0"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "get_audio_structure",
+                    "nodeType": "Hyuu::Signal::Audio::get_audio_structure",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "88.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-586.242 -287.087"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "extract_audio_channel",
+                    "nodeType": "Hyuu::Signal::Audio::extract_audio_channel",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "120.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "95.9141 326.311"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "112.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "740.82 5.19941"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "greater",
+                    "nodeType": "Core::Logic::greater",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "NodeValueDisplay",
+                            "metadata": [
+                                {
+                                    "metaName": "show",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                },
+                                {
+                                    "metaName": "format",
+                                    "metaType": "string",
+                                    "metaValue": "Greater than {second}"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "115.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "168.78 -345.134"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "extract_audio_channel2",
+                    "nodeType": "Hyuu::Signal::Audio::extract_audio_channel",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "118.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "89.3304 -118.494"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "extract_audio_channel3",
+                    "nodeType": "Hyuu::Signal::Audio::extract_audio_channel",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "117.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "87.894 71.1129"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "MIDDLE",
+                    "nodeType": "Core::Math::lerp",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "119.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "367.997 -62.4744"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "and",
+                    "nodeType": "Core::Logic::and",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "108.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "510.634 -475.579"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".audio",
+                    "target": "get_audio_structure.audio"
+                },
+                {
+                    "source": "get_audio_structure.frames",
+                    "target": "extract_audio_channel.frames"
+                },
+                {
+                    "source": "get_audio_structure.channel_count",
+                    "target": "extract_audio_channel.channel_count"
+                },
+                {
+                    "source": "get_audio_structure.sample_rate",
+                    "target": ".sample_rate"
+                },
+                {
+                    "source": ".channel_index",
+                    "target": "extract_audio_channel.channel_index"
+                },
+                {
+                    "source": "extract_audio_channel.signal",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": "get_audio_structure.channel_count",
+                    "target": "greater.first"
+                },
+                {
+                    "source": "get_audio_structure.frames",
+                    "target": "extract_audio_channel2.frames"
+                },
+                {
+                    "source": "get_audio_structure.channel_count",
+                    "target": "extract_audio_channel2.channel_count"
+                },
+                {
+                    "source": "get_audio_structure.frames",
+                    "target": "extract_audio_channel3.frames"
+                },
+                {
+                    "source": "get_audio_structure.channel_count",
+                    "target": "extract_audio_channel3.channel_count"
+                },
+                {
+                    "source": "extract_audio_channel2.signal",
+                    "target": "MIDDLE.first"
+                },
+                {
+                    "source": "extract_audio_channel3.signal",
+                    "target": "MIDDLE.second"
+                },
+                {
+                    "source": "MIDDLE.interpolated",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": ".stereo_to_mono",
+                    "target": "and.first"
+                },
+                {
+                    "source": "greater.output",
+                    "target": "and.second"
+                },
+                {
+                    "source": "and.output",
+                    "target": "if.condition"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".signal"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "greater.second",
+                    "valueType": "long",
+                    "value": "1"
+                },
+                {
+                    "valueName": "extract_audio_channel2.frames",
+                    "valueType": "array<float>",
+                    "value": []
+                },
+                {
+                    "valueName": "extract_audio_channel2.channel_count",
+                    "valueType": "long",
+                    "value": "0"
+                },
+                {
+                    "valueName": "extract_audio_channel2.channel_index",
+                    "valueType": "long",
+                    "value": "0"
+                },
+                {
+                    "valueName": "extract_audio_channel3.frames",
+                    "valueType": "array<float>",
+                    "value": []
+                },
+                {
+                    "valueName": "extract_audio_channel3.channel_count",
+                    "valueType": "long",
+                    "value": "0"
+                },
+                {
+                    "valueName": "extract_audio_channel3.channel_index",
+                    "valueType": "long",
+                    "value": "1"
+                },
+                {
+                    "valueName": "MIDDLE.fraction",
+                    "valueType": "float",
+                    "value": "0.5f"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                },
+                {
+                    "name": "output1"
+                },
+                {
+                    "name": "input1"
+                }
+            ]
+        }
+    ]
+}

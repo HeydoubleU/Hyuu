@@ -1,0 +1,841 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "Hyuu::Terrain::terrain_example",
+            "uriImported": "stream:/bifrostGraphShape3",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes"
+                        },
+                        {
+                            "metaName": "io_onodes"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "678.276 51.0926 3116.79 508.12"
+                },
+                {
+                    "metaName": "compoundIsGraph",
+                    "metaValue": "true"
+                },
+                {
+                    "metaName": "author",
+                    "metaType": "string",
+                    "metaValue": "Hyuu"
+                },
+                {
+                    "metaName": "category",
+                    "metaType": "string",
+                    "metaValue": "Hyuu"
+                },
+                {
+                    "metaName": "description",
+                    "metaType": "string",
+                    "metaValue": "Example of basic terrain creation and erosion"
+                },
+                {
+                    "metaName": "thumbnail",
+                    "metaType": "string",
+                    "metaValue": "terrain_example_thumb.png"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [],
+            "compoundNodes": [
+                {
+                    "nodeName": "create_terrain",
+                    "nodeType": "Hyuu::Terrain::create_terrain",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "60.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-807.631 100.404"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "voronoi_displace_terrain",
+                    "nodeType": "Hyuu::Terrain::voronoi_displace_terrain",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-432.719 99.2019"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "fractal_turbulence_field",
+                    "nodeType": "Core::Fields::fractal_turbulence_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-883.985 292.13"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "cache_value",
+                    "nodeType": "Hyuu::Utility::cache_value",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "61.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-72.4687 96.8797"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "terrain_to_heightmap",
+                    "nodeType": "Hyuu::Terrain::Heightmap::terrain_to_heightmap",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "351.234 103.21"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "project_to_heightmap",
+                    "nodeType": "Hyuu::Terrain::Heightmap::project_to_heightmap",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "660.142 92.3452"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "heightmap_expression",
+                    "nodeType": "Hyuu::Terrain::Heightmap::heightmap_expression",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "999.278 112.692"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "blur_heightmap",
+                    "nodeType": "Hyuu::Terrain::Heightmap::blur_heightmap",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1277.03 121.084"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "heightmap_noise",
+                    "nodeType": "Hyuu::Terrain::Heightmap::heightmap_noise",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1568.99 122.491"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "47.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "heightmap_erosion",
+                    "nodeType": "Hyuu::Terrain::Heightmap::heightmap_erosion",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "64.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2481.39 135.648"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "erosion_scope",
+                    "nodeType": "Hyuu::Terrain::Heightmap::erosion_scope",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2797.66 114.706"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "65.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "write_heightmap_buffer",
+                    "nodeType": "Hyuu::Terrain::Heightmap::write_heightmap_buffer",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "62.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2150.39 147.804"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "heightmap_positions",
+                    "nodeType": "Hyuu::Terrain::Heightmap::heightmap_positions",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1587.95 337.694"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "46.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "fractal_noise_field",
+                    "nodeType": "Core::Fields::fractal_noise_field",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1594.48 533.543"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "sample_field",
+                    "nodeType": "Core::Fields::sample_field",
+                    "metadata": [
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1898 386"
+                        },
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "change_range",
+                    "nodeType": "Core::Math::change_range",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2185.37 429.524"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "41.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "create_mesh_cube",
+                    "nodeType": "Modeling::Primitive::create_mesh_cube",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "306.66 402.67"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "58.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "create_terrain.terrain",
+                    "target": "voronoi_displace_terrain.terrain"
+                },
+                {
+                    "source": "fractal_turbulence_field.noise_field",
+                    "target": "voronoi_displace_terrain.displacement"
+                },
+                {
+                    "source": "voronoi_displace_terrain.terrain_out",
+                    "target": "cache_value.value"
+                },
+                {
+                    "source": "cache_value.value_out",
+                    "target": "terrain_to_heightmap.terrain"
+                },
+                {
+                    "source": "terrain_to_heightmap.heightmap",
+                    "target": "project_to_heightmap.heightmap"
+                },
+                {
+                    "source": "project_to_heightmap.heightmap_out",
+                    "target": "heightmap_expression.heightmap"
+                },
+                {
+                    "source": "heightmap_expression.heightmap_out",
+                    "target": "blur_heightmap.heightmap"
+                },
+                {
+                    "source": "blur_heightmap.heightmap_out",
+                    "target": "heightmap_noise.heightmap"
+                },
+                {
+                    "source": "heightmap_erosion.heightmap_out",
+                    "target": "erosion_scope.heightmap"
+                },
+                {
+                    "source": "heightmap_noise.heightmap_out",
+                    "target": "write_heightmap_buffer.heightmap"
+                },
+                {
+                    "source": "write_heightmap_buffer.heightmap_out",
+                    "target": "heightmap_erosion.heightmap"
+                },
+                {
+                    "source": "heightmap_noise.heightmap_out",
+                    "target": "heightmap_positions.heightmap"
+                },
+                {
+                    "source": "heightmap_positions.positions",
+                    "target": "sample_field.position"
+                },
+                {
+                    "source": "fractal_noise_field.noise_field",
+                    "target": "sample_field.field"
+                },
+                {
+                    "source": "sample_field.result",
+                    "target": "change_range.value"
+                },
+                {
+                    "source": "change_range.result",
+                    "target": "write_heightmap_buffer.data"
+                },
+                {
+                    "source": "create_mesh_cube.cube_mesh",
+                    "target": "project_to_heightmap.mesh"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "create_terrain.dimensions",
+                    "valueType": "Math::long2",
+                    "value": {
+                        "x": "1024",
+                        "y": "1024"
+                    }
+                },
+                {
+                    "valueName": "create_terrain.size",
+                    "valueType": "Math::float2",
+                    "value": {
+                        "x": "2000f",
+                        "y": "2000f"
+                    }
+                },
+                {
+                    "valueName": "voronoi_displace_terrain.displacement",
+                    "valueType": "Core::Fields::VectorField",
+                    "value": {}
+                },
+                {
+                    "valueName": "voronoi_displace_terrain.scale",
+                    "valueType": "float",
+                    "value": "-500f"
+                },
+                {
+                    "valueName": "voronoi_displace_terrain.coeffs",
+                    "valueType": "array<float>",
+                    "value": [
+                        "-1f",
+                        "1f",
+                        "0.100000001f",
+                        "0.25f",
+                        "0.5f",
+                        "-0.200000003f"
+                    ]
+                },
+                {
+                    "valueName": "voronoi_displace_terrain.amount",
+                    "valueType": "float",
+                    "value": "20f"
+                },
+                {
+                    "valueName": "fractal_turbulence_field.magnitude",
+                    "valueType": "float",
+                    "value": "65.3199997f"
+                },
+                {
+                    "valueName": "fractal_turbulence_field.num_frequencies",
+                    "valueType": "float",
+                    "value": "6f"
+                },
+                {
+                    "valueName": "fractal_turbulence_field.frequency",
+                    "valueType": "float",
+                    "value": "0.0120000001f"
+                },
+                {
+                    "valueName": "cache_value.update",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "project_to_heightmap.mask_output",
+                    "valueType": "long",
+                    "value": "3"
+                },
+                {
+                    "valueName": "heightmap_expression.height_expression",
+                    "valueType": "string",
+                    "value": "h+p[0]"
+                },
+                {
+                    "valueName": "heightmap_expression.params",
+                    "valueType": "array<float>",
+                    "value": [
+                        "233.100006f",
+                        "0.0489999987f"
+                    ]
+                },
+                {
+                    "valueName": "heightmap_expression.mask_blend",
+                    "valueType": "string",
+                    "value": "h"
+                },
+                {
+                    "valueName": "heightmap_expression.mask_expression",
+                    "valueType": "string",
+                    "value": "clamp(m*p[1], 0.f, 1.f)"
+                },
+                {
+                    "valueName": "heightmap_expression.write_height",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "heightmap_expression.write_mask",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "blur_heightmap.filter_mask",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "blur_heightmap.iterations",
+                    "valueType": "long",
+                    "value": "5"
+                },
+                {
+                    "valueName": "blur_heightmap.filter_height",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "blur_heightmap.mask",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "blur_heightmap.radius",
+                    "valueType": "uint",
+                    "value": "16U"
+                },
+                {
+                    "valueName": "blur_heightmap.falloff_f",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "heightmap_noise.slope_mask_factor",
+                    "valueType": "float",
+                    "value": "1.16559994f"
+                },
+                {
+                    "valueName": "heightmap_noise.slope_sample_spread",
+                    "valueType": "Math::float2",
+                    "value": {
+                        "x": "0.635200024f",
+                        "y": "0.635200024f"
+                    }
+                },
+                {
+                    "valueName": "heightmap_noise.frequency",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "2.77600002f",
+                        "y": "2.77600002f",
+                        "z": "2.77600002f"
+                    }
+                },
+                {
+                    "valueName": "heightmap_noise.magnitude",
+                    "valueType": "float",
+                    "value": "256.600006f"
+                },
+                {
+                    "valueName": "heightmap_erosion.rain_fall",
+                    "valueType": "float",
+                    "value": "0.00499999989f"
+                },
+                {
+                    "valueName": "heightmap_erosion.steps_per_frame",
+                    "valueType": "long",
+                    "value": "500"
+                },
+                {
+                    "valueName": "heightmap_erosion.harden_rate",
+                    "valueType": "float",
+                    "value": "10f"
+                },
+                {
+                    "valueName": "heightmap_erosion.capacity_scale",
+                    "valueType": "float",
+                    "value": "0.400000006f"
+                },
+                {
+                    "valueName": "heightmap_erosion.inertia",
+                    "valueType": "float",
+                    "value": "0.200000003f"
+                },
+                {
+                    "valueName": "heightmap_erosion.drying_rate",
+                    "valueType": "float",
+                    "value": "0.00999999978f"
+                },
+                {
+                    "valueName": "heightmap_erosion.draining",
+                    "valueType": "float",
+                    "value": "0.00100000005f"
+                },
+                {
+                    "valueName": "heightmap_erosion.rain_end_frame",
+                    "valueType": "float",
+                    "value": "20f"
+                },
+                {
+                    "valueName": "heightmap_erosion.thermal_erosion",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "heightmap_erosion.slide_rate",
+                    "valueType": "float",
+                    "value": "0.00100000005f"
+                },
+                {
+                    "valueName": "heightmap_erosion.threshold_start",
+                    "valueType": "float",
+                    "value": "2f"
+                },
+                {
+                    "valueName": "heightmap_erosion.hydraulic_erosion",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "heightmap_erosion.threshold_end",
+                    "valueType": "float",
+                    "value": "6f"
+                },
+                {
+                    "valueName": "erosion_scope.color_mode",
+                    "valueType": "long",
+                    "value": "5"
+                },
+                {
+                    "valueName": "erosion_scope.erode_scale",
+                    "valueType": "float",
+                    "value": "0.188099995f"
+                },
+                {
+                    "valueName": "erosion_scope.deposite_scale",
+                    "valueType": "float",
+                    "value": "0.0431299992f"
+                },
+                {
+                    "valueName": "write_heightmap_buffer.key",
+                    "valueType": "string",
+                    "value": "thermal_threshold"
+                },
+                {
+                    "valueName": "fractal_noise_field.num_frequencies",
+                    "valueType": "float",
+                    "value": "8f"
+                },
+                {
+                    "valueName": "fractal_noise_field.frequency",
+                    "valueType": "float",
+                    "value": "0.057f"
+                },
+                {
+                    "valueName": "fractal_noise_field.ratio",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "change_range.from_start",
+                    "valueType": "float",
+                    "value": "-1.20000005f"
+                },
+                {
+                    "valueName": "change_range.from_end",
+                    "valueType": "float",
+                    "value": "1.20000005f"
+                },
+                {
+                    "valueName": "change_range.to_end",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "change_range.clamp",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "create_mesh_cube.length",
+                    "valueType": "float",
+                    "value": "650f"
+                },
+                {
+                    "valueName": "create_mesh_cube.width",
+                    "valueType": "float",
+                    "value": "650f"
+                },
+                {
+                    "valueName": "create_mesh_cube.height",
+                    "valueType": "float",
+                    "value": "650f"
+                },
+                {
+                    "valueName": "create_mesh_cube.position",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "0f",
+                        "y": "-350f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "create_mesh_cube.up_axis",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1.5f",
+                        "y": "1f",
+                        "z": "1f"
+                    }
+                }
+            ]
+        }
+    ]
+}
