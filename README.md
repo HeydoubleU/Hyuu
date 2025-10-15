@@ -1,5 +1,3 @@
-Bifrost Version: 2.12.0.0
-
 General purpose Bifrost library. Much of the library is lower level utilities for building compounds. To highlight some of the high level compounds:
 
 ### `Hyuu::Geometry::Mesh`
