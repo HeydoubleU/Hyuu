@@ -7,6 +7,7 @@ My general purpose Bifrost library. Some highlights:
 - Terrain module adds terrain/heightmap creation and erosion compounds much of which is GPU accelerated with OpenCL.
 
 
+
 ## Install
 
 Copy the `Hyuu` folder in `Compounds` to your prefered compounds directory. Add the path for `HyuuPackConfig.json` to `BIFROST_LIB_CONFIG_FILES`, e.g.:
