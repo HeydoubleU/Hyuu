@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
 
+if( NOT CMAKE_TOOLCHAIN_FILE AND DEFINED ENV{VCPKG_ROOT} )
+    set( CMAKE_TOOLCHAIN_FILE "$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
+endif()
+
 if( NOT BIFROST_LOCATION )
     if( DEFINED ENV{BIFROST_LOCATION} )
         set( BIFROST_LOCATION $ENV{BIFROST_LOCATION})
