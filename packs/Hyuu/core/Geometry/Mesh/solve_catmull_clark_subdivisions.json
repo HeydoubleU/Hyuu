@@ -1542,7 +1542,7 @@
                                                                             "metaName": "current_index"
                                                                         },
                                                                         {
-                                                                            "metaName": "point_face_adjacency_index"
+                                                                            "metaName": "point_face_adjacency_offset"
                                                                         }
                                                                     ]
                                                                 },
@@ -1608,7 +1608,7 @@
                                             "portDirection": "input"
                                         },
                                         {
-                                            "portName": "point_face_adjacency_index",
+                                            "portName": "point_face_adjacency_offset",
                                             "portDirection": "input"
                                         },
                                         {
@@ -4847,7 +4847,7 @@
                                             "target": "iterate3.point_face_adjacency"
                                         },
                                         {
-                                            "source": ".point_face_adjacency_index",
+                                            "source": ".point_face_adjacency_offset",
                                             "target": "access_offset_array.offset_array"
                                         },
                                         {
@@ -6117,8 +6117,8 @@
                                     "target": "for_each_point_compute_new_position.point_face_adjacency"
                                 },
                                 {
-                                    "source": "get_mesh_adjacency.point_face_adjacency_index",
-                                    "target": "for_each_point_compute_new_position.point_face_adjacency_index"
+                                    "source": "get_mesh_adjacency.point_face_adjacency_offset",
+                                    "target": "for_each_point_compute_new_position.point_face_adjacency_offset"
                                 },
                                 {
                                     "source": "get_geo_property.data",

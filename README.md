@@ -6,18 +6,27 @@ My general purpose Bifrost library. Some highlights:
 - OpenCL module adds operators for compiling and executing OpenCL code in the graph for GPU accelerated compounds.
 - Terrain module adds terrain/heightmap creation and erosion compounds much of which is GPU accelerated with OpenCL.
 
-
+This pack was built with Maya 2027 and Bifrost 3.3.0.0
 
 ## Install
 
-Copy the `Hyuu` folder in `Compounds` to your prefered compounds directory. Add the path for `HyuuPackConfig.json` to `BIFROST_LIB_CONFIG_FILES`, e.g.:
+The built pack is located in `/packs`, just copy the `Hyuu` folder to your `Compounds` folder. 
 
-```
-BIFROST_LIB_CONFIG_FILES = C:/your/compounds/path/Hyuu/HyuuPackConfig.json
+Optional: Open `HyuuPackConfig.json` and check the `bifrostVersion` field to verify it matches your current bifrost version.
+
+## Building From Source
+
+This project has only been tested on Windows. As far as I'm aware there's nothing to prevent this from building on other platforms.
+
+Per the Bifrost SDK, building requires CMake and a Visual Studio toolset (on Windows). This project also assumes Python is installed, there's a post-build script `finish_pack.py` which assembles the pack automatically. With those requirements met, this project can be built with the following commands:
 ```
 
-If the environment variable is already set you can append a path with using `;`
+cmake --build build --config Release --targetcmake -S . -B build -G "Visual Studio 18 2026"      install
+```
+Or if the `BIFROST_LOCATION` environment is not set it can be provided explicitly:
+```
+cmake -S . -B build -G "Visual Studio 18 2026" -DBIFROST_LOCATION="<bifrost_location>"        
+cmake --build build --config Release --target install
+```
 
-```
-BIFROST_LIB_CONFIG_FILES = <existing value>;C:/your/compounds/path/Hyuu/HyuuPackConfig.json
-```
+The final assembled pack will be at `/packs/Hyuu`.

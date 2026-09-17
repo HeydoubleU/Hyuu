@@ -29,7 +29,7 @@
                 }
             ],
             "libraryDependencies": {
-                "Amino": "2.15.0.11"
+                "Amino": "3.3.0.15"
             }
         },
         {
@@ -57,7 +57,7 @@
                 }
             ],
             "libraryDependencies": {
-                "Amino": "2.15.0.11"
+                "Amino": "3.3.0.15"
             }
         },
         {
@@ -92,7 +92,35 @@
                 }
             ],
             "libraryDependencies": {
-                "Amino": "2.15.0.11"
+                "Amino": "3.3.0.15"
+            }
+        },
+        {
+            "name": "Hyuu::File::list_directory",
+            "msMangle": "?list_directory@File@Hyuu@@YAXAEBVString@Amino@@AEAV?$Ptr@V?$Array@VString@Amino@@@Amino@@@4@1@Z",
+            "itaniumMangle": "_ZN4Hyuu4File14list_directoryERKN5Amino6StringERNS1_3PtrINS1_5ArrayIS2_EEEES9_",
+            "ports": [
+                {
+                    "portName": "path",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "files",
+                    "portDirection": "output",
+                    "portType": "array<string>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "dirs",
+                    "portDirection": "output",
+                    "portType": "array<string>",
+                    "portConvention": "byReferenceToPtr"
+                }
+            ],
+            "libraryDependencies": {
+                "Amino": "3.3.0.15"
             }
         }
     ]

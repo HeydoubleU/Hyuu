@@ -1,12 +1,23 @@
 add_library(HyuuOps SHARED)
 
-# OpenCL
-find_package(OpenCL REQUIRED)
-target_link_libraries(HyuuOps PRIVATE OpenCL::OpenCL)
+# OpenCL - fetched directly so no OpenCL SDK/package manager needs to be pre-installed
+include(FetchContent)
 
-# SndFile
-find_package(SndFile CONFIG REQUIRED)
-target_link_libraries(HyuuOps PRIVATE SndFile::sndfile)
+FetchContent_Declare(
+    OpenCLHeaders
+    GIT_REPOSITORY https://github.com/KhronosGroup/OpenCL-Headers.git
+    GIT_TAG v2026.05.29
+)
+FetchContent_MakeAvailable(OpenCLHeaders)
+
+FetchContent_Declare(
+    OpenCLICDLoader
+    GIT_REPOSITORY https://github.com/KhronosGroup/OpenCL-ICD-Loader.git
+    GIT_TAG v2026.05.29
+)
+FetchContent_MakeAvailable(OpenCLICDLoader)
+
+target_link_libraries(HyuuOps PRIVATE OpenCL::OpenCL)
 
 # Build and install the library
 target_compile_definitions( HyuuOps PRIVATE HYUU_BUILD_NODEDEF_DLL )
@@ -29,8 +40,7 @@ set( headers_to_parse
 
 bifrost_header_parser( 
     HyuuJsonFiles  # Name of the target.
-    "lib" # Install and build dirs - relative to install prefix
-                           # and build directory
+    "lib" # Install and build dirs - relative to install prefix and build directory
     INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}
     HEADER_FILES ${headers_to_parse})
 
@@ -39,6 +49,8 @@ set( CONFIG_PACK_VERSION "${PROJECT_VERSION}")
 set( CONFIG_PACK_NAME "${PROJECT_NAME}")
 set( CONFIG_SHARED_LIBS "./lib")
 set( CONFIG_JSON_FILES "./lib")
+include( ${BIFROST_LOCATION}/sdk/cmake/bifrost_maya_plugin_version.info )  # include only for access to version variables
+set( BIFROST_VERSION_NAME "${BIFROST_MAYA_PLUGIN_APPLICATION_VERSION}.${BIFROST_MAYA_PLUGIN_MAJOR_VERSION}.${BIFROST_MAYA_PLUGIN_MINOR_VERSION}.${BIFROST_MAYA_PLUGIN_PATCH_LEVEL}" )
 set( config_json ${CMAKE_BINARY_DIR}/${PROJECT_NAME}PackConfig.json )
 configure_file(PackConfig.json.in ${config_json} )
 install(FILES ${config_json} DESTINATION . )

@@ -305,7 +305,7 @@
                                                             "metaName": "point_face_adjacency"
                                                         },
                                                         {
-                                                            "metaName": "point_face_adjacency_index"
+                                                            "metaName": "point_face_adjacency_offset"
                                                         },
                                                         {
                                                             "metaName": "face_vertex_adjacent_edge"
@@ -397,7 +397,7 @@
                             "portDirection": "input"
                         },
                         {
-                            "portName": "point_face_adjacency_index",
+                            "portName": "point_face_adjacency_offset",
                             "portDirection": "input"
                         },
                         {
@@ -456,7 +456,7 @@
                                                             "metaName": "io_ports",
                                                             "metadata": [
                                                                 {
-                                                                    "metaName": "point_face_adjacency_index"
+                                                                    "metaName": "point_face_adjacency_offset"
                                                                 },
                                                                 {
                                                                     "metaName": "point_index"
@@ -502,7 +502,7 @@
                             ],
                             "ports": [
                                 {
-                                    "portName": "point_face_adjacency_index",
+                                    "portName": "point_face_adjacency_offset",
                                     "portDirection": "input"
                                 },
                                 {
@@ -980,7 +980,7 @@
                                     "target": ".main_edge"
                                 },
                                 {
-                                    "source": ".point_face_adjacency_index",
+                                    "source": ".point_face_adjacency_offset",
                                     "target": "access_offset_array.offset_array"
                                 },
                                 {
@@ -1285,8 +1285,8 @@
                             "target": "check_is_poked_face.point_face_adjacency"
                         },
                         {
-                            "source": ".point_face_adjacency_index",
-                            "target": "check_is_poked_face.point_face_adjacency_index"
+                            "source": ".point_face_adjacency_offset",
+                            "target": "check_is_poked_face.point_face_adjacency_offset"
                         },
                         {
                             "source": ".face_vertex_adjacent_edge",
@@ -1912,8 +1912,8 @@
                     "target": "for_each.point_face_adjacency"
                 },
                 {
-                    "source": "get_mesh_adjacency.point_face_adjacency_index",
-                    "target": "for_each.point_face_adjacency_index"
+                    "source": "get_mesh_adjacency.point_face_adjacency_offset",
+                    "target": "for_each.point_face_adjacency_offset"
                 },
                 {
                     "source": "check_mesh_adjacency.mesh_out",

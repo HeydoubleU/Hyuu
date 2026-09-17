@@ -625,7 +625,7 @@
                                                                                     "metaName": "point_face_adjacency"
                                                                                 },
                                                                                 {
-                                                                                    "metaName": "point_face_adjacency_index"
+                                                                                    "metaName": "point_face_adjacency_offset"
                                                                                 },
                                                                                 {
                                                                                     "metaName": "face_vertex"
@@ -692,7 +692,7 @@
                                                     "portDirection": "input"
                                                 },
                                                 {
-                                                    "portName": "point_face_adjacency_index",
+                                                    "portName": "point_face_adjacency_offset",
                                                     "portDirection": "input"
                                                 },
                                                 {
@@ -1180,7 +1180,7 @@
                                                     "target": "do_while.point_face_adjacency"
                                                 },
                                                 {
-                                                    "source": ".point_face_adjacency_index",
+                                                    "source": ".point_face_adjacency_offset",
                                                     "target": "access_offset_array.offset_array"
                                                 },
                                                 {
@@ -1397,8 +1397,8 @@
                                             "target": "for_each4.point_face_adjacency"
                                         },
                                         {
-                                            "source": "get_mesh_adjacency.point_face_adjacency_index",
-                                            "target": "for_each4.point_face_adjacency_index"
+                                            "source": "get_mesh_adjacency.point_face_adjacency_offset",
+                                            "target": "for_each4.point_face_adjacency_offset"
                                         },
                                         {
                                             "source": "get_component_tag.tag_indices",
@@ -1537,7 +1537,7 @@
                                                                             "metaName": "point_face_adjacency"
                                                                         },
                                                                         {
-                                                                            "metaName": "point_face_adjacency_index"
+                                                                            "metaName": "point_face_adjacency_offset"
                                                                         },
                                                                         {
                                                                             "metaName": "point_position"
@@ -1632,7 +1632,7 @@
                                             "portDirection": "input"
                                         },
                                         {
-                                            "portName": "point_face_adjacency_index",
+                                            "portName": "point_face_adjacency_offset",
                                             "portDirection": "input"
                                         },
                                         {
@@ -3435,7 +3435,7 @@
                                             "target": "iterate.point_face_adjacency"
                                         },
                                         {
-                                            "source": ".point_face_adjacency_index",
+                                            "source": ".point_face_adjacency_offset",
                                             "target": "access_offset_array.offset_array"
                                         },
                                         {
@@ -4101,7 +4101,7 @@
                                                                                     "metaName": "point_face_adjacency"
                                                                                 },
                                                                                 {
-                                                                                    "metaName": "point_face_adjacency_index"
+                                                                                    "metaName": "point_face_adjacency_offset"
                                                                                 },
                                                                                 {
                                                                                     "metaName": "face_vertex"
@@ -4179,7 +4179,7 @@
                                                     "portDirection": "input"
                                                 },
                                                 {
-                                                    "portName": "point_face_adjacency_index",
+                                                    "portName": "point_face_adjacency_offset",
                                                     "portDirection": "input"
                                                 },
                                                 {
@@ -6373,15 +6373,15 @@
                                                     "target": "do_while1.point_face_adjacency"
                                                 },
                                                 {
-                                                    "source": ".point_face_adjacency_index",
+                                                    "source": ".point_face_adjacency_offset",
                                                     "target": "access_offset_array.offset_array"
                                                 },
                                                 {
-                                                    "source": ".point_face_adjacency_index",
+                                                    "source": ".point_face_adjacency_offset",
                                                     "target": "access_offset_array1.offset_array"
                                                 },
                                                 {
-                                                    "source": ".point_face_adjacency_index",
+                                                    "source": ".point_face_adjacency_offset",
                                                     "target": "access_offset_array2.offset_array"
                                                 },
                                                 {
@@ -6940,8 +6940,8 @@
                                             "target": "for_each1.point_face_adjacency"
                                         },
                                         {
-                                            "source": "update_mesh_adjacency1.point_face_adjacency_index",
-                                            "target": "for_each1.point_face_adjacency_index"
+                                            "source": "update_mesh_adjacency1.point_face_adjacency_offset",
+                                            "target": "for_each1.point_face_adjacency_offset"
                                         },
                                         {
                                             "source": "get_mesh_structure.point_count",
@@ -7492,8 +7492,8 @@
                                     "target": "for_each.point_face_adjacency"
                                 },
                                 {
-                                    "source": "update_mesh_adjacency.point_face_adjacency_index",
-                                    "target": "for_each.point_face_adjacency_index"
+                                    "source": "update_mesh_adjacency.point_face_adjacency_offset",
+                                    "target": "for_each.point_face_adjacency_offset"
                                 },
                                 {
                                     "source": "if.output",

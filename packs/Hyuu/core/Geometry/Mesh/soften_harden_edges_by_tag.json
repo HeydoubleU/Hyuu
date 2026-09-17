@@ -1367,7 +1367,7 @@
                                                                     "metaName": "point_face_adjacency"
                                                                 },
                                                                 {
-                                                                    "metaName": "point_face_adjacency_index"
+                                                                    "metaName": "point_face_adjacency_offset"
                                                                 }
                                                             ]
                                                         },
@@ -1543,7 +1543,7 @@
                                     "portDirection": "input"
                                 },
                                 {
-                                    "portName": "point_face_adjacency_index",
+                                    "portName": "point_face_adjacency_offset",
                                     "portDirection": "input"
                                 },
                                 {
@@ -3442,7 +3442,7 @@
                                     "target": "slice_and_extra_data.point_face_adjacency"
                                 },
                                 {
-                                    "source": ".point_face_adjacency_index",
+                                    "source": ".point_face_adjacency_offset",
                                     "target": "access_offset_array.offset_array"
                                 },
                                 {
@@ -3745,8 +3745,8 @@
                             "target": "sort_point_face_adj.point_face_adjacency"
                         },
                         {
-                            "source": "update_mesh_adjacency.point_face_adjacency_index",
-                            "target": "sort_point_face_adj.point_face_adjacency_index"
+                            "source": "update_mesh_adjacency.point_face_adjacency_offset",
+                            "target": "sort_point_face_adj.point_face_adjacency_offset"
                         },
                         {
                             "source": ".mesh_out",

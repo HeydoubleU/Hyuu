@@ -41,5 +41,7 @@ namespace Hyuu {
 
 		HYUU_DECL void write_json(Bifrost::Object& object AMINO_ANNOTATE("Amino::InOut outName=object_out"),
 			const Amino::String& filename, bool& success) AMINO_ANNOTATE("Amino::Node");
+
+		HYUU_DECL void list_directory(const Amino::String& path, ArrayPtr<Amino::String>& files, ArrayPtr<Amino::String>& dirs) AMINO_ANNOTATE("Amino::Node");
 	}
 }

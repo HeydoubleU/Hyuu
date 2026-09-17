@@ -270,3 +270,25 @@ void Hyuu::File::write_json(Bifrost::Object& object, const Amino::String& filena
     file.close();
     return;
 }
+
+
+void Hyuu::File::list_directory(const Amino::String& path, ArrayPtr<Amino::String>& files, ArrayPtr<Amino::String>& dirs)
+{
+    auto _files = Amino::Array<Amino::String>();
+    auto _dirs = Amino::Array<Amino::String>();
+    std::filesystem::path dirPath(path.c_str());
+
+    if (std::filesystem::exists(dirPath) && std::filesystem::is_directory(dirPath)) {
+        for (const auto& entry : std::filesystem::directory_iterator(dirPath)) {
+            if (entry.is_directory()) {
+                _dirs.push_back(entry.path().filename().string().c_str());
+            }
+            else if (entry.is_regular_file()) {
+                _files.push_back(entry.path().filename().string().c_str());
+            }
+        }
+    }
+
+	files = Amino::newClassPtr<Amino::Array<Amino::String>>(std::move(_files));
+	dirs = Amino::newClassPtr<Amino::Array<Amino::String>>(std::move(_dirs));
+}

@@ -237,7 +237,7 @@
                                                             "metaName": "point_face_adjacency"
                                                         },
                                                         {
-                                                            "metaName": "point_face_adjacency_index"
+                                                            "metaName": "point_face_adjacency_offset"
                                                         },
                                                         {
                                                             "metaName": "face_center"
@@ -317,7 +317,7 @@
                             "portType": "array<Geometry::Mesh::FaceEdge>"
                         },
                         {
-                            "portName": "point_face_adjacency_index",
+                            "portName": "point_face_adjacency_offset",
                             "portDirection": "input",
                             "portType": "array<uint>"
                         },
@@ -915,7 +915,7 @@
                             "target": "get_adjacent_faces.point_face_adjacency"
                         },
                         {
-                            "source": ".point_face_adjacency_index",
+                            "source": ".point_face_adjacency_offset",
                             "target": "access_offset_array.offset_array"
                         },
                         {
@@ -1471,8 +1471,8 @@
                     "target": "compute_mesh_curvature.point_face_adjacency"
                 },
                 {
-                    "source": "update_mesh_adjacency.point_face_adjacency_index",
-                    "target": "compute_mesh_curvature.point_face_adjacency_index"
+                    "source": "update_mesh_adjacency.point_face_adjacency_offset",
+                    "target": "compute_mesh_curvature.point_face_adjacency_offset"
                 },
                 {
                     "source": "get_point_position.point_position",

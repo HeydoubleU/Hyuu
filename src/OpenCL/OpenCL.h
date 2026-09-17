@@ -14,7 +14,8 @@ namespace Hyuu {
 	namespace OpenCL {
 		namespace Utilitiy {
 			//HYUU_DECL bool opencl_restart() AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");  // doesn't work it seems, needs more investigation
-			HYUU_DECL void opencl_device_info(Amino::MutablePtr<Bifrost::Object>& device_info) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
+			HYUU_DECL void opencl_device_info(Amino::MutablePtr<Bifrost::Object>& device_info)
+				AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}, {documentation, ../documentation/modules/OpenCL/opencl_device_info.md}]");
 			HYUU_DECL void opencl_device_image_formats(ArrayPtr<Amino::String>& formats) AMINO_ANNOTATE("Amino::Node metadata=[{icon, ../icons/opencl_icon.png}]");
 		}  // namespace Utilitiy
 

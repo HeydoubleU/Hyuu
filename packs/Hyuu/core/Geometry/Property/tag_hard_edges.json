@@ -2808,7 +2808,7 @@
                                                                     "metaName": "point_face_adjacency"
                                                                 },
                                                                 {
-                                                                    "metaName": "point_face_adjacency_index"
+                                                                    "metaName": "point_face_adjacency_offset"
                                                                 },
                                                                 {
                                                                     "metaName": "border_feature"
@@ -2876,7 +2876,7 @@
                                     "portDirection": "input"
                                 },
                                 {
-                                    "portName": "point_face_adjacency_index",
+                                    "portName": "point_face_adjacency_offset",
                                     "portDirection": "input"
                                 },
                                 {
@@ -3400,7 +3400,7 @@
                                     "target": "do_while.point_face_adjacency"
                                 },
                                 {
-                                    "source": ".point_face_adjacency_index",
+                                    "source": ".point_face_adjacency_offset",
                                     "target": "access_offset_array.offset_array"
                                 },
                                 {
@@ -3560,8 +3560,8 @@
                             "target": "for_each.point_face_adjacency"
                         },
                         {
-                            "source": "get_mesh_adjacency.point_face_adjacency_index",
-                            "target": "for_each.point_face_adjacency_index"
+                            "source": "get_mesh_adjacency.point_face_adjacency_offset",
+                            "target": "for_each.point_face_adjacency_offset"
                         },
                         {
                             "source": "get_mesh_structure.face_offset",

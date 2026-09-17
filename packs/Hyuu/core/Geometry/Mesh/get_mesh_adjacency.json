@@ -12,7 +12,6 @@
     "compounds": [
         {
             "name": "Hyuu::Geometry::Mesh::get_mesh_adjacency",
-            "uriImported": "file:///get_mesh_adjacency.json",
             "metadata": [
                 {
                     "metaName": "io_nodes",
@@ -44,7 +43,7 @@
                                         {
                                             "metaName": "zValue",
                                             "metaType": "string",
-                                            "metaValue": "36.000000"
+                                            "metaValue": "35.000000"
                                         }
                                     ]
                                 }
@@ -67,11 +66,6 @@
                                             "metaValue": "169.444 -1011.8"
                                         },
                                         {
-                                            "metaName": "zValue",
-                                            "metaType": "string",
-                                            "metaValue": "37.000000"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -81,35 +75,20 @@
                                                     "metaName": "point_face_adjacency"
                                                 },
                                                 {
-                                                    "metaName": "point_face_adjacency_index"
+                                                    "metaName": "point_face_adjacency_offset"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "36.000000"
                                         }
                                     ]
                                 }
                             ]
                         }
                     ]
-                },
-                {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-1911.14 -1281.72 2282.99 1010.26"
-                },
-                {
-                    "metaName": "DisplayMode",
-                    "metaType": "string",
-                    "metaValue": "2"
-                },
-                {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "-410.506 -158.674"
-                },
-                {
-                    "metaName": "zValue",
-                    "metaType": "string",
-                    "metaValue": "61.000000"
                 },
                 {
                     "metaName": "documentation",
@@ -120,6 +99,31 @@
                     "metaName": "icon",
                     "metaType": "string",
                     "metaValue": "../../../icons/hyuu_icon.png"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1644.53 -1080.53 2284 1268.89"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "156.405 150.089"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "56.000000"
+                },
+                {
+                    "metaName": "NodeWidthOffset",
+                    "metaType": "string",
+                    "metaValue": "-228.46"
                 }
             ],
             "terminalStates": [
@@ -146,7 +150,7 @@
                     "portType": "array<Geometry::Mesh::FaceEdge>"
                 },
                 {
-                    "portName": "point_face_adjacency_index",
+                    "portName": "point_face_adjacency_offset",
                     "portDirection": "output",
                     "portType": "array<uint>"
                 }
@@ -211,7 +215,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "33.000000"
+                            "metaValue": "37.000000"
                         }
                     ]
                 },
@@ -252,7 +256,7 @@
                 },
                 {
                     "source": "get_property1.value",
-                    "target": ".point_face_adjacency_index"
+                    "target": ".point_face_adjacency_offset"
                 },
                 {
                     "source": ".mesh",
@@ -296,7 +300,7 @@
                 {
                     "valueName": "get_property.key",
                     "valueType": "string",
-                    "value": "point_face_adjacency_index"
+                    "value": "point_face_adjacency_offset"
                 },
                 {
                     "valueName": "get_property1.default_and_type",
@@ -316,7 +320,11 @@
                 {
                     "name": "output"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "3.3.0.13",
+                "bif": "3.3.0.13"
+            }
         }
     ]
 }

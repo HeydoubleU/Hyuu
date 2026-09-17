@@ -1,0 +1,10 @@
+prefix=C:/Users/MAIN/hyuu/CppProjects/Hyuu/cmake-build-release-visual-studio/Hyuu-3.0
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+
+Name: OpenCL
+Description: Khronos OpenCL ICD Loader
+Requires: OpenCL-Headers
+Version: 3.0
+Libs: -L${libdir} -lOpenCL
+Libs.private: -lcfgmgr32 -lruntimeobject
