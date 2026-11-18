@@ -7,6 +7,7 @@ AMINO_DEFINE_DEFAULT_CLASS(Hyuu::OpenCL::Memory::LocalBuffer);
 AMINO_DEFINE_DEFAULT_CLASS(Hyuu::OpenCL::Memory::Image::Image1DBuffer);
 AMINO_DEFINE_DEFAULT_CLASS(Hyuu::OpenCL::Memory::Image::Image2DBuffer);
 AMINO_DEFINE_DEFAULT_CLASS(Hyuu::OpenCL::Memory::Image::Image3DBuffer);
+AMINO_DEFINE_DEFAULT_CLASS(Hyuu::OpenCL::Memory::Image::ClSamplerWrapper);
 AMINO_DEFINE_DEFAULT_CLASS(Hyuu::OpenCL::Execute::Program);
 AMINO_DEFINE_DEFAULT_CLASS(Hyuu::OpenCL::Execute::Kernel);
 

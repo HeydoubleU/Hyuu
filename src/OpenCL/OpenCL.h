@@ -408,5 +408,6 @@ AMINO_DECLARE_DEFAULT_CLASS(HYUU_DECL, Hyuu::OpenCL::Memory::Image::Image1DBuffe
 AMINO_DECLARE_DEFAULT_CLASS(HYUU_DECL, Hyuu::OpenCL::Memory::Image::Image2DBuffer);
 AMINO_DECLARE_DEFAULT_CLASS(HYUU_DECL, Hyuu::OpenCL::Memory::Image::Image3DBuffer);
 AMINO_DECLARE_DEFAULT_CLASS(HYUU_DECL, Hyuu::OpenCL::Memory::Image::ImageSampler);
+AMINO_DECLARE_DEFAULT_CLASS(HYUU_DECL, Hyuu::OpenCL::Memory::Image::ClSamplerWrapper);
 AMINO_DECLARE_DEFAULT_CLASS(HYUU_DECL, Hyuu::OpenCL::Execute::Program);
 AMINO_DECLARE_DEFAULT_CLASS(HYUU_DECL, Hyuu::OpenCL::Execute::Kernel);

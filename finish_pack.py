@@ -14,10 +14,14 @@ ROOT_FOLDER = os.path.dirname(__file__).replace("\\", "/")
 BUILT_PACK_FOLDER = f"{ROOT_FOLDER}/{args.build_folder}/{args.pack_name}-{args.pack_version}"
 # Existing complete pack with operactors/compounds/graphs/etc.
 DST_PACK_FOLDER = f"{ROOT_FOLDER}/packs/{args.pack_name}"
+print("dst pack folder:", DST_PACK_FOLDER)
 
-
-# Update the existing pack with the newly built ops
-shutil.copytree(BUILT_PACK_FOLDER, DST_PACK_FOLDER, dirs_exist_ok=True)
+# Copy newly built ops to /packs, ignoring unnecessary folders
+IGNORED_FOLDERS = {"bin", "lib/pkgconfig"}
+def ignore_folders(directory, names):
+    rel_dir = os.path.relpath(directory, BUILT_PACK_FOLDER).replace("\\", "/")
+    return [name for name in names if (name if rel_dir == "." else f"{rel_dir}/{name}") in IGNORED_FOLDERS]
+shutil.copytree(BUILT_PACK_FOLDER, DST_PACK_FOLDER, dirs_exist_ok=True, ignore=ignore_folders)
 
 
 # Set name display mode for set_kernel_arg nodes.

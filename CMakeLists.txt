@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-# This project has no vcpkg dependency, so ignore any machine-wide vcpkg
-# toolchain CMake would otherwise auto-apply from the CMAKE_TOOLCHAIN_FILE
-# environment variable. Must happen before project()/enable_language().
+# Ignore any machine-wide vcpkg toolchain.
 unset( CMAKE_TOOLCHAIN_FILE CACHE )
 
 if( NOT BIFROST_LOCATION )
@@ -23,14 +21,14 @@ project(
 # Bifrost setup and utilities...
 include(${BIFROST_LOCATION}/sdk/cmake/setup.cmake)
 
-# Needed to run finish_pack.py after install (portably - not all platforms have 'python' on PATH)
-find_package(Python3 REQUIRED COMPONENTS Interpreter)
-
 # Verbose CMake
 set( CMAKE_VERBOSE_MAKEFILE TRUE)
 
 # Find Bifrost
 find_package(Bifrost REQUIRED SDK)
+
+# Only needed for running inish_pack.py
+find_package(Python3 REQUIRED COMPONENTS Interpreter)
 
 # Build from sources
 add_subdirectory(src)
